@@ -6,9 +6,8 @@ let g:ctrlp_prompt_mappings = {
 \ 'ToggleRegex()':        [''],
 \ }
 set grepprg=ag\ --nogroup\ --nocolor\ --smart-case
-
 " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_open_new_file = 'r'
 
 " ag is fast enough that CtrlP doesn't need to cache
