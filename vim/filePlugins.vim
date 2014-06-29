@@ -18,7 +18,7 @@ Plug mdreves/vim-scaladoc
 Plug LaTeX-Box-Team/LaTeX-Box
  
 " python ----------------------------------------------------------------------
-Plug davidhalter/jedi-vim
+" Plug davidhalter/jedi-vim
 
 " julia ----------------------------------------------------------------------
 Plug JuliaLang/julia-vim
