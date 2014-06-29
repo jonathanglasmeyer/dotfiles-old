@@ -1,0 +1,13 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+URxvt*scrollBar:                      false
+URxvt*scrollTtyOutput:                false
+URxvt*scrollTtyKeypress:              true
+URxvt*font:                           xft:Liberation\ Mono:size=11
+URxvt*boldFont:                       xft:Liberation\ Mono:size=11
+/* URxvt.letterSpace: -1 */

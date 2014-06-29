@@ -1,0 +1,15 @@
+
+function! Source(arg)
+    let l:f=expand('~/.dotfiles/vim/' . a:arg . ".vim")
+"    if filereadable(l:f)
+       silent exec "source " . l:f
+  " endif
+endfunction
+command! -nargs=1 Source call Source(<f-args>) 
+
+
+Source plugins
+Source settings
+Source fileTypeSpecificSettings
+Source mappings
+set t_ut=

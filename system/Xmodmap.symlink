@@ -1,0 +1,41 @@
+
+keycode  18 = parenleft 9 parenleft 9
+keycode  19 = parenright 0 parenright 0
+
+
+
+! keycode  43 = h H minus H
+! ! keycode  45 = k K 5 K
+! keycode  46 = l L 6 L
+! keycode  47 = semicolon colon 0 colon
+! keycode  36 = Return NoSymbol parenright
+
+
+! keycode  57 = n N period N
+! keycode  58 = m M 1 M
+!keycode  59 = Multi_key
+! keycode  60 = period greater 3 greater
+! keycode  61 = slash question slash question
+
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 46 = o O odiaeresis Odiaeresis
+keycode 31 = u U udiaeresis Udiaeresis
+keycode 39 = s S ssharp
+
+keycode  48 = quotedbl apostrophe quotedbl apostrophe
+keycode  34 = braceleft bracketleft bracketleft braceleft
+keycode  35 = braceright bracketright bracketright braceright
+
+keycode 94 = Escape
+
+
+keycode 108 = Mode_switch NoSymbol Mode_switch
+
+! Exchange left Alt and left Win
+! remove mod1 = Alt_L
+! remove mod4 = Super_L
+! add mod1 = Super_L
+! add mod4 = Alt_L
+
+! Swap Caps_Lock and Control_L
+!

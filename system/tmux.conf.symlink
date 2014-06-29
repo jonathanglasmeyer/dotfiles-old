@@ -1,0 +1,52 @@
+
+# Change prefix key to backtick (`)
+unbind C-b
+set-option -g prefix `
+# double backtick => output normal backtick
+bind ` send-prefix
+
+# So we can still use ` when needed
+bind-key C-a set-option -g prefix C-a
+bind-key C-b set-option -g prefix `
+
+setw -g mode-keys vi
+set -g status-keys vi
+bind-key -t vi-edit Up   history-up
+bind-key -t vi-edit Down history-down
+
+# Set a Ctrl-b shortcut for reloading your tmux config
+bind r source-file ~/.tmux.conf
+
+# Rename your terminals
+set -g set-titles on
+# set -g set-titles-string '#(whoami)::#h::#(curl ipecho.net/plain;echo)'
+
+# Status bar customization
+set -g status-utf8 on
+set -g status-bg black
+set -g status-fg white
+set -g status-interval 5
+set -g status-left-length 90
+set -g status-right-length 60
+set -g status-justify left
+
+set -g repeat-time 125
+set -g base-index 1     # count from 1
+
+
+
+# Easy bindings for split
+unbind %
+bind | split-window -h
+bind - split-window -v
+
+# normal scrolling
+setw -g mode-mouse on
+
+# Allow mouse to select which pane to use
+set -g mouse-select-pane on
+
+# Scroll History
+set -g history-limit 30000
+# Lower escape timing from 500ms to 50ms for quicker response to scroll-buffer access.
+set -s escape-time 50
