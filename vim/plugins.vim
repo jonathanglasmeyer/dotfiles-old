@@ -32,7 +32,7 @@ Plug tpope/vim-unimpaired
 Plug tpope/vim-eunuch
 Plug EasyGrep
 Plug godlygeek/tabular
-Plug Raimondi/delimitMate
+" Plug Raimondi/delimitMate
 Plug rking/ag.vim
 Plug tpope/vim-obsession
 Plug tpope/vim-fugitive
