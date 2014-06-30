@@ -30,13 +30,14 @@ nnoremap <leader>t :CtrlPTag<cr>
 " nnoremap <leader>g :Ag<SPACE>
 " nnoremap <leader>g :Ag<SPACE>
 nnoremap <leader>gw :Gwrite<cr>
-nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gB :Gblame<cr>
+nnoremap <leader>gc :Git checkout<space>
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gm :Gmove<space>
 nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gp :Git push<cr>
+nnoremap <leader>gn :Git nb<space>
 nnoremap <silent> <leader>gl :silent Glog<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <silent> <leader>gl :Extradite<cr>
