@@ -23,3 +23,9 @@ au! BufWritePost arpeggio.vim source %
 
 
 Source fileTypeMappings
+
+
+" custom filetypes
+
+autocmd! BufRead *.dart set ft=dart
+

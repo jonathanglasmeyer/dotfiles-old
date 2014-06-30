@@ -22,3 +22,7 @@ Plug LaTeX-Box-Team/LaTeX-Box
 
 " julia ----------------------------------------------------------------------
 Plug JuliaLang/julia-vim
+
+" dart -----------------------------------------------------------------------
+Plug dart-lang/dart-vim-plugin
+
