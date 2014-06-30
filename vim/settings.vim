@@ -124,8 +124,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set scrolloff=23
 
 " new tab for help
-" cabbrev h tab help
-set helpheight=99999
+" cabbrev help tab help
+" set helpheight=99999
 
 
 function! Setuphelp()
