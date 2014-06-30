@@ -35,3 +35,4 @@ au BufRead /sys/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>
 " open/create config file from line
 autocmd! BufRead ~/.dotfiles/vim/* map <buffer> <cr> 0w"ahiW:CtrlPCurFile<CR>plugins/<C-\>ra.vim<C-y>
 autocmd! BufRead ~/.vim/config/* noremap <leader>g :AgFromCurrentFile<space> -
+au! BufRead ~/.dotfiles/vim/plugins.vim nnoremap <buffer> <leader>s :PluginInstall<cr>
