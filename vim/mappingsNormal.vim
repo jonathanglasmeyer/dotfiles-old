@@ -104,3 +104,6 @@ nnoremap <F1> :Startify<cr>
 inoremap <F2> <c-o>:SaveToDic<cr>
 nnoremap <F3> :RainbowParenthesesToggleAll<cr>
 nnoremap <silent> <F4> :%y+<cr>
+nnoremap <F8> :TagbarToggle<cr>
+
+

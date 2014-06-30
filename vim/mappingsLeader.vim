@@ -10,9 +10,7 @@ nnoremap <leader>Q :wq!<CR>
 nnoremap <leader>Q :qall!<CR>
 nnoremap <leader>R :CtrlPCurWD<cr>
 nnoremap <leader>d :CtrlPMRU<cr>
-nnoremap <leader>D :CtrlPBookmarkDir<cr>
 nnoremap <leader>r :CtrlP<cr>
-nnoremap <leader>w :CtrlPSwitch<cr>
 
 nnoremap <leader>b :CtrlPBookmarkDir<cr>
 nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>

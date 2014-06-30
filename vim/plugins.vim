@@ -49,6 +49,10 @@ Plug kien/rainbow_parentheses.vim
 " Plug luochen1990/rainbow
 Plug int3/vim-extradite
 Plug ivan-cukic/vim-ctrlp-switcher
+Plug majutsushi/tagbar
+Plug kana/vim-textobj-user
+Plug bps/vim-textobj-python
+
 Source vundleEnd
 
 
