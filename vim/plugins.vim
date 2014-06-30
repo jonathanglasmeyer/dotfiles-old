@@ -32,7 +32,7 @@ Plug tpope/vim-unimpaired
 Plug tpope/vim-eunuch
 Plug EasyGrep
 Plug godlygeek/tabular
-" Plug Raimondi/delimitMate
+Plug Raimondi/delimitMate
 Plug rking/ag.vim
 Plug tpope/vim-obsession
 Plug tpope/vim-fugitive
@@ -40,11 +40,14 @@ Plug tommcdo/vim-fugitive-blame-ext
 Plug bling/vim-airline
 " Plug bling/vim-bufferline
 Plug mhinz/vim-startify
-Plug Shougo/neocomplete.vim
+" Plug Shougo/neocomplete.vim
 " Plug Shougo/neosnippet
 " Plug honza/vim-snippets
-Plug drmingdrmer/xptemplate
 Plug kikijump/tslime.vim
+
+Plug SirVer/ultisnips
+Plug honza/vim-snippets
+
 Plug kien/rainbow_parentheses.vim
 " Plug luochen1990/rainbow
 Plug int3/vim-extradite
