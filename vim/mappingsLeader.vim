@@ -11,6 +11,7 @@ nnoremap <leader>Q :qall!<CR>
 nnoremap <leader>R :CtrlPCurWD<cr>
 nnoremap <leader>d :CtrlPMRU<cr>
 nnoremap <leader>r :CtrlP<cr>
+nnoremap <leader>R :CtrlPCurFile<cr>
 
 nnoremap <leader>b :CtrlPBookmarkDir<cr>
 nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
