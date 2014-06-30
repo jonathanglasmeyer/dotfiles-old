@@ -40,7 +40,7 @@ Plug tommcdo/vim-fugitive-blame-ext
 Plug bling/vim-airline
 " Plug bling/vim-bufferline
 Plug mhinz/vim-startify
-" Plug Shougo/neocomplete.vim
+Plug Shougo/neocomplete.vim
 " Plug Shougo/neosnippet
 " Plug honza/vim-snippets
 Plug kikijump/tslime.vim
@@ -55,6 +55,8 @@ Plug ivan-cukic/vim-ctrlp-switcher
 Plug majutsushi/tagbar
 Plug kana/vim-textobj-user
 Plug bps/vim-textobj-python
+Plug vim-scripts/UnconditionalPaste
+Plug airblade/vim-gitgutter
 
 Source vundleEnd
 
