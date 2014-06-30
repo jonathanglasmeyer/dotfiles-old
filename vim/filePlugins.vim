@@ -3,6 +3,7 @@ Plug scrooloose/syntastic
 " html -----------------------------------------------------------------------
 Plug mattn/emmet-vim
 Plug indenthtml.vim
+Plug othree/xml.vim
 
 " css ------------------------------------------------------------------------
 Plug hail2u/vim-css3-syntax
@@ -26,3 +27,7 @@ Plug JuliaLang/julia-vim
 " dart -----------------------------------------------------------------------
 Plug dart-lang/dart-vim-plugin
 
+" angular --------------------------------------------------------------------
+Plug othree/javascript-libraries-syntax.vim
+Plug matthewsimo/angular-vim-snippets
+Plug burnettk/vim-angular
