@@ -11,5 +11,6 @@
     <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
     <property name="inactivity-sleep-mode" type="string" value="Suspend"/>
     <property name="spin-down-hdd" type="uint" value="0"/>
+    <property name="presentation-mode" type="bool" value="false"/>
   </property>
 </channel>
