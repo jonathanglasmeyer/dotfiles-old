@@ -20,7 +20,6 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/leather_dark_linux_man
 # q
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+r [title="ranger"] scratchpad show
-# r
 # w
 # b
 
@@ -31,6 +30,7 @@ bindsym $mod+t layout tabbed
 bindsym $mod+semicolon workspace back_and_forth
 
 # ----- BOTTOM -----------
+bindsym $mod+x exec --no-startup-id ~/.dotfiles/bin/session-dev
 
 # ##### RIGHT ###########################
 
