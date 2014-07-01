@@ -17,12 +17,12 @@ bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
 
-setopt auto_cd
+# setopt auto_cd
 # setopt autopushd
 setopt completealiases
 setopt HIST_IGNORE_DUPS
 
-cdpath=(~/.vim ~/C $HOME $HOME/dev $HOME/u)
+# cdpath=(~/.vim ~/C $HOME $HOME/dev $HOME/u)
 
 function chpwd() {
     emulate -L zsh
@@ -34,4 +34,4 @@ alias cwd='cd "$(cat ~/.cwd)"'
 
 # eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 
-cwd
+# cwd
