@@ -9,7 +9,7 @@ nnoremap <silent> <leader>q :wqall!<cr>
 nnoremap <leader>Q :wq!<CR>
 nnoremap <leader>Q :qall!<CR>
 nnoremap <leader>R :CtrlPCurWD<cr>
-nnoremap <leader>d :CtrlPMRU<cr>
+nnoremap <leader>d :CtrlPMRUFiles<cr>
 nnoremap <leader>r :CtrlP<cr>
 nnoremap <leader>R :CtrlPCurFile<cr>
 
