@@ -95,6 +95,7 @@ nnoremap <bs> zm
 
 " bind K to grep word under cursor
 nnoremap <silent> K :silent AgMy<cr>
+vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 
 " bind \ (backward slash) to grep shortcut
 " command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!

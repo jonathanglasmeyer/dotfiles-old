@@ -54,6 +54,7 @@ nnoremap <leader>C :AgConfig<space>
 "f
 "p
 nnoremap <silent> <leader>u :SubstituteCWord<cr>
+vnoremap <silent> <leader>u :<C-u>SubstituteCWordVisual<cr>
 ";
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
