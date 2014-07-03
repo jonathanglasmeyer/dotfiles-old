@@ -1,0 +1,5 @@
+#/bin/sh
+
+i3-msg '[class="zeal"] scratchpad show'
+zeal --query "$@"
+
