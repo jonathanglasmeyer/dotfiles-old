@@ -7,6 +7,8 @@ floating_modifier $mod
 
 # STARTUP
 exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/leather_dark_linux_manjaro_1600x900_60627.jpg
+exec --no-startup-id zeal
+for_window [class=""] scratchpad move
 
 # WORKSPACES
 # exec --no-startup-id i3-msg 'workspace 4; exec thunderbird; workspace 1'
