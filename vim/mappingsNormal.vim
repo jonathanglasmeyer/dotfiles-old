@@ -51,8 +51,8 @@ vnoremap y h
 
 " onoremap f t
 " onoremap t f
-nnoremap f t
-nnoremap t f
+" nnoremap f t
+" nnoremap t f
 
 
 
@@ -91,7 +91,10 @@ nnoremap <Tab> :wincmd w<cr>
 nnoremap <bs> zm
 
 " nnoremap <silent> <F11> :YRShow<CR>
- nnoremap <cr> za
+ " nnoremap <cr> za
+
+" Quickly select text you just pasted:
+noremap gV `[v`]
 
 " bind K to grep word under cursor
 nnoremap <silent> K :silent AgMy<cr>

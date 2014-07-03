@@ -5,6 +5,6 @@ autocmd! BufWritePost ~/u/para/cluster/c/mpitut/*.cc exec "SlimeSend1 mpicxx hel
 
 
 " Dart-Cmdline ---------------------------------------------------------------
-au! BufRead ~/dev/dart-commandline nnoremap <buffer> <silent> <leader>s :DartExec<cr>
+au! BufRead ~/dev/dart-commandline/* nnoremap <buffer> <silent> <leader>s :DartExec<cr>
 
 

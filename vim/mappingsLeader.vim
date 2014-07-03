@@ -6,8 +6,7 @@ nnoremap <silent> <leader>% :tabn 5<cr>
 
 " left ---------------------------------------------------------------------
 nnoremap <silent> <leader>q :wqall!<cr>
-nnoremap <leader>Q :wq!<CR>
-nnoremap <leader>Q :qall!<CR>
+nnoremap <leader>Q :Restart!<CR>
 nnoremap <leader>R :CtrlPCurWD<cr>
 nnoremap <leader>d :CtrlPMRUFiles<cr>
 nnoremap <leader>r :CtrlP<cr>
@@ -52,25 +51,28 @@ nnoremap <leader>C :AgConfig<space>
 "v
 "=============================================================================
 "f
+nnoremap <silent> <expr> <leader>f Highlighting()
 "p
 nnoremap <silent> <leader>u :SubstituteCWord<cr>
 vnoremap <silent> <leader>u :<C-u>SubstituteCWordVisual<cr>
+nnoremap <silent> <leader>U :UndoSubstitution<cr>
+nnoremap <leader>p :%s/<c-r><c-/>/
 ";
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
-nnoremap <leader>n :CtrlP ~/txt/tech<cr>
-nnoremap <leader>e :TabularizeWithChar<space>
+nnoremap <leader>N :CtrlP ~/txt/tech<cr>
+nnoremap <leader>E :TabularizeWithChar<space>
 nnoremap <silent> <leader>o :b#<cr>
 nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
 " reindent whole file
 nnoremap <silent> <leader>I mmgg=G`m
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>k :CtrlP app/models<cr>
-nnoremap <silent> <leader>l :CtrlP app/views<cr>
 nnoremap <silent> <leader>, :CtrlP app/controllers<cr>
 nnoremap <silent> <leader>/ :nohlsearch<cr>
 
-
+"----------------------------------------------------------------------------
+nnoremap <leader>l :CtrlPLine %<cr>
 
 
 

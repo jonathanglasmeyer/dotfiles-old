@@ -97,7 +97,7 @@ set matchtime=2
 
 " set hlsearch
 set ignorecase
-set smartcase
+" set smartcase
 
 " Automatically indent based on file type: ``filetype indent on``
 filetype indent on
@@ -175,3 +175,5 @@ if has("patch-7.4.314")
 endif
 autocmd VimEnter *
 \ highlight ModeMsg guifg=bg guibg=bg | highlight WarningMsg guifg=bg
+
+set iskeyword+=:
