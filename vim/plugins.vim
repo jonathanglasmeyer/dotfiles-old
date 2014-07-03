@@ -8,7 +8,7 @@ Source filePlugins
 Source colorschemes
 
 " navigation -----------------------------------------------------------------
-Plug justinmk/vim-sneak
+" Plug justinmk/vim-sneak
 
 Plug kien/ctrlp.vim
 Plug fisadev/vim-ctrlp-cmdpalette
@@ -22,6 +22,7 @@ Plug tsukkee/unite-tag
 " tweaks
 Plug tpope/vim-repeat
 Plug wellle/targets.vim
+Plug vim-scripts/ReplaceWithRegister
 
 " additional functionality
 " Plug airblade/vim-rooter
@@ -57,6 +58,7 @@ Plug kana/vim-textobj-user
 Plug bps/vim-textobj-python
 Plug vim-scripts/UnconditionalPaste
 Plug airblade/vim-gitgutter
+Plug terryma/vim-smooth-scroll
 Source vundleEnd
 
 
