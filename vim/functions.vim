@@ -192,22 +192,45 @@ command! AgMyVisual call AgMyVisual()
 
 
 function! SubstituteCWord()
+    normal mA
     Gcd
-    let cw = expand("<cword>")
+    let g:cw = expand("<cword>")
     let g:ag_qhandler=""
-    silent exec "Ag! " . cw
-    let replacement = input("Enter replacement: ", cw)
-    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/c"
+    silent exec "Ag! " . g:cw
+    let g:replacement = input("Enter replacement: ", g:cw)
+    exec "Qargs | argdo %s/" . g:cw . "/" . g:replacement . "/cI"
+    normal `A
 endfunction
 command! SubstituteCWord call SubstituteCWord()
 
+function! UndoSubstitution()
+    normal mA
+    let g:ag_qhandler=""
+    silent exec "Ag! " . g:replacement
+    silent exec "Qargs | argdo %s/" . g:replacement . "/" . g:cw . "/I"
+    normal `A
+endfunction
+command! UndoSubstitution call UndoSubstitution()
+
 
 function! SubstituteCWordVisual()
+    normal mA
     Gcd
-    let cw = s:get_visual_selection()
+    let g:cw = s:get_visual_selection()
     let g:ag_qhandler=""
-    silent exec "Ag! " . cw
-    let replacement = input("Enter replacement: ", cw)
-    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/c"
+    silent exec "Ag! " . g:cw
+    let g:replacement = input("Enter replacement: ", g:cw)
+    exec "Qargs | argdo %s/" . g:cw . "/" . g:replacement . "/cI"
+    normal `A
 endfunction
 command! SubstituteCWordVisual call SubstituteCWordVisual()
+
+
+let g:highlighting = 0
+function! Highlighting()
+  if g:highlighting == 1 && @/ =~ '^\\<'.expand('<cword>').'\\>$'
+    let g:highlighting = 0
+    return ":silent nohlsearch\<CR>"
+  endif
+  let @/ = '\<'.expand('<cword>').'\>'
+  let g:highlighting = 1
