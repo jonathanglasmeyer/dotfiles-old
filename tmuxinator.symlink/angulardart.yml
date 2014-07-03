@@ -1,7 +1,7 @@
 # ~/.tmuxinator/angulardart.yml
 
 name: angulardart
-root: ~/dev/angular.dart.tutorial.bak
+root: ~/dev/angular.dart.tutorial.bak/Chapter_02
 
 # Optional tmux socket
 # socket_name: foo
@@ -24,5 +24,6 @@ windows:
       # panes:
         # - vim
         # - guard
-  - server: bundle exec rails s
+  - server: pub serve
+  - shell: ec; ls
   # - logs: tail -f log/development.log
