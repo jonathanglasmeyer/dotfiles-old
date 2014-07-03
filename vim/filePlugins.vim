@@ -8,7 +8,7 @@ Plug othree/xml.vim
 " css ------------------------------------------------------------------------
 Plug hail2u/vim-css3-syntax
 Plug gorodinskiy/vim-coloresque
-Plug vim-pandoc/vim-pandoc
+" Plug vim-pandoc/vim-pandoc
 
 " scala ----------------------------------------------------------------------
 Plug derekwyatt/vim-scala
