@@ -17,8 +17,8 @@ nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <silent> <leader>S :silent Git add . \| :Gcommit<cr>
-nnoremap <leader>h :exec "!clear; valgrind ./" . expand('%:r')<cr>
+nnoremap <silent> <leader>S :Gcommit<cr>
+" nnoremap <leader>h :exec "!clear; valgrind ./" . expand('%:r')<cr>
 nnoremap <leader>H :Unite help<cr>
 nnoremap <leader>t :CtrlPTag<cr>
 nnoremap <leader>gw :Gwrite<cr>
@@ -37,7 +37,9 @@ nnoremap <silent> <leader>gL :Git! log --oneline<cr>
 "-----------------------------------------------------------------------------
 "z
 noremap <silent> <leader>x :close<cr> 
+noremap <silent> <leader>X :only<cr> 
 nnoremap <leader>m :verbose map<space>
+nnoremap <leader>m :map <space
 nnoremap <leader>c :CtrlP ~/.dotfiles<cr>
 nnoremap <leader>C :AgConfig<space>
 "v
