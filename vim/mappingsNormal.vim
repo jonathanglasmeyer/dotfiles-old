@@ -110,4 +110,5 @@ inoremap <F2> <c-o>:SaveToDic<cr>
 nnoremap <F3> :RainbowParenthesesToggleAll<cr>
 nnoremap <silent> <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
+nnoremap <F5> :e!<cr>
 
