@@ -44,6 +44,6 @@ nnoremap <M-2> :e web/main.dart<cr>
 imap <buffer> <M-o> \begin{
 imap <buffer> <M-c> <Plug>LatexCloseCurEnv
 
-nnoremap <cr> zA
+" nnoremap <cr> zA:
 
 
