@@ -59,6 +59,7 @@ Plug bps/vim-textobj-python
 Plug vim-scripts/UnconditionalPaste
 Plug airblade/vim-gitgutter
 Plug terryma/vim-smooth-scroll
+Plug tpope/vim-vinegar
 Source vundleEnd
 
 
