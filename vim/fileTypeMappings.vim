@@ -6,6 +6,7 @@ au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsInfo<CR>
 au FileType markdown nnoremap <buffer> <silent> <leader>w :w\|!pandoc -o pdf/%:r.pdf %<CR>
 
 au! FileType julia nnoremap <buffer> <silent> <leader>s :JuliaExec<cr>
+" au! FileType dart nnoremap <buffer> <silent> <leader>s :DartExec<cr>
 " au FileType julia nnoremap <buffer> <silent> <leader>s :JuliaExecSSH<cr>
 
 au FileType racket nnoremap <silent> <leader>w :RacketExec<cr>
