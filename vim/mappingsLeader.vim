@@ -16,6 +16,8 @@ nnoremap <leader>R :CtrlPCurFile<cr>
 nnoremap <leader>b :CtrlPBookmarkDir<cr>
 nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 
+nnoremap <silent> <leader>a :ZealCurrentWord<cr>
+nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
 nnoremap <silent> <leader>S :silent Git add . \| :Gcommit<cr>
 " nnoremap <leader>S :w !sudo tee > /dev/null %<CR>
@@ -64,6 +66,7 @@ nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
 nnoremap <silent> <leader>I mmgg=G`m
 
 nnoremap <silent> <leader>, :CtrlP app/controllers<cr>
+nnoremap <silent> <leader>/ :nohlsearch<cr>
 nnoremap <silent> <leader>k :CtrlP app/models<cr>
 nnoremap <silent> <leader>l :CtrlP app/views<cr>
 
