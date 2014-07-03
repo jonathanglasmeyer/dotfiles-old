@@ -30,7 +30,6 @@ bindsym $mod+t layout tabbed
 bindsym $mod+semicolon workspace back_and_forth
 
 # ----- BOTTOM -----------
-bindsym $mod+x exec --no-startup-id ~/.dotfiles/bin/session-dev
 
 # ##### RIGHT ###########################
 
@@ -54,9 +53,11 @@ bindsym $mod+quotedbl [title="Sunrise"] scratchpad show
 bindsym $mod+backslash split h
 bindsym $mod+Return exec xfce4-terminal
 # bindsym $mod+minus scratchpad show
-# bindsym $mod+space focus mode_toggle
-bindsym $mod+space [title="Webogram"] scratchpad show
-bindsym $mod+minus [class="Gvim"] scratchpad show
+bindsym $mod+space focus mode_toggle
+# bindsym $mod+space [title="Webogram"] scratchpad show
+# bindsym $mod+minus [class="Gvim"] scratchpad show
+bindsym $mod+minus scratchpad show
+bindsym $mod+F2 exec --no-startup-id ~/.dotfiles/bin/session-dev
 
 
 # shift
