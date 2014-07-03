@@ -28,7 +28,7 @@ nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gm :Gmove<space>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gp :Git push<cr>
+nnoremap <leader>gp :Gpush<cr>
 nnoremap <leader>gn :Git nb<space>
 nnoremap <silent> <leader>gl :silent Glog<cr>
 nnoremap <leader>ge :Gedit<cr>
