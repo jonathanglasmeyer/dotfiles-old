@@ -147,7 +147,7 @@ endfunction
 command! DartExec call DartExec()
 
 function! Zeal(arg)
-    exec 'silent !zeal-show '. &ft . ':' . a:arg
+    silent exec 'silent !zeal-show '. &ft . ':' . a:arg
 endfunction
 command! -nargs=1 Zeal call Zeal(<f-args>) 
 
@@ -188,7 +188,7 @@ function! AgMyVisual()
     let g:ag_qhandler="CtrlPQuickfix"
     silent exec "Ag! " . s:get_visual_selection()
 endfunction
-command! -range AgMyVisual <line1>,<line2> call AgMyVisual()
+command! AgMyVisual call AgMyVisual()
 
 
 function! SubstituteCWord()
@@ -197,7 +197,7 @@ function! SubstituteCWord()
     let g:ag_qhandler=""
     silent exec "Ag! " . cw
     let replacement = input("Enter replacement: ", cw)
-    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/gc"
+    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/c"
 endfunction
 command! SubstituteCWord call SubstituteCWord()
 
@@ -208,6 +208,6 @@ function! SubstituteCWordVisual()
     let g:ag_qhandler=""
     silent exec "Ag! " . cw
     let replacement = input("Enter replacement: ", cw)
-    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/gc"
+    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/c"
 endfunction
-command! -range SubstituteCWordVisual <line1>,<line2> call SubstituteCWordVisual()
+command! SubstituteCWordVisual call SubstituteCWordVisual()
