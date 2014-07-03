@@ -140,3 +140,53 @@ function! TabularizeWithChar(c)
 endfunction
 command! -nargs=1 TabularizeWithChar call TabularizeWithChar(<f-args>) 
 
+function! DartExec()
+    write
+    exec '!dart ' . expand('%p')
+endfunction
+command! DartExec call DartExec()
+
+function! Zeal(arg)
+    exec 'silent !zeal-show '. &ft . ':' . a:arg
+endfunction
+command! -nargs=1 Zeal call Zeal(<f-args>) 
+
+function! ZealCurrentWord()
+    silent exec '!zeal-show ' . &ft . ':' . expand("<cword>")
+endfunction
+command! ZealCurrentWord call ZealCurrentWord() 
+
+command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
+function! QuickfixFilenames()
+  " Building a hash ensures we get each buffer only once
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(values(buffer_numbers))
+endfunction
+
+function! AgMy()
+    Gcd
+    let g:ag_qhandler="CtrlPQuickfix"
+    silent exec "Ag! " . expand("<cword>")
+endfunction
+command! AgMy call AgMy()
+
+function! SubstituteCWord()
+    Gcd
+    let cw = expand("<cword>")
+    let g:ag_qhandler=""
+    silent exec "Ag! " . cw
+    let replacement = input("Enter replacement: ", cw)
+    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/gc"
+endfunction
+
+command! SubstituteCWord call SubstituteCWord()
+
+
+
+" aaaa
+" aaaa(
+    
+    
