@@ -68,7 +68,7 @@ nnoremap Q <nop>
 nnoremap 0 ^
 
 " make yanking behave live c and d
-nnoremap Y y$
+nnoremap H y$
 " easier searching
 nnoremap ? ?\V
 vnoremap ? ?\V
@@ -85,25 +85,26 @@ nnoremap <Tab> :wincmd w<cr>
 
 " select pasted --TODO doesn't really work?
 " nnoremap gp `[v`]
-nnoremap gp "*p
-nnoremap gP "+p
+" nnoremap p gp
+" nnoremap gp "*p
+" nnoremap gP "+p
 nnoremap <bs> zm
 
 " nnoremap <silent> <F11> :YRShow<CR>
  nnoremap <cr> za
 
 " bind K to grep word under cursor
-nnoremap K :Ag <C-R><C-W><CR>
+nnoremap <silent> K :silent AgMy<cr>
 
 " bind \ (backward slash) to grep shortcut
 " command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 
 nnoremap <F12> :silent call FillLine( '-' )<cr>
-nnoremap <F1> :Startify<cr>
+nnoremap <F1> :tabe .<cr>
 inoremap <F2> <c-o>:SaveToDic<cr>
 nnoremap <F3> :RainbowParenthesesToggleAll<cr>
 nnoremap <silent> <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
 
-
+nnoremap S :SubstituteCWord<cr>
