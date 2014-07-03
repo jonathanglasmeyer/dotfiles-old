@@ -15,9 +15,9 @@ Plug fisadev/vim-ctrlp-cmdpalette
 
 Plug mkitt/tabline.vim
 
-Plug Shougo/unite.vim
-Plug tsukkee/unite-help
-Plug tsukkee/unite-tag
+" Plug Shougo/unite.vim
+" Plug tsukkee/unite-help
+" Plug tsukkee/unite-tag
 
 " tweaks
 Plug tpope/vim-repeat

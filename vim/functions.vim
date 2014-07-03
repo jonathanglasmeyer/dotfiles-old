@@ -234,3 +234,4 @@ function! Highlighting()
   endif
   let @/ = '\<'.expand('<cword>').'\>'
   let g:highlighting = 1
+endfunction
