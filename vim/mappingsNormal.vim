@@ -107,4 +107,3 @@ nnoremap <F3> :RainbowParenthesesToggleAll<cr>
 nnoremap <silent> <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
 
-nnoremap S :SubstituteCWord<cr>

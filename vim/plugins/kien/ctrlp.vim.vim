@@ -4,7 +4,9 @@ let g:ctrlp_prompt_mappings = {
 \ 'PrtHistory(-1)':       [''],
 \ 'PrtCurEnd()':          [''],
 \ 'ToggleRegex()':        [''],
-\ 'ToggleMRURelative()':  ['<F2>']
+\ 'ToggleMRURelative()':  ['<F2>'],
+\ 'AcceptSelection("e")': ['<c-t>'],
+\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>']
 \ }
 set grepprg=ag\ --nogroup\ --nocolor\ --smart-case
 " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore

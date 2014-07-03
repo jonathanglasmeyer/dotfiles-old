@@ -31,7 +31,7 @@ Plug epeli/slimux
 Plug tpope/vim-commentary
 Plug tpope/vim-unimpaired
 Plug tpope/vim-eunuch
-Plug EasyGrep
+" Plug EasyGrep
 Plug godlygeek/tabular
 " Plug Raimondi/delimitMate
 Plug rking/ag.vim

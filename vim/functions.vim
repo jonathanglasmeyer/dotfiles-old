@@ -173,6 +173,24 @@ function! AgMy()
 endfunction
 command! AgMy call AgMy()
 
+function! s:get_visual_selection()
+  " Why is this not a built-in Vim script function?!
+  let [lnum1, col1] = getpos("'<")[1:2]
+  let [lnum2, col2] = getpos("'>")[1:2]
+  let lines = getline(lnum1, lnum2)
+  let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
+  let lines[0] = lines[0][col1 - 1:]
+  return join(lines, "\n")
+endfunction
+
+function! AgMyVisual()
+    Gcd
+    let g:ag_qhandler="CtrlPQuickfix"
+    silent exec "Ag! " . s:get_visual_selection()
+endfunction
+command! -range AgMyVisual <line1>,<line2> call AgMyVisual()
+
+
 function! SubstituteCWord()
     Gcd
     let cw = expand("<cword>")
@@ -181,12 +199,15 @@ function! SubstituteCWord()
     let replacement = input("Enter replacement: ", cw)
     exec "Qargs | argdo %s/" . cw . "/" . replacement . "/gc"
 endfunction
-
 command! SubstituteCWord call SubstituteCWord()
 
 
-
-" aaaa
-" aaaa(
-    
-    
+function! SubstituteCWordVisual()
+    Gcd
+    let cw = s:get_visual_selection()
+    let g:ag_qhandler=""
+    silent exec "Ag! " . cw
+    let replacement = input("Enter replacement: ", cw)
+    exec "Qargs | argdo %s/" . cw . "/" . replacement . "/gc"
+endfunction
+command! -range SubstituteCWordVisual <line1>,<line2> call SubstituteCWordVisual()

@@ -12,10 +12,9 @@ nnoremap <leader>R :CtrlPCurWD<cr>
 nnoremap <leader>d :CtrlPMRUFiles<cr>
 nnoremap <leader>r :CtrlP<cr>
 nnoremap <leader>R :CtrlPCurFile<cr>
-
 nnoremap <leader>b :CtrlPBookmarkDir<cr>
 nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
-
+"-----------------------------------------------------------------------------
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
@@ -32,7 +31,7 @@ nnoremap <leader>t :CtrlPTag<cr>
 " nnoremap <leader>g :Ag<SPACE>
 " nnoremap <leader>g :Ag<SPACE>
 nnoremap <leader>gw :Gwrite<cr>
-nnoremap <leader>gB :Gblame<cr>
+nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>gc :Git checkout<space>
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gm :Gmove<space>
@@ -44,31 +43,31 @@ nnoremap <silent> <leader>gl :silent Glog<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <silent> <leader>gl :Extradite<cr>
 nnoremap <silent> <leader>gL :Git! log --oneline<cr>
-
-
+"-----------------------------------------------------------------------------
+"z
 noremap <silent> <leader>x :close<cr> 
 nnoremap <leader>m :Unite mapping<cr>
 nnoremap <leader>c :CtrlP ~/.dotfiles<cr>
 nnoremap <leader>C :AgConfig<space>
-
-
-
-
+"v
+"=============================================================================
+"f
+"p
+nnoremap <silent> <leader>u :SubstituteCWord<cr>
+";
+"----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
 nnoremap <leader>n :CtrlP ~/txt/tech<cr>
-" tabularize
-" nnoremap <leader>e mmvip:Tab /\|<cr>`m
 nnoremap <leader>e :TabularizeWithChar<space>
-" switch to last file
 nnoremap <silent> <leader>o :b#<cr>
 nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
 " reindent whole file
 nnoremap <silent> <leader>I mmgg=G`m
-
-nnoremap <silent> <leader>, :CtrlP app/controllers<cr>
-nnoremap <silent> <leader>/ :nohlsearch<cr>
+"----------------------------------------------------------------------------
 nnoremap <silent> <leader>k :CtrlP app/models<cr>
 nnoremap <silent> <leader>l :CtrlP app/views<cr>
+nnoremap <silent> <leader>, :CtrlP app/controllers<cr>
+nnoremap <silent> <leader>/ :nohlsearch<cr>
 
 
 

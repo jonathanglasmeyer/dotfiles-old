@@ -1,14 +1,14 @@
 alias reload!='. ~/.zshrc'
 function o () {
-    xdg-open "$1" &> /dev/null &
+xdg-open "$1" &> /dev/null &
 }
 function untar () {
-    tar -zxvf $1 
+tar -zxvf $1 
 }
 function f () {
-  ag --smart-case --hidden -g $1
+ag --smart-case --hidden -g $1
 }
-    
+
 alias path="echo $PATH | sed 's/\:/\n/g' | sort"
 alias c="cd"
 alias h="history"
@@ -90,3 +90,6 @@ alias idea="~/bin/idea-IU-135.909/bin/idea.sh"
 alias copykey="xclip -sel clip < ~/.ssh/id_rsa.pub"
 alias mongo="~/bin/mongodb-linux-x86_64-2.6.1/bin/mongo"
 alias tmux="tmux -2"
+alias muxk="tmux kill-session -t"
+
+

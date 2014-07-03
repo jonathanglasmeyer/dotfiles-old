@@ -1,7 +1,7 @@
-# ~/.tmuxinator/angulardart.yml
+# ~/.tmuxinator/session.yml
 
-name: angulardart
-root: ~/dev/ch6
+name: session
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -19,11 +19,4 @@ root: ~/dev/ch6
 # tmux_command: byobu
 
 windows:
-  # - editor:
-      # layout: main-vertical
-      # panes:
-        # - vim
-        # - guard
-  - server: pub serve
-  - shell: gvim
-  - dartium: dartium http://localhost:8080
+  - session: mux list
