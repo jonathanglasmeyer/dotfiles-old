@@ -1,7 +1,7 @@
 # ~/.tmuxinator/angulardart.yml
 
 name: angulardart
-root: ~/dev/ch6
+root: ~/dev/angulardart-my
 
 # Optional tmux socket
 # socket_name: foo
