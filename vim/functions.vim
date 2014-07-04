@@ -242,3 +242,12 @@ function! CommitHunk()
     exec "normal \<Plug>GitGutterStageHunk"
     Gcommit
 endfunction
+
+
+function! MergeFeatureBranch()
+    silent Git checkout feature
+    silent Git rebase master
+    silent Git checkout master
+    exec "Git merge --squash feature"
+    exec "Git branch -d feature"
+endfunction
