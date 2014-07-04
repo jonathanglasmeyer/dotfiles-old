@@ -27,7 +27,7 @@ nnoremap <leader>gb :Gblame<cr>
 nnoremap <silent> <leader>gco :Git checkout<space>
 nnoremap <silent> <leader>gcc :Gcommit<cr>
 nnoremap <silent> <leader>gca :Gcommit --amend<cr>
-nnoremap <silent> <leader>gcA :Gcommit --amend -reuse-message=HEAD<cr>
+nnoremap <silent> <leader>gcA :Gcommit --amend --reuse-message=HEAD<cr>
 nnoremap <leader>gr :Gread<cr>
 " git stats, how often changed etc
 nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
