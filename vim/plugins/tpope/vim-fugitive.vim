@@ -21,3 +21,8 @@
 " q     close status
 " R     reload status
 " S     |:Gvsplit|
+" Squash commits
+function! SquashCommits()
+  '<,'>s/pick /fixup /ge
+endfunction
+autocmd! VimEnter .git/rebase-merge/git-rebase-todo vmap <buffer> <leader>s :call SquashCommits()<CR>
