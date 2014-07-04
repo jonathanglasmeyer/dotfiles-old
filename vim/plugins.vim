@@ -67,6 +67,7 @@ Plug terryma/vim-expand-region
 Plug kana/vim-textobj-line
 Plug kana/vim-textobj-entire
 Plug tpope/vim-endwise
+Plug tpope/vim-dispatch
 
 Source vundleEnd
 
