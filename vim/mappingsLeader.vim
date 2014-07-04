@@ -34,8 +34,8 @@ nnoremap <silent> <leader>gM :call MergeFeatureBranch()<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 " git [p]ickaxe = search through history (not only commit messages)
-nnoremap <leader>gp :Git log -S
-nnoremap <leader>gP :Gpush<cr>
+nnoremap <leader>gP :Git log -S
+nnoremap <leader>gp :Gpush<cr>
 " nnoremap <leader>gnf :Git nb feature<cr>
 nnoremap  <leader>gn :Git nb<space>
 nnoremap <silent> <leader>gl :silent Glog<cr>
