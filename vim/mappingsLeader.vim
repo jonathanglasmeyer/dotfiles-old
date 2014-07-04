@@ -24,8 +24,8 @@ nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
 nnoremap <leader>t :CtrlPTag<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
-nnoremap <silent> <leader>gcf :silent Git checkout feature<cr>
-nnoremap <silent> <leader>gcc :silent Git checkout master<cr>
+nnoremap <silent> <leader>gco :Git checkout<space>
+nnoremap <silent> <leader>gci :Gcommit<cr>
 nnoremap <leader>gr :Gread<cr>
 " git stats, how often changed etc
 nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
@@ -37,7 +37,7 @@ nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gp :Git log -S
 nnoremap <leader>gP :Gpush<cr>
 " nnoremap <leader>gnf :Git nb feature<cr>
-nnoremap <silent> <leader>gnf :silent Git nb feature<cr>
+nnoremap  <leader>gn :Git nb<space>
 nnoremap <silent> <leader>gl :silent Glog<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <silent> <leader>gl :Extradite<cr>
