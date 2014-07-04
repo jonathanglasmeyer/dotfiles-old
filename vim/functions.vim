@@ -239,5 +239,5 @@ endfunction
 function! CommitHunk()
     exec "normal \<Plug>GitGutterPreviewHunk"
     exec "normal \<Plug>GitGutterStageHunk"
-    normal ":Gcommit<cr>i"
+    Gcommit
 endfunction
