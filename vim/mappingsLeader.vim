@@ -26,6 +26,8 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>gc :Git checkout<space>
 nnoremap <leader>gr :Gread<cr>
+" git stats, how often changed etc
+nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
 nnoremap <leader>gm :Gmove<space>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
