@@ -237,10 +237,5 @@ function! Highlighting()
   return ":silent set hlsearch\<CR>"
 endfunction
 
-function! CommitHunk()
-    exec "normal \<Plug>GitGutterPreviewHunk"
-    exec "normal \<Plug>GitGutterStageHunk"
-    Gcommit
-endfunction
 
 
