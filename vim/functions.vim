@@ -236,6 +236,3 @@ function! Highlighting()
   let g:highlighting = 1
   return ":silent set hlsearch\<CR>"
 endfunction
-
-
-
