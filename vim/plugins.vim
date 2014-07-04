@@ -62,7 +62,7 @@ Plug terryma/vim-smooth-scroll
 Plug tpope/vim-vinegar
 Plug tpope/vim-rsi
 Plug restart.vim
-Plug prendradjaja/vim-vertigo
+" Plug prendradjaja/vim-vertigo
 Plug terryma/vim-expand-region
 Plug kana/vim-textobj-line
 Plug kana/vim-textobj-entire
