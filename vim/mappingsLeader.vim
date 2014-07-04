@@ -17,15 +17,15 @@ nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <leader>S :call CommitHunk()<cr>
 nnoremap <Leader>ha <Plug>GitGutterStageHunk
 nnoremap <Leader>hu <Plug>GitGutterRevertHunk
 nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
 nnoremap <leader>t :CtrlPTag<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
-nnoremap <silent> <leader>gco :Git checkout<space>
-nnoremap <silent> <leader>gci :Gcommit<cr>
+nnoremap <silent> <leader>gcc :Gcommit<cr>
+nnoremap <silent> <leader>gca :Gcommit --amend<cr>
+nnoremap <silent> <leader>gcA :Gcommit --amend -reuse-message=HEAD<cr>
 nnoremap <leader>gr :Gread<cr>
 " git stats, how often changed etc
 nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
