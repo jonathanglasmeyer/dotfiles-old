@@ -1,0 +1,14 @@
+#/bin/sh
+
+# i3-msg "workspace 2: dev"
+i3-msg "[class="Xfce4-terminal"] kill"
+i3-msg "[class="Gvim"] kill"
+i3-msg "[class="Google-chrome-stable"] kill"
+i3-msg "[class="Dartium"] kill"
+i3-msg "append_layout /home/jwerner/.i3/term-vim-chrome.json"
+i3-msg "exec google-chrome-stable"
+# i3-msg "exec xfce4-terminal -e 'mux start angulardart'"
+i3-msg "exec xfce4-terminal -e 'mux start session'"
+# i3-msg "exec gvim --servername vim"
+
+
