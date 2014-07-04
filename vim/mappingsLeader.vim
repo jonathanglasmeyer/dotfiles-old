@@ -30,6 +30,7 @@ nnoremap <leader>gr :Gread<cr>
 nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
 nnoremap <leader>gm :Gmove<space>
 nnoremap <leader>gs :Gstatus<cr>
+nnoremap <silent> <leader>gM :call MergeFeatureBranch()<cr>
 nnoremap <leader>gd :Gdiff<cr>
 " git [p]ickaxe = search through history (not only commit messages)
 nnoremap <leader>gp :Git log -S
