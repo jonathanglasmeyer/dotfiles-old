@@ -234,6 +234,7 @@ function! Highlighting()
   endif
   let @/ = '\<'.expand('<cword>').'\>'
   let g:highlighting = 1
+  return ":silent set hlsearch\<CR>"
 endfunction
 
 function! CommitHunk()
