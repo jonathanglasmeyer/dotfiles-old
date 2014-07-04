@@ -17,6 +17,7 @@ nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
+nnoremap <leader>S :Gwrite<bar>Gcommit<cr>i
 nnoremap <Leader>ha <Plug>GitGutterStageHunk
 nnoremap <Leader>hu <Plug>GitGutterRevertHunk
 nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
