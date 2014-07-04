@@ -235,3 +235,9 @@ function! Highlighting()
   let @/ = '\<'.expand('<cword>').'\>'
   let g:highlighting = 1
 endfunction
+
+function! CommitHunk()
+    exec "normal \<Plug>GitGutterPreviewHunk"
+    exec "normal \<Plug>GitGutterStageHunk"
+    normal ":Gcommit<cr>i"
+endfunction

@@ -17,9 +17,10 @@ nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <silent> <leader>S :Gcommit<cr>
-" nnoremap <leader>h :exec "!clear; valgrind ./" . expand('%:r')<cr>
-nnoremap <leader>H :Unite help<cr>
+nnoremap <leader>S :call CommitHunk()<cr>
+nnoremap <Leader>ha <Plug>GitGutterStageHunk
+nnoremap <Leader>hu <Plug>GitGutterRevertHunk
+nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
 nnoremap <leader>t :CtrlPTag<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
