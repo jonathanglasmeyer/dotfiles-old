@@ -242,3 +242,5 @@ function! CommitHunk()
     exec "normal \<Plug>GitGutterStageHunk"
     Gcommit
 endfunction
+
+

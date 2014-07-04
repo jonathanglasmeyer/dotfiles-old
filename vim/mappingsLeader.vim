@@ -17,24 +17,27 @@ nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <leader>S :call CommitHunk()<cr>
 nnoremap <Leader>ha <Plug>GitGutterStageHunk
 nnoremap <Leader>hu <Plug>GitGutterRevertHunk
 nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
 nnoremap <leader>t :CtrlPTag<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
-nnoremap <leader>gc :Git checkout<space>
+nnoremap <silent> <leader>gcc :Gcommit<cr>
+nnoremap <silent> <leader>gca :Gcommit --amend<cr>
+nnoremap <silent> <leader>gcA :Gcommit --amend -reuse-message=HEAD<cr>
 nnoremap <leader>gr :Gread<cr>
 " git stats, how often changed etc
 nnoremap <silent> <leader>gS :exec "!git churn --since='6 months ago' \| tail"<cr>
 nnoremap <leader>gm :Gmove<space>
+nnoremap <silent> <leader>gM :call MergeFeatureBranch()<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 " git [p]ickaxe = search through history (not only commit messages)
 nnoremap <leader>gp :Git log -S
 nnoremap <leader>gP :Gpush<cr>
-nnoremap <leader>gn :Git nb<space>
+" nnoremap <leader>gnf :Git nb feature<cr>
+nnoremap  <leader>gn :Git nb<space>
 nnoremap <silent> <leader>gl :silent Glog<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <silent> <leader>gl :Extradite<cr>
@@ -59,7 +62,7 @@ nnoremap <leader>p :%s/<c-r><c-/>/
 ";
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
-nnoremap <leader>N :CtrlP ~/txt/tech<cr>
+nnoremap <leader>n :CtrlP ~/txt/tech<cr>
 nnoremap <leader>E :TabularizeWithChar<space>
 nnoremap <silent> <leader>o :b#<cr>
 nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
