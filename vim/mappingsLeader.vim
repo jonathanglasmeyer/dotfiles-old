@@ -6,13 +6,13 @@ nnoremap <silent> <leader>% :tabn 5<cr>
 
 " left ---------------------------------------------------------------------
 nnoremap <silent> <leader>q :wqall!<cr>
-nnoremap <leader>Q :Restart!<CR>
-nnoremap <leader>R :CtrlPCurWD<cr>
-nnoremap <leader>d :CtrlPMRUFiles<cr>
-nnoremap <leader>r :CtrlP<cr>
-nnoremap <leader>R :CtrlPCurFile<cr>
-nnoremap <leader>bv :CtrlP ~/.vim/bundle<cr>
-nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
+nnoremap <silent> <leader>Q :Restart!<CR>
+nnoremap <silent> <leader>R :CtrlPCurWD<cr>
+nnoremap <silent> <leader>d :CtrlPMRUFiles<cr>
+nnoremap <silent> <leader>r :CtrlP<cr>
+nnoremap <silent> <leader>R :CtrlPCurFile<cr>
+nnoremap <silent> <leader>bv :CtrlP ~/.vim/bundle<cr>
+nnoremap <silent> <leader>B :CtrlPBookmarkDirAdd<cr>
 "-----------------------------------------------------------------------------
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
