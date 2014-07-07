@@ -29,8 +29,8 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                       "class": "^Xfce4\\-terminal$",
-                       "instance": "^xfce4\\-terminal$"
+                       "class": "^Gvim$",
+                       "instance": "^gvim$"
                        }
                     ],
                     "type": "con"
@@ -48,8 +48,8 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                       "class": "^Gvim$",
-                       "instance": "^gvim$"
+                       "class": "^Xfce4\\-terminal$",
+                       "instance": "^xfce4\\-terminal$"
                        }
                     ],
                     "type": "con"
