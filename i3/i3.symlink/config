@@ -1,7 +1,9 @@
 # SETTINGS
 set $mod Mod4
 workspace_layout tabbed
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:Cantarell 9
+# font pango:Liberation  Mono  for  Powerline  11
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -21,6 +23,7 @@ for_window [class="zeal"] move scratchpad
 # ----- TOP -----------
 # q
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+bindsym $mod+shift+d exec xfce4-appfinder
 bindsym $mod+r [title="ranger"] scratchpad show
 # w
 # b
@@ -66,7 +69,6 @@ bindsym $mod+F3 exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
 # shift
 bindsym $mod+Shift+y move left
 bindsym $mod+Shift+q kill 
-bindsym $mod+shift+d exec dmenu_run
 bindsym $mod+Shift+n move down
 bindsym $mod+Shift+e move up
 bindsym $mod+Shift+o move right
@@ -145,7 +147,7 @@ for_window [class="XTerm"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
 for_window [class="Pamac-updater"] floating enable 
 for_window [class="Lxpolkit"] floating enable 
-for_window [class="Gvim"] border 1pixel
+# for_window [class="Gvim"] border 1pixel
 # for_window [class="Xfce4-terminal"] border none
 for_window [title="ranger"] border 1pixel
 for_window [window_role="pop-up"] floating enable
