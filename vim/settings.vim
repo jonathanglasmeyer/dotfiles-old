@@ -42,7 +42,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+" set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
@@ -178,10 +178,10 @@ autocmd VimEnter *
 
 set iskeyword+=:
 
-" Go to last file if invoked without arguments.
-autocmd VimEnter * nested if
-  \ argc() == 0 &&
-  \ bufname("%") == "" &&
-  \ bufname("2" + 0) != "" |
-  \   exe "normal! `0" |
-  \ endif
+" " Go to last file if invoked without arguments.
+" autocmd VimEnter * nested if
+"   \ argc() == 0 &&
+"   \ bufname("%") == "" &&
+"   \ bufname("2" + 0) != "" |
+"   \   exe "normal! `0" |
+"   \ endif

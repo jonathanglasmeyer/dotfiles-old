@@ -50,7 +50,7 @@ noremap <silent> <leader>x :close<cr>
 noremap <silent> <leader>X :only<cr> 
 nnoremap <leader>m :verbose map<space>
 nnoremap <leader>m :map <space
-nnoremap <leader>c :CtrlP ~/.dotfiles<cr>
+nnoremap <silent> <leader>c :CtrlP ~/.dotfiles<cr>
 nnoremap <leader>C :AgConfig<space>
 "v
 "=============================================================================

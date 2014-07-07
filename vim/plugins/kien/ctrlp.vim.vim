@@ -64,7 +64,7 @@ let g:ctrlp_open_new_file = 'r'
     let g:ctrlp_switch_buffer = ''
 
 " ag is fast enough that CtrlP doesn't need to cache
-let g:ctrlp_use_caching = 0
+let g:ctrlp_use_caching = 1
 
 " MRU mode options:~ ---------------------------------------------------------
 
