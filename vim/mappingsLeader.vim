@@ -11,7 +11,7 @@ nnoremap <leader>R :CtrlPCurWD<cr>
 nnoremap <leader>d :CtrlPMRUFiles<cr>
 nnoremap <leader>r :CtrlP<cr>
 nnoremap <leader>R :CtrlPCurFile<cr>
-nnoremap <leader>b :CtrlPBookmarkDir<cr>
+nnoremap <leader>bv :CtrlP ~/.vim/bundle<cr>
 nnoremap <leader>B :CtrlPBookmarkDirAdd<cr>
 "-----------------------------------------------------------------------------
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>

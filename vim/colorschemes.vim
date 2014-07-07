@@ -9,4 +9,5 @@ Plug altercation/vim-colors-solarized
 " colorscheme xoria256
 " colorscheme grb256
 colorscheme gruvbox
+" set background=light 
 set background=dark

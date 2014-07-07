@@ -108,9 +108,17 @@ nnoremap <F12> :silent call FillLine( '-' )<cr>
 nnoremap <F1> :tabe .<cr>
 inoremap <F2> <c-o>:SaveToDic<cr>
 nnoremap <F3> :RainbowParenthesesToggleAll<cr>
-nnoremap <silent> <F4> :SyntasticCheck<cr>
+nnoremap <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
 nnoremap <F5> :e!<cr>
 noremap <F6> :Invbg<CR>
 
+nnoremap 1 `A
+nnoremap 2 `S
+nnoremap 3 `H
+nnoremap 4 `T
 
+nnoremap <leader>1 mA
+nnoremap <leader>2 mS
+nnoremap <leader>3 mH
+nnoremap <leader>4 mT

@@ -146,6 +146,19 @@ function! DartExec()
 endfunction
 command! DartExec call DartExec()
 
+function! DartAnalyze()
+    write
+    " exec 'SlimuxShellRun ' . expand('%p')
+    silent exec '!dartanalyzer-client ' . expand('%p')
+    " exec "SlimuxShellRun \\""
+endfunction
+
+function! DartExecAnalyze()
+    call DartExec()
+    call DartAnalyze()
+endfunction
+
+
 function! Zeal(arg)
     silent exec 'silent !zeal-show '. &ft . ':' . a:arg
 endfunction
@@ -165,6 +178,8 @@ function! QuickfixFilenames()
   endfor
   return join(values(buffer_numbers))
 endfunction
+
+" cabbrev! AgGit :Gcd<bar>:Ag<space>
 
 function! AgMy()
     Gcd
@@ -236,3 +251,19 @@ function! Highlighting()
   let g:highlighting = 1
   return ":silent set hlsearch\<CR>"
 endfunction
+
+
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
+function! ReverseBackground()
+ let Mysyn=&syntax
+ if &bg=="light"
+ se bg=dark
+ else
+ se bg=light
+ endif
+ syn on
+ exe "set syntax=" . Mysyn
+: echo "now syntax is "&syntax
+endfunction
+command! Invbg call ReverseBackground()

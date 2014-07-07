@@ -13,8 +13,8 @@ nmap T <Plug>Sneak_F
 xmap t <Plug>Sneak_f
 xmap T <Plug>Sneak_F
 " operator-pending-mode
-omap t <Plug>Sneak_f
-omap T <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
 
 " 1-character _exclusive_ Sneak (for enhanced 't')
 nmap f <Plug>Sneak_t
@@ -23,7 +23,7 @@ nmap F <Plug>Sneak_T
 xmap f <Plug>Sneak_t
 xmap F <Plug>Sneak_T
 " operator-pending-mode
-omap f <Plug>Sneak_t
-omap F <Plug>Sneak_T
+omap t <Plug>Sneak_t
+omap T <Plug>Sneak_T
 
 

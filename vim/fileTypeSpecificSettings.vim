@@ -28,4 +28,5 @@ Source fileTypeMappings
 " custom filetypes
 
 autocmd! BufRead *.dart set ft=dart
+" autocmd! BufRead *.dart set 
 

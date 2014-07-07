@@ -5,6 +5,16 @@ autocmd! BufWritePost ~/u/para/cluster/c/mpitut/*.cc exec "SlimeSend1 mpicxx hel
 
 
 " Dart-Cmdline ---------------------------------------------------------------
-au! BufRead ~/dev/dart-commandline/* nnoremap <buffer> <silent> <leader>s :DartExec<cr>
+" au! BufRead ~/dev/dart-analyzer-server/* nnoremap <buffer> <silent> <leader>s :call DartAnalyze()<cr>
+" au! BufRead ~/dev/dart-gcal/*.dart nnoremap <buffer> <silent> <leader>s :call DartExecAnalyze()<cr>
+au! BufRead ~/dev/dart-commandline/*.dart nnoremap <buffer> <silent> <leader>s :call DartExec()<cr>
+au! BufRead ~/dev/dart-commandline/*.dart nnoremap <buffer> <silent> <leader>s :call DartExec()<cr>
+" au! InsertLeave *dart :w<bar>SyntasticCheck<cr>
+" au! InsertLeave *.dart echo "test" 
+
+au! TextChanged *.dart exec "w\<bar>SyntasticCheck"
+au! InsertLeave *.dart exec "w\<bar>SyntasticCheck"
+" |TextChanged|		after a change was made to the text in Normal mode
+" |TextChangedI|		after a change was made to the text in Insert mode
 
 

@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git wd)
+plugins=(git wd virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,4 +34,14 @@ alias cwd='cd "$(cat ~/.cwd)"'
 
 # eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 
-# cwd
+# ---------- vex --------------------
+## zsh needs this option set to use $(virtualenv_prompt)
+# setopt prompt_subst
+
+# function virtualenv_prompt() {
+#     if [ -n "$VIRTUAL_ENV" ]; then
+#         echo "(${VIRTUAL_ENV##*/}) "
+#     fi
+# }
+
+# export PROMPT='$(virtualenv_prompt)%n@%m> ' cwd
