@@ -15,4 +15,5 @@
 " t toggles the visibility of the file diff buffer.
 
 " q closes the Extradite buffer.
+let g:extradite_diff_split="belowright vertical split"
 " let g:extradite_width=10
