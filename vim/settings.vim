@@ -177,3 +177,11 @@ autocmd VimEnter *
 \ highlight ModeMsg guifg=bg guibg=bg | highlight WarningMsg guifg=bg
 
 set iskeyword+=:
+
+" Go to last file if invoked without arguments.
+autocmd VimEnter * nested if
+  \ argc() == 0 &&
+  \ bufname("%") == "" &&
+  \ bufname("2" + 0) != "" |
+  \   exe "normal! `0" |
+  \ endif
