@@ -33,7 +33,8 @@ Plug tpope/vim-unimpaired
 Plug tpope/vim-eunuch
 " Plug EasyGrep
 Plug godlygeek/tabular
-" Plug Raimondi/delimitMate
+Plug Raimondi/delimitMate
+Plug jiangmiao/auto-pairs
 Plug rking/ag.vim
 Plug tpope/vim-obsession
 Plug tpope/vim-fugitive
@@ -68,6 +69,8 @@ Plug kana/vim-textobj-line
 Plug kana/vim-textobj-entire
 Plug tpope/vim-endwise
 Plug tpope/vim-dispatch
+Plug Yggdroot/indentLine
+Plug bartlomiejdanek/vim-dart
 
 Source vundleEnd
 

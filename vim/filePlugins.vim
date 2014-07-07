@@ -25,7 +25,7 @@ Plug LaTeX-Box-Team/LaTeX-Box
 Plug JuliaLang/julia-vim
 
 " dart -----------------------------------------------------------------------
-Plug dart-lang/dart-vim-plugin
+" Plug dart-lang/dart-vim-plugin
 
 " angular --------------------------------------------------------------------
 Plug othree/javascript-libraries-syntax.vim
