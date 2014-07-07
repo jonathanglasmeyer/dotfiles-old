@@ -47,7 +47,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+" set relativenumber
 set undofile
 
 " disable welcome screen
@@ -124,7 +124,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set scrolloff=23
 
 " new tab for help
-" cabbrev help tab help
+cnoreabbrev <expr> h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab help' : 'h'
 " set helpheight=99999
 
 
