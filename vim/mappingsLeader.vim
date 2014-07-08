@@ -41,10 +41,10 @@ nnoremap <leader>gP :Git log -S
 nnoremap <leader>gp :Gpush<cr>
 " nnoremap <leader>gnf :Git nb feature<cr>
 nnoremap  <leader>gn :Git nb<space>
-nnoremap <silent> <leader>gl :silent Glog<cr>
+nnoremap <silent> <leader>gl :Gitv<cr>
 nnoremap <leader>ge :Gedit<cr>
-nnoremap <silent> <leader>gl :Extradite<cr>
-nnoremap <silent> <leader>gL :Git! log --oneline<cr>
+nnoremap <silent> <leader>gl :Gitv<cr>
+nnoremap <silent> <leader>gL :Gitv!<cr>
 "-----------------------------------------------------------------------------
 "z
 noremap <silent> <leader>x :close<cr> 
