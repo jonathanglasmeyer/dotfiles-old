@@ -15,7 +15,8 @@ bind-key -t vi-edit Up   history-up
 bind-key -t vi-edit Down history-down
 
 # Set a Ctrl-b shortcut for reloading your tmux config
-bind r source-file ~/.tmux.conf
+bind R source-file ~/.tmux.conf \; display-message "Config reloaded..."
+
 
 # Rename your terminals
 set -g set-titles on
@@ -30,10 +31,14 @@ set -g status-left-length 90
 set -g status-right-length 60
 set -g status-justify left
 
+set-window-option -g pane-active-border-bg "#0088CC"
+set -g status-right ''
+
 set -g repeat-time 125
 set -g base-index 1     # count from 1
 
-
+# listen to alerts from all windows
+set -g bell-action any
 
 # Easy bindings for split
 unbind %
