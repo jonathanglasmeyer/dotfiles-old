@@ -31,7 +31,8 @@ set -g status-left-length 90
 set -g status-right-length 60
 set -g status-justify left
 
-set-window-option -g pane-active-border-bg "#0088CC"
+# set-window-option -g pane-active-border-bg "#0088CC"
+set-window-option -g pane-active-border-bg red
 set -g status-right ''
 
 set -g repeat-time 125

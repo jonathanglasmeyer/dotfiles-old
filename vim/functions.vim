@@ -284,12 +284,16 @@ function! RunMx()
     if dir == "/home/jwerner/.dotfiles"
       let dir = "/home/jwerner/dev/dotfiles"
     endif
-    silent exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
+    exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
   " endif
 endfunction
 command! Mx call RunMx()
 
 function! RestartMX()
+  call SetCWD()
+    if getcwd() == "/home/jwerner/.dotfiles"
+      exec "cd /home/jwerner/dev/dotfiles"
+    endif
   silent exec "!mx-restart"
   call RunMx()
 endfunction

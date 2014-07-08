@@ -40,24 +40,16 @@
 
 set -e
 
-if [ -z "$1" ]; then
-  SESSION="${PWD##*/}"
-else
-  SESSION="$1"
-fi
+SESSION="${PWD##*/}"
 
 _safe_window() {
   if [ -x "$2" ]; then
     tmux new-window -n "$1" -t "$SESSION"
-  /  tmux send-keys -t "$SESSION" "$2" C-m
+    tmux send-keys -t "$SESSION" "$2" C-m
   fi
 }
 
 if ! (tmux has-session -t "$SESSION" >/dev/null 2>&1); then
-  if [ -d "$PROJECTS"/"$SESSION" ]; then
-    cd "$PROJECTS"/"$SESSION"
-  fi
-
   if [ -x "$PWD"/.tmux ]; then
     "$PWD"/.tmux "$SESSION"
   else
@@ -75,5 +67,6 @@ fi
 # if [ -z "$TMUX" ]; then
   # tmux attach -t "$SESSION"
 # else
+
 tmux switch-client -t "$SESSION"
 # fi

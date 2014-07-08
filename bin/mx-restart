@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 set -e
 SESSION="${PWD##*/}"
+echo $SESSION
 
 tmux switch-client -t "session"
 tmux kill-session -t "$SESSION"
