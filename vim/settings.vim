@@ -75,7 +75,7 @@ set t_Co=256
 " folds
 set foldopen=block,hor,mark,percent,quickfix,search,tag,undo,jump
 "set foldmethod=marker
-" set foldlevelstart=
+" set foldlevelstart=20
  set viewoptions=folds,cursor
 
 " au BufWinLeave * silent! mkview

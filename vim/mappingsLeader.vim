@@ -27,6 +27,7 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <silent> <leader>gco :Git checkout<space>
 nnoremap <silent> <leader>gcc :Gcommit<cr>
+nnoremap <silent> <leader>gC :silent Git add --all<bar>Gcommit<cr>
 nnoremap <silent> <leader>gca :Gcommit --amend<cr>
 nnoremap <silent> <leader>gcA :Gcommit --amend --reuse-message=HEAD<cr>
 nnoremap <leader>gr :Gread<cr>

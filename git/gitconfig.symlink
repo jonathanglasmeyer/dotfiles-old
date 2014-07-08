@@ -10,6 +10,7 @@
         helper = cache
 [alias]
         co = checkout
+        ci = commit
         nb = checkout -b
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
@@ -31,7 +32,7 @@
 [difftool]
         prompt = false
 [help]
-        autocorrect = 1
+        autocorrect = 0
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.

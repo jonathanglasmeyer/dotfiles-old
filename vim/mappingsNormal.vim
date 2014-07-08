@@ -97,7 +97,9 @@ nnoremap <silent> <Tab> :wincmd w<cr>
 nnoremap <bs> zm
 
 " nnoremap <silent> <F11> :YRShow<CR>
- " nnoremap <cr> za
+
+" this doesn't work in quickfix mode
+" nnoremap <cr> za
 
 " Quickly select text you just pasted:
 noremap gV `[v`]

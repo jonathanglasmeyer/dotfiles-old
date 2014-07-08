@@ -13,7 +13,8 @@ Plug justinmk/vim-sneak
 Plug kien/ctrlp.vim
 Plug fisadev/vim-ctrlp-cmdpalette
 
-" Plug mkitt/tabline.vim
+" make tabline prettier
+Plug mkitt/tabline.vim
 
 " Plug Shougo/unite.vim
 " Plug tsukkee/unite-help
@@ -52,7 +53,7 @@ Plug jpalardy/vim-slime
 
 Plug kien/rainbow_parentheses.vim
 " Plug luochen1990/rainbow
-Plug int3/vim-extradite
+" Plug int3/vim-extradite
 Plug ivan-cukic/vim-ctrlp-switcher
 " Plug majutsushi/tagbar
 Plug kana/vim-textobj-user
@@ -70,6 +71,7 @@ Plug kana/vim-textobj-entire
 Plug tpope/vim-endwise
 Plug tpope/vim-dispatch
 Plug Yggdroot/indentLine
+Plug gregsexton/gitv
 
 Plug bartlomiejdanek/vim-dart
 Source vundleEnd

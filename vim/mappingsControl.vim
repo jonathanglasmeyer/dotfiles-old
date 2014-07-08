@@ -22,13 +22,13 @@ vnoremap <C-v> "+p
 vnoremap <C-c> "+y
 inoremap <C-v> <c-o>:set paste<cr><C-R>+<c-o>:set nopaste<cr>
 
-" nnoremap <M-1> 1gt
-" nnoremap <M-2> 2gt
-" nnoremap <M-3> 3gt
-" nnoremap <M-4> 4gt
-" nnoremap <M-5> 5gt
-" nnoremap <M-6> 6gt
-" nnoremap <M-7> 7gt
+nnoremap <M-1> 1gt
+nnoremap <M-2> 2gt
+nnoremap <M-3> 3gt
+nnoremap <M-4> 4gt
+nnoremap <M-5> 5gt
+nnoremap <M-6> 6gt
+nnoremap <M-7> 7gt
 
 " nnoremap <M-1> :e web/index.html<cr>
 " nnoremap <M-2> :e web/main.dart<cr>
