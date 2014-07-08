@@ -9,9 +9,10 @@
 " colorscheme grb256
 Plug morhetz/gruvbox
 colorscheme gruvbox
-" set background=light 
-if strftime("%H") < 12
-  set background=light
-else
-  set background=dark
-endif
+set background=light
+" set background=dark
+" if strftime("%H") < 12
+"   set background=light
+" else
+"   set background=dark
+" endif

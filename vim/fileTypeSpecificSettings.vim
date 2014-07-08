@@ -28,5 +28,6 @@ Source fileTypeMappings
 " custom filetypes
 
 autocmd! BufRead *.dart set ft=dart
+" autocmd! BufEnter * call RunMx()
 " autocmd! BufRead *.dart set 
 

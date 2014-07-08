@@ -45,6 +45,7 @@ let g:ctrlp_prompt_mappings = {
 <
 set grepprg=ag\ --nogroup\ --nocolor\ --smart-case
 " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+" let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_open_new_file = 'r'
 "never jump to existing buffer
@@ -92,14 +93,14 @@ let g:ctrlp_use_caching = 1
 
 "                                                       *'g:ctrlp_mruf_relative'*
 " Set this to 1 to show only MRU files in the current working directory: >
-  let g:ctrlp_mruf_relative = 1
+  " let g:ctrlp_mruf_relative = 1
 " <
 " Note: you can use a custom mapping to toggle this option inside the prompt: >
 " <
 
 "                                                  *'g:ctrlp_mruf_default_order'*
 " Set this to 1 to disable sorting when searching in MRU mode: >
-"   let g:ctrlp_mruf_default_order = 0
+let g:ctrlp_mruf_default_order = 1
 " <
 
 "                                                 *'g:ctrlp_mruf_case_sensitive'*
@@ -114,3 +115,12 @@ let g:ctrlp_use_caching = 1
   let g:ctrlp_mruf_save_on_update = 1
 " <
 
+" The position: (default: bottom)
+"   top - show the match window at the top of the screen.
+"   bottom - show the match window at the bottom of the screen.
+
+" The listing order of results: (default: btt)
+"   order:ttb - from top to bottom.
+"   order:btt - from bottom to top.
+
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35'

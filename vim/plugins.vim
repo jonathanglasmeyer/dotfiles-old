@@ -44,7 +44,8 @@ Plug bling/vim-airline
 Plug Shougo/neocomplete.vim
 " Plug Shougo/neosnippet
 " Plug honza/vim-snippets
-Plug kikijump/tslime.vim
+" Plug kikijump/tslime.vim
+Plug jpalardy/vim-slime
 
 " Plug SirVer/ultisnips
 " Plug honza/vim-snippets
@@ -69,8 +70,8 @@ Plug kana/vim-textobj-entire
 Plug tpope/vim-endwise
 Plug tpope/vim-dispatch
 Plug Yggdroot/indentLine
-Plug bartlomiejdanek/vim-dart
 
+Plug bartlomiejdanek/vim-dart
 Source vundleEnd
 
 

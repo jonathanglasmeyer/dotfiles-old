@@ -8,11 +8,12 @@ nnoremap <silent> <leader>% :tabn 5<cr>
 nnoremap <silent> <leader>q :wqall!<cr>
 nnoremap <silent> <leader>Q :Restart!<CR>
 nnoremap <silent> <leader>R :CtrlPCurWD<cr>
-nnoremap <silent> <leader>d :CtrlPMRUFiles<cr>
+nnoremap <silent> <leader>D :call CtrlPMRURelative()<cr>
+nnoremap <silent> <leader>d :call CtrlPMRUAbsolute()<cr>
 nnoremap <silent> <leader>r :CtrlP<cr>
 nnoremap <silent> <leader>R :CtrlPCurFile<cr>
 nnoremap <silent> <leader>bv :CtrlP ~/.vim/bundle<cr>
-nnoremap <silent> <leader>B :CtrlPBookmarkDirAdd<cr>
+nnoremap <silent> <leader>bd :CtrlPDir ~/dev<cr>
 "-----------------------------------------------------------------------------
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
@@ -56,16 +57,21 @@ nnoremap <leader>C :AgConfig<space>
 "=============================================================================
 "f
 nnoremap <silent> <expr> <leader>f Highlighting()
+nnoremap <leader>F :%s/<c-r><c-/>/
 "p
 nnoremap <silent> <leader>u :SubstituteCWord<cr>
 vnoremap <silent> <leader>u :<C-u>SubstituteCWordVisual<cr>
 nnoremap <silent> <leader>U :UndoSubstitution<cr>
-nnoremap <leader>p :%s/<c-r><c-/>/
+nnoremap <silent> <leader>p :CtrlPBookmarkDir<cr>
+nnoremap <silent> <leader>P :CtrlPBookmarkDirAdd<cr>
+" nnoremap <silent> <leader>P :e ~/dev<cr>
 ";
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
 nnoremap <leader>n :CtrlP ~/txt/tech<cr>
-nnoremap <leader>E :TabularizeWithChar<space>
+nnoremap <silent> <leader>e :Mx<cr>
+nnoremap <silent> <leader>E :call RestartMX()<cr>
+" nnoremap <leader>E :TabularizeWithChar<space>
 nnoremap <silent> <leader>o :b#<cr>
 nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
 " reindent whole file
@@ -76,5 +82,4 @@ nnoremap <silent> <leader>, :CtrlP app/controllers<cr>
 nnoremap <silent> <leader>/ :nohlsearch<cr>
 
 "----------------------------------------------------------------------------
-nnoremap <leader>l :CtrlPLine %<cr>
 

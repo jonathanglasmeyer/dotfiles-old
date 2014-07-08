@@ -22,7 +22,7 @@ Plug gorodinskiy/vim-coloresque
 " Plug davidhalter/jedi-vim
 
 " julia ----------------------------------------------------------------------
-" Plug JuliaLang/julia-vim
+Plug JuliaLang/julia-vim
 
 " dart -----------------------------------------------------------------------
 " Plug dart-lang/dart-vim-plugin

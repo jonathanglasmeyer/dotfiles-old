@@ -267,3 +267,40 @@ function! ReverseBackground()
 : echo "now syntax is "&syntax
 endfunction
 command! Invbg call ReverseBackground()
+
+function! SetCWD()
+  if exists(':Glcd')
+    silent Glcd
+  else
+    silent lcd %:p:h
+  endif
+endfunction
+
+function! RunMx()
+  " let olddir=getcwd()
+  call SetCWD()
+  let dir = getcwd() 
+  " if dir != olddir
+    if dir == "/home/jwerner/.dotfiles"
+      let dir = "/home/jwerner/dev/dotfiles"
+    endif
+    silent exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
+  " endif
+endfunction
+command! Mx call RunMx()
+
+function! RestartMX()
+  silent exec "!mx-restart"
+  call RunMx()
+endfunction
+
+
+function! CtrlPMRURelative()
+  let g:ctrlp_mruf_relative = 1
+  CtrlPMRUFiles
+endfunction
+
+function! CtrlPMRUAbsolute()
+  let g:ctrlp_mruf_relative = 0
+  CtrlPMRUFiles
+endfunction

@@ -7,7 +7,7 @@ function! Plug(arg)
 endfunction
 command! -nargs=1 Plug call Plug(<f-args>) 
 
-
+" function! PlugActuali
 
 
 

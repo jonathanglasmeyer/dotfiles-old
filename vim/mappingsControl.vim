@@ -30,8 +30,8 @@ inoremap <C-v> <c-o>:set paste<cr><C-R>+<c-o>:set nopaste<cr>
 " nnoremap <M-6> 6gt
 " nnoremap <M-7> 7gt
 
-nnoremap <M-1> :e web/index.html<cr>
-nnoremap <M-2> :e web/main.dart<cr>
+" nnoremap <M-1> :e web/index.html<cr>
+" nnoremap <M-2> :e web/main.dart<cr>
 " nnoremap <M-1> :buffer 1<cr>
 " nnoremap <M-2> :buffer 2<cr>
 " nnoremap <M-3> :buffer 3<cr>

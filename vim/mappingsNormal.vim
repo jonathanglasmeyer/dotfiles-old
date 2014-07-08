@@ -2,8 +2,8 @@ inoremap <esc> <esc>l
 nnoremap ) 0
 nnoremap 0 )
 nnoremap 9 (
-nnoremap 4 $
-nnoremap $ 4
+" nnoremap 4 $
+" nnoremap $ 4
 
 nnoremap l o
 nnoremap o l
@@ -87,7 +87,7 @@ nnoremap <silent> <F4> :SyntasticToggleMode<CR>
 
 "move betw splits
 " map <Tab> :wincmd w\|:vert res 84<cr>
-nnoremap <Tab> :wincmd w<cr>
+nnoremap <silent> <Tab> :wincmd w<cr>
 
 " select pasted --TODO doesn't really work?
 " nnoremap gp `[v`]
@@ -122,9 +122,9 @@ noremap <F6> :Invbg<CR>
 nnoremap 1 `A
 nnoremap 2 `S
 nnoremap 3 `H
-" nnoremap 4 `T
+nnoremap 4 `T
 
 nnoremap <leader>1 mA
 nnoremap <leader>2 mS
 nnoremap <leader>3 mH
-" nnoremap <leader>4 mT
+nnoremap <leader>4 mT

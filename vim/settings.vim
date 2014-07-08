@@ -185,3 +185,4 @@ set iskeyword+=:
 "   \ bufname("2" + 0) != "" |
 "   \   exe "normal! `0" |
 "   \ endif
+

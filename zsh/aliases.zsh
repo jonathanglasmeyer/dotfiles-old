@@ -56,10 +56,10 @@ alias unp="unp -U"
 alias ping='ping www.google.com'
 alias source-xresources="xrdb ~/.Xresources"
 # alias e='vim'
-alias e="gvim --servername DEFAULT --remote-silent"
-alias ec="gvim --servername DEFAULT"
-alias ecs="gvim --servername DEFAULT -S Session.vim"
-alias ed='gvim --servername DEFAULT --remote-send "<C-\><C-N>:cd `pwd`<CR>"'
+alias e="gvim --servername vim --remote-silent"
+alias ec="gvim --servername vim"
+alias ecs="gvim --servername vim -S Session.vim"
+alias ed='gvim --servername vim --remote-send "<C-\><C-N>:cd `pwd`<CR>"'
 alias vs='sf -e sudoedit'
 
 
@@ -91,5 +91,8 @@ alias copykey="xclip -sel clip < ~/.ssh/id_rsa.pub"
 alias mongo="~/bin/mongodb-linux-x86_64-2.6.1/bin/mongo"
 alias tmux="tmux -2"
 alias muxk="tmux kill-session -t"
+alias vimprofile="gvim --startuptime vim.log && cat vim.log | sort -k 2"
+alias dev="cd ~/dev"
+alias session="tmux attach -t session"
 
 

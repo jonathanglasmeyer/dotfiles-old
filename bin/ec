@@ -1,0 +1,8 @@
+#/bin/sh
+h=`date +%H`
+
+if [ $h -lt 22 ]; then
+
+else
+  echo Good evening
+fi

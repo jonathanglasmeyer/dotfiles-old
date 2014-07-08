@@ -8,7 +8,7 @@ font pango:Cantarell 9
 floating_modifier $mod
 
 # STARTUP
-exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/leather_dark_linux_manjaro_1600x900_60627.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/metal-textures_00240944.jpg
 exec --no-startup-id zeal
 for_window [class="zeal"] move scratchpad
 
@@ -24,7 +24,8 @@ for_window [class="zeal"] move scratchpad
 # q
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+shift+d exec xfce4-appfinder
-bindsym $mod+r [title="ranger"] scratchpad show
+# bindsym $mod+r [title="ranger"] scratchpad show
+bindsym $mod+r exec --no-startup-id ~/.dotfiles/bin/session-dev
 # w
 # b
 
@@ -77,7 +78,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+shift+p focus child
 bindsym $mod+Shift+c restart
 bindsym $mod+Shift+k exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+shift+r mode "resize"
+# bindsym $mod+shift+r mode "resize"
 bindsym $mod+Shift+s exec xfce4-settings-manager
 bindsym $mod+Shift+f exec thunar
  

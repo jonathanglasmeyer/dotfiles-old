@@ -6,7 +6,7 @@ i3-msg "focus parent"
 i3-msg "kill"
 i3-msg "append_layout /home/jwerner/.i3/term-vim.json"
 # i3-msg "exec xfce4-terminal"
-i3-msg "exec xfce4-terminal -e 'mux start session'"
-# i3-msg "exec gvim --servername vim"
+i3-msg "exec xfce4-terminal -e 'tmux attach -t session'"
+i3-msg "exec gvim --servername vim"
 
 
