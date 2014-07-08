@@ -94,5 +94,6 @@ alias muxk="tmux kill-session -t"
 alias vimprofile="gvim --startuptime vim.log && cat vim.log | sort -k 2"
 alias dev="cd ~/dev"
 alias session="tmux attach -t session"
+alias sessioncreate="tmux new-session -s 'session'"
 
 
