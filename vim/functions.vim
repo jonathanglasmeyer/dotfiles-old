@@ -1,3 +1,23 @@
+			" %		current file name
+			" #		alternate file name
+			" #n		alternate file name n
+			" <cfile>		file name under the cursor
+			" <afile>		autocmd file name
+			" <abuf>		autocmd buffer number (as a String!)
+			" <amatch>	autocmd matched name
+			" <sfile>		sourced script file or function name
+			" <slnum>		sourced script file line number
+			" <cword>		word under the cursor
+			" <cWORD>		WORD under the cursor
+			" <client>	the {clientid} of the last received
+			" 		message |server2client()|
+		" Modifiers:
+			" :p		expand to full path
+			" :h		head (last path component removed)
+			" :t		tail (last path component only)
+			" :r		root (one extension removed)
+			" :e		extension only
+
 " filename without extension: expand('%:r') 
 
 function! SlimeSendParagraph()
@@ -280,10 +300,6 @@ function! RunMx()
   " let olddir=getcwd()
   call SetCWD()
   let dir = getcwd() 
-  " if dir != olddir
-    if dir == "/home/jwerner/.dotfiles"
-      let dir = "/home/jwerner/dev/dotfiles"
-    endif
     exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
   " endif
 endfunction
@@ -298,6 +314,29 @@ function! RestartMX()
   call RunMx()
 endfunction
 
+function! TmuxCDCurrentFile()
+    let dir = expand('%:p:h')
+    exec 'silent !tmux send-keys C-q "cd \"' . dir . '\"" C-m ls C-m'
+
+endfunction
+command! TmuxCDCurrentFile call TmuxCDCurrentFile()
+
+function! TmuxCD(dir)
+    exec '!tmux send-keys C-q "cd ' . a:dir . '" C-m ls C-m'
+endfunction
+command! -nargs=1 Tcd call TmuxCD(<f-args>)
+
+function! TmuxRename()
+    call StartTmuxPaneInCurrentFileDir()
+    exec 'silent !tmux send-keys "mv \"' . expand("%:t") . '\""'
+endfunction
+command! TmuxRename call TmuxRename()
+
+function! NewProject(name)
+    exec "!mkdir ~/dev/" . a:name
+
+endfunction
+command! -nargs=1 -complete=file NP call NewProject(<f-args>)
 
 function! CtrlPMRURelative()
   let g:ctrlp_mruf_relative = 1
@@ -308,3 +347,13 @@ function! CtrlPMRUAbsolute()
   let g:ctrlp_mruf_relative = 0
   CtrlPMRUFiles
 endfunction
+
+function! TabMessage(cmd)
+  redir => message
+  silent execute a:cmd
+  redir END
+  tabnew
+  silent put=message
+  set nomodified
+endfunction
+command! -nargs=+ -complete=command TabMessage call TabMessage(<q-args>)

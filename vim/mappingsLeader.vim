@@ -64,12 +64,13 @@ nnoremap <silent> <leader>u :SubstituteCWord<cr>
 vnoremap <silent> <leader>u :<C-u>SubstituteCWordVisual<cr>
 nnoremap <silent> <leader>U :UndoSubstitution<cr>
 nnoremap <silent> <leader>p :CtrlPBookmarkDir<cr>
-nnoremap <silent> <leader>P :CtrlPBookmarkDirAdd<cr>
+nnoremap <silent> <leader>P :e ~/.cache/ctrlp/bkd/cache.txt<cr>
 " nnoremap <silent> <leader>P :e ~/dev<cr>
 ";
 "----------------------------------------------------------------------------
 nnoremap <silent> <leader>y :vs<cr> 
 nnoremap <leader>n :CtrlP ~/txt/tech<cr>
+nnoremap <leader>N :NewProject<space>
 nnoremap <silent> <leader>e :Mx<cr>
 nnoremap <silent> <leader>E :call RestartMX()<cr>
 " nnoremap <leader>E :TabularizeWithChar<space>

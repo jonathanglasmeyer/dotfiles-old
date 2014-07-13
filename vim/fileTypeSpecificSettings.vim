@@ -22,12 +22,19 @@ au! BufWritePost imap-cmds.vim source %
 au! BufWritePost arpeggio.vim source %
 
 
+" au!     nnoremap <leader>N :NewProject<space>
 Source fileTypeMappings
+" au! FileType netrw nnoremap <buffer> gon :NP <C-r><C-f>
+" au! FileType netrw nnoremap <buffer> gos :NP <C-r><C-f>
+
 
 
 " custom filetypes
 
 autocmd! BufRead *.dart set ft=dart
-" autocmd! BufEnter * call RunMx()
+autocmd! BufRead *.hamlet set ft=hamlet
+autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guibg=#282828
+
+" autocmd! BufEnter ~/dev/* call RunMx()
 " autocmd! BufRead *.dart set 
 

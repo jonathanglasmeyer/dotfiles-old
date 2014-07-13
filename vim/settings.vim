@@ -75,7 +75,7 @@ set t_Co=256
 " folds
 set foldopen=block,hor,mark,percent,quickfix,search,tag,undo,jump
 "set foldmethod=marker
-" set foldlevelstart=20
+set foldlevelstart=2
  set viewoptions=folds,cursor
 
 " au BufWinLeave * silent! mkview
@@ -97,7 +97,7 @@ set matchtime=2
 
 " set hlsearch
 set ignorecase
-" set smartcase
+set smartcase
 
 " Automatically indent based on file type: ``filetype indent on``
 filetype indent on
@@ -147,7 +147,7 @@ command! -bar SetupHelp call SetupHelp()
 " endfunc
 
 " tweaking for auto complete popup
-highlight Pmenu ctermbg=8 guibg=#606060
+" highlight Pmenu ctermbg=8 guibg=#606060
 " highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
 " highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
 
@@ -177,6 +177,8 @@ autocmd VimEnter *
 \ highlight ModeMsg guifg=bg guibg=bg | highlight WarningMsg guifg=bg
 
 set iskeyword+=:
+"for haskell (The 39 is for the prime character)
+set iskeyword=a-z,A-Z,_,.,39
 
 " " Go to last file if invoked without arguments.
 " autocmd VimEnter * nested if

@@ -57,6 +57,7 @@ bindsym $mod+quotedbl [title="Sunrise"] scratchpad show
 
 # ###### SPECIAL #############
 bindsym $mod+backslash split h
+bindsym $mod+bar split v
 bindsym $mod+Return exec xfce4-terminal
 # bindsym $mod+minus scratchpad show
 bindsym $mod+space focus mode_toggle

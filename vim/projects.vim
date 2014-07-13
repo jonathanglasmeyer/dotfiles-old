@@ -18,3 +18,9 @@ au! InsertLeave *.dart exec "w\<bar>SyntasticCheck"
 " |TextChangedI|		after a change was made to the text in Insert mode
 
 
+" haskell --------------------------------------------------------------------
+fu! RunHaskell()
+    " GhcModCheckAndLintAsync
+    exec "!runghc %"
+endfunction
+au! BufWritePost ~/dev/haskell/fastandhard/*.hs call RunHaskell()

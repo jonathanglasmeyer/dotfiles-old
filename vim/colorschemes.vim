@@ -1,16 +1,16 @@
-" Plug tomasr/molokai
-" Plug sickill/vim-monokai
-" Plug quanganhdo/grb256
-" Plug xoria256.vim
-" Plug Wombat
-" Plug altercation/vim-colors-solarized
+" Plugin tomasr/molokai
+" Plugin sickill/vim-monokai
+" Plugin quanganhdo/grb256
+" Plugin xoria256.vim
+" Plugin Wombat
+" Plugin altercation/vim-colors-solarized
 
 " colorscheme xoria256
 " colorscheme grb256
-Plug morhetz/gruvbox
+Plugin morhetz/gruvbox
 colorscheme gruvbox
-" set background=light
 set background=dark
+" set background=light
 " if strftime("%H") < 12
 "   set background=light
 " else

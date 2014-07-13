@@ -4,8 +4,8 @@ let g:sneak#streak = 1
 " nmap S <Plug>(SneakStreakBackward)
 " let g:sneak#target_labels = "qd"
 let g:sneak#use_ic_scs = 1
-omap s <Plug>Sneak_s
-omap S <Plug>Sneak_S
+" omap s <Plug>Sneak_s
+" omap S <Plug>Sneak_S
 " 1-character _inclusive_ Sneak (for enhanced 'f')
 " nmap t <Plug>Sneak_f
 " nmap T <Plug>Sneak_F

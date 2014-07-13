@@ -1,7 +1,5 @@
 inoremap <esc> <esc>l
-nnoremap ) 0
-nnoremap 0 )
-nnoremap 9 (
+inoremap ) 0
 " nnoremap 4 $
 " nnoremap $ 4
 
@@ -113,7 +111,7 @@ vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 
 
 nnoremap <F12> :silent call FillLine( '-' )<cr>
-nnoremap <F1> :tabe .<cr>
+nnoremap <F1> :NewProject<space>
 inoremap <F2> <c-o>:SaveToDic<cr>
 nnoremap <F3> :RainbowParenthesesToggleAll<cr>
 nnoremap <F4> :SyntasticCheck<cr>
@@ -130,3 +128,8 @@ nnoremap <leader>1 mA
 nnoremap <leader>2 mS
 nnoremap <leader>3 mH
 nnoremap <leader>4 mT
+
+
+nnoremap <silent> god :e ~/dev<cr>
+nnoremap <silent> _ :e ~/dev<cr>
+" c:nnoremap <silent> gop :Tmux

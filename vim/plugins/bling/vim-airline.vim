@@ -16,6 +16,6 @@ let g:airline#extensions#syntastic#enabled = 1
 " let g:airline_section_a = '{mode'
 let g:airline_section_x = ''
 let g:airline_section_y = ''
-let g:airline_section_z = ''
+" let g:airline_section_z = ''
 let g:airline_section_warning = ''
   " let g:airline_section_c = '%t'
