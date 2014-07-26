@@ -13,6 +13,13 @@ au! FileType tex set ft=plaintex
 " save hooks -----------------------------------------------------------------
 au! TextChanged  *tex silent w
 au! InsertLeave *tex silent w
+au! TextChanged  *styl silent w
+au! InsertLeave *styl silent w
+" au! TextChanged  *jade silent w
+" au! InsertLeave *jade silent w
+
+" hack for auto refresh to work ?
+au! BufWritePost *jade silent w
 
 " source files ---------------------------------------------------------------
 au! BufWritePost ~/.aliases silent !source %
@@ -33,8 +40,9 @@ Source fileTypeMappings
 
 autocmd! BufRead *.dart set ft=dart
 autocmd! BufRead *.hamlet set ft=hamlet
+autocmd! BufRead *.jade set ft=jade
 autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guibg=#282828
 
-" autocmd! BufEnter ~/dev/* call RunMx()
+autocmd! BufEnter ~/dev/* call RunMx()
 " autocmd! BufRead *.dart set 
 

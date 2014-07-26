@@ -202,7 +202,7 @@ endfunction
 " cabbrev! AgGit :Gcd<bar>:Ag<space>
 
 function! AgMy()
-    Gcd
+    call SetCWD()
     let g:ag_qhandler="CtrlPQuickfix"
     silent exec "Ag! " . expand("<cword>")
 endfunction
@@ -219,7 +219,7 @@ function! s:get_visual_selection()
 endfunction
 
 function! AgMyVisual()
-    Gcd
+    call SetCWD()
     let g:ag_qhandler="CtrlPQuickfix"
     silent exec "Ag! " . s:get_visual_selection()
 endfunction
@@ -228,7 +228,7 @@ command! AgMyVisual call AgMyVisual()
 
 function! SubstituteCWord()
     normal mA
-    Gcd
+    call SetCWD()
     let g:cw = expand("<cword>")
     let g:ag_qhandler=""
     silent exec "Ag! " . g:cw
@@ -250,7 +250,7 @@ command! UndoSubstitution call UndoSubstitution()
 
 function! SubstituteCWordVisual()
     normal mA
-    Gcd
+    call SetCWD()
     let g:cw = s:get_visual_selection()
     let g:ag_qhandler=""
     silent exec "Ag! " . g:cw
@@ -260,17 +260,6 @@ function! SubstituteCWordVisual()
 endfunction
 command! SubstituteCWordVisual call SubstituteCWordVisual()
 
-
-let g:highlighting = 0
-function! Highlighting()
-  if g:highlighting == 1 && @/ =~ '^\\<'.expand('<cword>').'\\>$'
-    let g:highlighting = 0
-    return ":silent nohlsearch\<CR>"
-  endif
-  let @/ = '\<'.expand('<cword>').'\>'
-  let g:highlighting = 1
-  return ":silent set hlsearch\<CR>"
-endfunction
 
 
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
@@ -292,21 +281,28 @@ function! SetCWD()
   if exists(':Glcd')
     silent Glcd
   else
+    echo "No git repo, using file path as WD" 
     silent lcd %:p:h
   endif
 endfunction
 
 function! RunMx()
   " let olddir=getcwd()
-  call SetCWD()
+  " call SetCWD()
+  if !exists(':Glcd')
+    echo "No git repo, git init for RunMx to work"
+    return 
+  endif
+
   let dir = getcwd() 
-    exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
+    " exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
+    silent exec "!mx"
   " endif
 endfunction
 command! Mx call RunMx()
 
 function! RestartMX()
-  call SetCWD()
+  " call SetCWD()
     if getcwd() == "/home/jwerner/.dotfiles"
       exec "cd /home/jwerner/dev/dotfiles"
     endif

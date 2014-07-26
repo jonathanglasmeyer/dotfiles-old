@@ -1,3 +1,4 @@
+let g:ctrlp_map = ''
 let g:ctrlp_prompt_mappings = {
 \ 'PrtSelectMove("j")':   ['<c-n>', '<down>'],
 \ 'PrtSelectMove("k")':   ['<c-e>', '<up>'],
@@ -65,7 +66,7 @@ let g:ctrlp_open_new_file = 'r'
     let g:ctrlp_switch_buffer = ''
 
 " ag is fast enough that CtrlP doesn't need to cache
-let g:ctrlp_use_caching = 1
+let g:ctrlp_use_caching = 0
 
 " MRU mode options:~ ---------------------------------------------------------
 

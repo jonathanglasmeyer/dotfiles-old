@@ -57,7 +57,6 @@ nnoremap <leader>C :AgConfig<space>
 "v
 "=============================================================================
 "f
-nnoremap <silent> <expr> <leader>f Highlighting()
 nnoremap <leader>F :%s/<c-r><c-/>/
 "p
 nnoremap <silent> <leader>u :SubstituteCWord<cr>

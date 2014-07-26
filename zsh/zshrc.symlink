@@ -38,4 +38,7 @@ do
 done
 
 unset config_files
-source ~/.fzf.zsh
+# source ~/.fzf.zsh
+
+eval "$(rbenv init -)"
+

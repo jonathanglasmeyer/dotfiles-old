@@ -58,7 +58,7 @@ alias source-xresources="xrdb ~/.Xresources"
 # alias e='vim'
 alias e="gvim --servername vim --remote-silent"
 alias ec="gvim --servername vim"
-alias ecs="gvim --servername vim -S Session.vim"
+alias ecs="gvim --servername vim -S"
 alias ed='gvim --servername vim --remote-send "<C-\><C-N>:cd `pwd`<CR>"'
 alias vs='sf -e sudoedit'
 
@@ -95,5 +95,7 @@ alias vimprofile="gvim --startuptime vim.log && cat vim.log | sort -k 2"
 alias dev="cd ~/dev"
 alias session="tmux attach -t session"
 alias sessioncreate="tmux new-session -s 'session'"
+
+alias rake="noglob rake"
 
 

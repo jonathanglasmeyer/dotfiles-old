@@ -90,7 +90,7 @@
     <property name="plugin-1" type="string" value="showdesktop"/>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="false"/>
+        <property name="add-primary-clipboard" type="bool" value="true"/>
       </property>
     </property>
     <property name="plugin-9" type="string" value="launcher">

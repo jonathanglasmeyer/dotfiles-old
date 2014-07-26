@@ -42,6 +42,6 @@
 [web]
 	browser = xdg-open
 [init]
-	templatedir = ~/.git_template
+	# templatedir = ~/.git_template
 [pull]
 	rebase = true

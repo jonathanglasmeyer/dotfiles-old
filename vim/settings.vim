@@ -4,9 +4,9 @@ Source initBackupDir
 call InitBackupDir()
 " set fileencodings=utf-8
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set smarttab
 set winfixheight
@@ -188,3 +188,22 @@ set iskeyword=a-z,A-Z,_,.,39
 "   \   exe "normal! `0" |
 "   \ endif
 
+
+" auto cd
+  " A standalone function to set the working directory to the project's root, or
+  " to the parent directory of the current file if a root can't be found:
+  " (from https://github.com/szw/vim-ctrlspace/issues/36)
+  function! s:setcwd()
+    let cph = expand('%:p:h', 1)
+    if cph =~ '^.\+://' | retu | en
+    for mkr in ['.git/', '.hg/', '.svn/', '.bzr/', '_darcs/', '.vimprojects']
+      let wd = call('find'.(mkr =~ '/$' ? 'dir' : 'file'), [mkr, cph.';'])
+      if wd != '' | let &acd = 0 | brea | en
+    endfo
+    exe 'lc!' fnameescape(wd == '' ? cph : substitute(wd, mkr.'$', '.', ''))
+  endfunction
+
+  autocmd BufEnter * call s:setcwd()
+
+" auto reload on external change
+set autoread 

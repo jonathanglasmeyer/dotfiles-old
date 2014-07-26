@@ -131,5 +131,5 @@ nnoremap <leader>4 mT
 
 
 nnoremap <silent> god :e ~/dev<cr>
-nnoremap <silent> _ :e ~/dev<cr>
+nnoremap <silent> <f1> :e ~/dev<cr>
 " c:nnoremap <silent> gop :Tmux

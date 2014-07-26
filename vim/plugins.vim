@@ -45,7 +45,8 @@ Plugin tommcdo/vim-fugitive-blame-ext
 Plugin bling/vim-airline
 " Plugin bling/vim-bufferline
 " Plugin mhinz/vim-startify
-Plugin Shougo/neocomplete.vim
+" Plugin Shougo/neocomplete.vim
+Plugin Valloric/YouCompleteMe
 " Plugin Shougo/neosnippet
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
@@ -99,6 +100,7 @@ Plugin pbrisbin/vim-syntax-shakespeare
 Plugin mattn/emmet-vim
 Plugin indenthtml.vim
 Plugin othree/xml.vim
+Plugin digitaltoad/vim-jade
 
 " css ------------------------------------------------------------------------
 Plugin hail2u/vim-css3-syntax
@@ -131,13 +133,18 @@ Plugin othree/javascript-libraries-syntax.vim
 " jsx
 Plugin mxw/vim-jsx
 
-" closure
-Plugin guns/vim-clojure-static
-Plugin tpope/vim-fireplace
-Plugin tpope/vim-sexp-mappings-for-regular-people
-Plugin guns/vim-sexp
-Plugin tpope/vim-surround
+" " closure
+" Plugin guns/vim-clojure-static
+" Plugin tpope/vim-leiningen
+" Plugin tpope/vim-projectionist
+" Plugin tpope/vim-fireplace
+" Plugin guns/vim-sexp
+" Plugin tpope/vim-sexp-mappings-for-regular-people
+" Plugin tpope/vim-surround
 
+Plugin wavded/vim-stylus
+Plugin kchmck/vim-coffee-script
+Plugin groenewege/vim-less
 
 " =============================================================================
 "Source vundleEnd
