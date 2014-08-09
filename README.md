@@ -10,6 +10,6 @@ with alias "u". if you remove packages from file, they will be uninstalled.)
  - automatic setting-files for vim plugins (press enter in normalmode [plugin file](https://github.com/jonathanewerner/dotfiles/blob/master/vim/plugins.vim) will create settingfile for plugin under cursor and also autosource this file on vim-startup. great for less cruft in vimrc, and also easier removal of config stuff for plugins you no longer use)
  - normal mode vim bindings for workman layout (see [here](https://github.com/jonathanewerner/dotfiles/blob/master/vim/mappingsNormal.vim))
  - auto install python-pip packages in virtualenv with [vex](https://pypi.python.org/pypi/vex). (see [alias fig](https://github.com/jonathanewerner/dotfiles/blob/master/zsh/aliases.zsh) for example)
- - use gvim in servermode (open files in existing session) with aliases ec ([e]ditor [c]reate) and e ([e]dit)
- - autocreate project/folder-specific tmux sessions and auto switch to them on vim file open. superduper handy. (see /bin/mx and RunMx() in vim/functions.vim and autocmd in vim/filetypeSpecificSettings.vim)
+ - use gvim in servermode (open files in existing session) with aliases `ec` ([e]ditor [c]reate) and `e` ([e]dit)
+ - autocreate project/folder-specific tmux sessions and auto switch to them on vim file open. superduper handy. (see `/bin/mx` and `RunMx()` in `vim/functions.vim` and autocmd in `vim/filetypeSpecificSettings.vim`)
   
