@@ -1,0 +1,134 @@
+# info: F2
+# --------
+
+# themes
+> plank-theme-moka-git
+adwaita-manjaro-themes
+circle-flat-icons-git
+faenzaflattr_darkdecoration-icon-theme
+faenza-green-icon-theme
+elementary-xfce-icons
+gtk-theme-adwaita-cupertino
+gtk-theme-ceti
+gtk-theme-elementary
+> gtk-theme-flattastic
+gtk-theme-menda
+numix-circle-icon-theme-git
+numix-manjaro-themes
+numix-themes
+kdeartwork-desktopthemes
+kdeartwork-iconthemes
+lxdm-manjaro-theme
+mdm-themes
+moka-gtk-git
+moka-icons-git
+xfce-theme-greenbird
+xfwm4-themes
+plymouth-theme-manjaro-elegant
+
+# system
+packer
+zsh
+tmux
+tmuxinator
+
+# wm
+i3-git
+i3lock
+i3status
+j4-dmenu-desktop-git
+
+# file system / sync
+dropbox
+insync-thunar
+insync
+
+# tools
+> pcmanfm
+xclip
+vlc
+inotify-tools
+unrar
+unzip
+workrave
+> timeshift
+bitbucket-cli
+catfish
+zip
+feh
+evince
+ranger
+
+# software
+gvim
+gimp
+gimp-help-en
+
+
+# communication
+telegram-git
+> utox-git
+mumble
+pidgin
+
+# fonts
+terminus-font
+adobe-source-code-pro-fonts
+adobe-source-sans-pro-fonts
+ttf-anonymous-pro
+ttf-envy-code-r
+ttf-inconsolata
+> ttf-indic-otf
+ttf-liberation-mono-powerline-git
+ttf-meslo
+ttf-monaco
+
+# package management
+yaourt
+packer
+packup
+pkgtools
+
+
+# git
+gitg
+
+# dev
+ctags
+doc2dash
+zeal-git
+silver-searcher-git
+rbenv
+ipython
+nodejs
+ruby-build
+
+# dart
+dart
+
+# html
+tidyhtml
+
+# clojure
+> boot-git
+
+# python
+python2-mock
+python2-pip
+python2-virtualenv
+python-pip
+
+# virtualisation
+docker
+vagrant
+virtualbox
+
+# browser
+firefox-i18n-en-us
+icedtea-web-java7
+flashplugin
+google-chrome
+
+#try
+chromium-plugins 
+chromium 

@@ -1,4 +1,7 @@
 alias reload!='. ~/.zshrc'
+function mkc () {
+mkdir $1 && cd $1
+}
 function o () {
 xdg-open "$1" &> /dev/null &
 }
@@ -9,24 +12,75 @@ function f () {
 ag --smart-case --hidden -g $1
 }
 
+orphans() {
+  if [[ ! -n $(pkg-list_true_orphans) ]]; then
+    echo "No orphans to remove."
+  else
+    sudo pacman -Rns $(pkg-list_true_orphans)
+  fi
+}
+
+i-aur() {
+  # install when not already installed
+ # >/dev/null 2>&1 
+  pacman -Q $1 || sudo packer -S --noconfirm $1
+}
+
+I() {
+  echo $1 >> ~/.packages-manually-added
+  sudo packer -S --noconfirm $1
+}
+
+vex-build() {
+  if [ ! -f ~/.vex/builds/$1 ]; then 
+    # normal case: no build file for pip exists in ~/.vex/builds/
+    (cd ~/.virtualenvs && virtualenv2 $1 && $1/bin/pip install $1)
+  else
+    (cd ~/.virtualenvs && virtualenv2 $1 && $1/bin/pip install -r .vex/builds/$1)
+  fi
+  touch ~/.vex/.built/$1
+}
+
+vex-run() {
+  # run, possibly install first
+  (test -f ~/.vex/.built/$1 || vex-build $1) && vex $1 $1
+}
+vex-rm() {
+  rm -r ~/.virtualenvs/$1
+  rm -r ~/.vex/.built/$1
+}
+
+dot() {
+  # symlink dotfile to repo and bootstrap
+  var=$1
+  mv $1 ~/.dotfiles/${var#.}.symlink && ~/.dotfiles/script/bootstrap
+}
 alias path="echo $PATH | sed 's/\:/\n/g' | sort"
 alias c="cd"
 alias h="history"
 alias cluster="ssh werner@cluster.wr.informatik.uni-hamburg.de"
 
 # '[r]emove [o]rphans' - recursively remove ALL orphaned packages
-alias pac-ro="/usr/bin/pacman -Qtdq >	 /dev/null && sudo /usr/bin/pacman -Rns \$(/usr/bin/pacman -Qtdq | sed -e ':a;N;\$!ba;s/\n/ /g')"
-alias pac-orphans="yaourt -Q -td"
+# remove orphans
+
+alias pac-listaur="pacman -Qm"
 alias pac-recent="yaourt -Qe --date"
 alias pac-search="yaourt -Qe --date | grep"
+# Pacman alias examples
+alias pac-rem='sudo pacman -Rns'		# Remove the specified package(s), its configuration(s) and unneeded dependencies
+alias pac-cleancache="sudo pacman -Scc"		# Clean cache - delete all not currently installed package files
+alias paclf="pacman -Ql"		# List all files installed by a given package
+alias pacexpl="pacman -D --asexp"	# Mark one or more installed packages as explicitly installed 
+alias pacimpl="pacman -D --asdep"	# Mark one or more installed packages as non explicitly installed
+alias pac-info="pacman -Qi"
 
 alias gs='git status'
 alias rm='rm -I'
 alias i='sudo packer --noconfirm'
-alias I='sudo packer -S --noconfirm'
 # alias i='sudo yum -y install'
-alias upd='sudo yaourt -Syua --noconfirm'
-
+alias upd='sudo packer -Syu --noconfirm'
+alias u="sudo packages.py"
+alias ue="e ~/.packages.md"
 alias R='reload!'
 
 
@@ -97,5 +151,14 @@ alias session="tmux attach -t session"
 alias sessioncreate="tmux new-session -s 'session'"
 
 alias rake="noglob rake"
+
+# -- docker --------------------------------------------------------------------
+alias D="docker run --rm -it"
+alias Ds="docker search"
+
+
+# -- vex -----------------------------------------------------------------------
+alias fig="vex-run fig"
+
 
 

@@ -25,7 +25,7 @@ for_window [class="zeal"] move scratchpad
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+shift+d exec xfce4-appfinder
 # bindsym $mod+r [title="ranger"] scratchpad show
-bindsym $mod+r exec --no-startup-id ~/.dotfiles/bin/session-dev
+# bindsym $mod+r exec --no-startup-id ~/.dotfiles/bin/session-dev
 # w
 # b
 

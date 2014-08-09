@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+rm -r ~/.config/ranger
+ln -s ~/.ranger ~/.config/ranger 
+
+rm -r ~/.config/xfce4
+ln -s ~/.xfce4 ~/.config/xfce4 

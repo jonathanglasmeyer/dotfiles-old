@@ -1,0 +1,1099 @@
+Script started on Thu 07 Aug 2014 11:36:26 PM CEST
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.dotfiles[0m[27m[24m[J[01;32m➜ [01;32m [36m.dotfiles [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=cc script[1m/[0m[0m [?1l>
+]2;cd script[0m[01;32mbootstrap[0m  [01;32minstall[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.dotfiles/script[0m[27m[24m[J[01;32m➜ [01;32m [36mscript [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=ee symlink[?1l>
+]2;gvim --servername vim --remote-silent symlink[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.dotfiles/script[0m[27m[24m[J[01;32m➜ [01;32m [36mscript [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=lls con   l  ...[?1l>
+]2;cd ..typescript   [0m[01;34mvim[0m             ctags.symlink           [01;34mruby[0m        [01;34mscript[0m
+[01;34mzsh[0m          [01;34mdocker.symlink[0m  [01;34mtmux[0m                    [01;34mtmuxinator[0m  LICENSE.md
+[01;34mbin[0m          [01;34msystem[0m          [01;34mtmuxinator.symlink.bak[0m  [01;34mconfig[0m      Session.vim
+[01;34mvex.symlink[0m  [01;34mgit[0m             [01;34mpython[0m                  [01;34mi3[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.dotfiles[0m[27m[24m[J[01;32m➜ [01;32m [36m.dotfiles [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=lls config[1m/[0m[0m [?1l>
+]2;ls --color=tty config[0m[01;34mranger.symlink[0m  [01;34mxfce4.symlink[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.dotfiles[0m[27m[24m[J[01;32m➜ [01;32m [36m.dotfiles [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K[?1h=cc ~/.con
+[J[1;31m.config[0m/  [J.conkyrc[J[A[0m[27m[24m[28Cc ~/.con[Kfig[?1l>
+[J]2;cd ~/.config[0m[01;34mgoogle-chrome[0m  [01;34mgtk-3.0[0m         [01;36mranger[0m       [01;34mBarracuda Networks, Inc.[0m  [01;34mmenus[0m
+[01;34mdconf[0m          [01;34mconfigstore[0m     [01;34mzathura[0m      [01;36mxfce4[0m                     [01;34mmanjaro[0m
+[01;34mgtk-2.0[0m        [01;34mlibfm[0m           [01;34mAtom-Shell[0m   [01;34micedtea-web[0m               [01;34mpulse[0m
+[01;34mspotify[0m        [01;34mLightTable[0m      [01;34mvlc[0m          [01;34mhotkeys[0m                   user-dirs.locale
+[01;34mtox[0m            [01;34mchromium[0m        [01;34mMumble[0m       [01;34mpackup[0m                    [01;34mThunar[0m
+[01;34mInsync[0m         user-dirs.dirs  [01;34mviewnior[0m     [01;34msublime-text-2[0m            [01;34mvolumeicon[0m
+[01;34mgconf[0m          [01;34morage[0m           [01;34mcatfish[0m      [01;34mMousepad[0m
+[01;34mautostart[0m      [01;34mqgit[0m            [01;34mlibreoffice[0m  [01;34mpcmanfm[0m
+[01;34mVirtualBox[0m     [01;34mZeal[0m            [01;34mbackintime[0m   [01;34mxfce4-session[0m
+[01;34mxfburn[0m         Trolltech.conf  [01;34mayr[0m          [01;34mmate[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=ll.l ll[?1l>
+]2;ls --color=tty -lhtotal 180K
+drwx------ 3 jwerner users 4.0K Jun 20 00:37 [0m[01;34mAtom-Shell[0m
+drwxr-xr-x 2 jwerner users 4.0K Aug  3 19:08 [01;34mautostart[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 12 09:43 [01;34mayr[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 12 11:08 [01;34mbackintime[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 11 18:00 [01;34mBarracuda Networks, Inc.[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 15 13:44 [01;34mcatfish[0m
+drwx------ 6 jwerner users 4.0K Jul  8 11:11 [01;34mchromium[0m
+drwxr-xr-x 2 jwerner users 4.0K Jul 16 19:19 [01;34mconfigstore[0m
+drwxr-xr-x 2 jwerner users 4.0K Aug  7 13:20 [01;34mdconf[0m
+drwxr-xr-x 4 jwerner users 4.0K Aug  3 19:08 [01;34mgconf[0m
+drwx------ 7 jwerner users 4.0K Aug  7 23:38 [01;34mgoogle-chrome[0m
+drwxr-xr-x 2 jwerner users 4.0K Aug  7 13:18 [01;34mgtk-2.0[0m
+drwxr-xr-x 2 jwerner users 4.0K Jul 17 15:03 [01;34mgtk-3.0[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 11 16:41 [01;34mhotkeys[0m
+drwxr-xr-x 4 jwerner users 4.0K Jun 11 16:42 [01;34micedtea-web[0m
+drwx------ 4 jwerner users 4.0K Aug  3 19:08 [01;34mInsync[0m
+drwx------ 2 jwerner users 4.0K Jul 16 18:22 [01;34mlibfm[0m
+drwxr-xr-x 3 jwerner users 4.0K Jun 14 15:24 [01;34mlibreoffice[0m
+drwx------ 8 jwerner users 4.0K Jul 14 18:37 [01;34mLightTable[0m
+drwxr-xr-x 3 jwerner users 4.0K Jun 11 14:00 [01;34mmanjaro[0m
+drwx------ 3 jwerner users 4.0K Jun 11 14:13 [01;34mmate[0m
+drwx------ 3 jwerner users 4.0K Jun 11 14:11 [01;34mmenus[0m
+drwx------ 2 jwerner users 4.0K Jun 11 15:19 [01;34mMousepad[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 16 14:41 [01;34mMumble[0m
+drwx------ 2 jwerner users 4.0K Jul  7 13:31 [01;34morage[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun 11 15:55 [01;34mpackup[0m
+drwx------ 3 jwerner users 4.0K Jun 11 15:13 [01;34mpcmanfm[0m
+drwx------ 2 jwerner users 4.0K Jun 11 14:00 [01;34mpulse[0m
+drwxr-xr-x 2 jwerner users 4.0K Jul  4 14:55 [01;34mqgit[0m
+lrwxrwxrwx 1 jwerner users   21 Jun 24 12:27 [01;36mranger[0m -> /home/jwerner/.ranger
+drwxr-xr-x 3 jwerner users 4.0K Aug  6 11:53 [01;34mspotify[0m
+drwxr-xr-x 6 jwerner users 4.0K Jun 11 15:30 [01;34msublime-text-2[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun  7 15:30 [01;34mThunar[0m
+drwx------ 2 jwerner users 4.0K Aug  5 12:47 [01;34mtox[0m
+-rw-r--r-- 1 jwerner users 5.0K Jun 25 10:59 Trolltech.conf
+-rw------- 1 jwerner users  597 Jul  7 13:44 user-dirs.dirs
+-rw-r--r-- 1 jwerner users    5 Jun 11 14:00 user-dirs.locale
+drwx------ 2 jwerner users 4.0K Jun 15 13:45 [01;34mviewnior[0m
+drwx------ 2 jwerner users 4.0K Jul 26 23:24 [01;34mVirtualBox[0m
+drwx------ 2 jwerner users 4.0K Jun 17 11:31 [01;34mvlc[0m
+drwxr-xr-x 2 jwerner users 4.0K Jun  7 15:30 [01;34mvolumeicon[0m
+drwx------ 2 jwerner users 4.0K Jul 26 12:12 [01;34mxfburn[0m
+lrwxrwxrwx 1 jwerner users   20 Jun 11 17:50 [01;36mxfce4[0m -> /home/jwerner/.xfce4
+drwx------ 2 jwerner users 4.0K Jun 11 14:50 [01;34mxfce4-session[0m
+drwxr-x--x 2 jwerner users 4.0K Jun 20 03:13 [01;34mzathura[0m
+drwxr-xr-x 2 jwerner users 4.0K Jul  2 15:50 [01;34mZeal[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=lls[?1l>
+]2;ls --color=tty[0m[01;34mAtom-Shell[0m                [01;34mgoogle-chrome[0m  [01;34mmate[0m      [01;34mspotify[0m           [01;34mvolumeicon[0m
+[01;34mautostart[0m                 [01;34mgtk-2.0[0m        [01;34mmenus[0m     [01;34msublime-text-2[0m    [01;34mxfburn[0m
+[01;34mayr[0m                       [01;34mgtk-3.0[0m        [01;34mMousepad[0m  [01;34mThunar[0m            [01;36mxfce4[0m
+[01;34mbackintime[0m                [01;34mhotkeys[0m        [01;34mMumble[0m    [01;34mtox[0m               [01;34mxfce4-session[0m
+[01;34mBarracuda Networks, Inc.[0m  [01;34micedtea-web[0m    [01;34morage[0m     Trolltech.conf    [01;34mzathura[0m
+[01;34mcatfish[0m                   [01;34mInsync[0m         [01;34mpackup[0m    user-dirs.dirs    [01;34mZeal[0m
+[01;34mchromium[0m                  [01;34mlibfm[0m          [01;34mpcmanfm[0m   user-dirs.locale
+[01;34mconfigstore[0m               [01;34mlibreoffice[0m    [01;34mpulse[0m     [01;34mviewnior[0m
+[01;34mdconf[0m                     [01;34mLightTable[0m     [01;34mqgit[0m      [01;34mVirtualBox[0m
+[01;34mgconf[0m                     [01;34mmanjaro[0m        [01;36mranger[0m    [01;34mvlc[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=ff ranger[?1l>
+]2;f ranger[1;32mgoogle-chrome/Default/Local Storage/http_www.walkercoderanger.com_0.localstorage-journal[0m[K
+[1;32mgoogle-chrome/Default/Local Storage/http_www.walkercoderanger.com_0.localstorage[0m[K
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;31m➜ [27m[01;32m [36m.config [01;34m[01;34m [00m[K[?1h=lls[?1l>
+]2;ls --color=tty[0m[01;34mAtom-Shell[0m                [01;34mgoogle-chrome[0m  [01;34mmate[0m      [01;34mspotify[0m           [01;34mvolumeicon[0m
+[01;34mautostart[0m                 [01;34mgtk-2.0[0m        [01;34mmenus[0m     [01;34msublime-text-2[0m    [01;34mxfburn[0m
+[01;34mayr[0m                       [01;34mgtk-3.0[0m        [01;34mMousepad[0m  [01;34mThunar[0m            [01;36mxfce4[0m
+[01;34mbackintime[0m                [01;34mhotkeys[0m        [01;34mMumble[0m    [01;34mtox[0m               [01;34mxfce4-session[0m
+[01;34mBarracuda Networks, Inc.[0m  [01;34micedtea-web[0m    [01;34morage[0m     Trolltech.conf    [01;34mzathura[0m
+[01;34mcatfish[0m                   [01;34mInsync[0m         [01;34mpackup[0m    user-dirs.dirs    [01;34mZeal[0m
+[01;34mchromium[0m                  [01;34mlibfm[0m          [01;34mpcmanfm[0m   user-dirs.locale
+[01;34mconfigstore[0m               [01;34mlibreoffice[0m    [01;34mpulse[0m     [01;34mviewnior[0m
+[01;34mdconf[0m                     [01;34mLightTable[0m     [01;34mqgit[0m      [01;34mVirtualBox[0m
+[01;34mgconf[0m                     [01;34mmanjaro[0m        [01;36mranger[0m    [01;34mvlc[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=ff user[?1l>
+]2;f user[1;32mgoogle-chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.1.3_0/media/js/user_independent_vars.js[0m[K
+[1;32mgoogle-chrome/Default/Extensions/hdokiejnpimakedhajhdlcegeplioahd/3.1.45_0/images/copyusername.png[0m[K
+[1;32mgoogle-chrome/Default/Extensions/hdokiejnpimakedhajhdlcegeplioahd/3.1.45_0/images/lib/remove-user-red.gif[0m[K
+[1;32mgoogle-chrome/Default/Extensions/hdokiejnpimakedhajhdlcegeplioahd/3.1.45_0/copyusername.png[0m[K
+[1;32mgoogle-chrome/Default/Extensions/ihlenndgcmojhcghmfjfneahoeklbjjh/1.2.57_0/scripts/update_usercss.sh[0m[K
+[1;32mgoogle-chrome/Default/Extensions/ihlenndgcmojhcghmfjfneahoeklbjjh/1.2.57_0/background_scripts/user.css[0m[K
+[1;32mgoogle-chrome/Default/Local Storage/http_superuser.com_0.localstorage-journal[0m[K
+[1;32mgoogle-chrome/Default/Local Storage/http_superuser.com_0.localstorage[0m[K
+[1;32mdconf/user[0m[K
+[1;32mmenus/applications-merged/user-chrome-apps.menu[0m[K
+[1;32muser-dirs.dirs[0m[K
+[1;32mspotify/Users/1121764585-user/prefs[0m[K
+[1;32mspotify/Users/1121764585-user/track-player.bnk[0m[K
+[1;32mspotify/Users/1121764585-user/facebook-publish.bnk[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/radio/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/radio/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/suggest/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/suggest/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/browse/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/browse/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/feed/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/feed/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/messages/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/messages/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/notification-center/Cookies-journal[0m[K
+[1;32mspotify/Users/1121764585-user/Apps/notification-center/Cookies[0m[K
+[1;32mspotify/Users/1121764585-user/watch-sources.bnk[0m[K
+[1;32mspotify/Users/1121764585-user/social_manager.bnk[0m[K
+[1;32mspotify/Users/1121764585-user/guistate[0m[K
+[1;32mspotify/Users/1121764585-user/local-files.bnk[0m[K
+[1;32mlibreoffice/4/user/wordbook/standard.dic[0m[K
+[1;32mlibreoffice/4/user/registrymodifications.xcu[0m[K
+[1;32mlibreoffice/4/user/psprint/pspfontcache[0m[K
+[1;32mlibreoffice/4/user/autotext/mytexts.bau[0m[K
+[1;32mlibreoffice/4/user/basic/script.xlc[0m[K
+[1;32mlibreoffice/4/user/basic/Standard/Module1.xba[0m[K
+[1;32mlibreoffice/4/user/basic/Standard/dialog.xlb[0m[K
+[1;32mlibreoffice/4/user/basic/Standard/script.xlb[0m[K
+[1;32mlibreoffice/4/user/basic/dialog.xlc[0m[K
+[1;32mlibreoffice/4/user/extensions/bundled/lastsynchronized[0m[K
+[1;32mlibreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/extensions/buildid[0m[K
+[1;32mlibreoffice/4/user/extensions/shared/lastsynchronized[0m[K
+[1;32mlibreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/config/classic.sog[0m[K
+[1;32mlibreoffice/4/user/config/web.soc[0m[K
+[1;32mlibreoffice/4/user/config/javasettings_Linux_X86_64.xml[0m[K
+[1;32mlibreoffice/4/user/config/modern.sog[0m[K
+[1;32mlibreoffice/4/user/config/standard.sod[0m[K
+[1;32mlibreoffice/4/user/config/standard.sob[0m[K
+[1;32mlibreoffice/4/user/config/gallery.soc[0m[K
+[1;32mlibreoffice/4/user/config/html.soc[0m[K
+[1;32mlibreoffice/4/user/config/cmyk.soc[0m[K
+[1;32mlibreoffice/4/user/config/arrowhd.soe[0m[K
+[1;32mlibreoffice/4/user/config/hatching.soh[0m[K
+[1;32mlibreoffice/4/user/config/autotbl.fmt[0m[K
+[1;32mlibreoffice/4/user/config/palette.soc[0m[K
+[1;32mlibreoffice/4/user/config/standard.soh[0m[K
+[1;32mlibreoffice/4/user/config/standard.soe[0m[K
+[1;32mlibreoffice/4/user/config/standard.soc[0m[K
+[1;32mlibreoffice/4/user/config/standard.sog[0m[K
+[1;32mlibreoffice/4/user/config/libreoffice.soc[0m[K
+[1;32mlibreoffice/4/user/config/tango.soc[0m[K
+[1;32mlibreoffice/4/user/config/styles.sod[0m[K
+[1;32mlibreoffice/4/user/config/scribus.soc[0m[K
+[1;32mlibreoffice/4/user/uno_packages/cache/log.txt[0m[K
+[1;32mlibreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend/backenddb.xml[0m[K
+[1;32mlibreoffice/4/user/gallery/sg30.sdv[0m[K
+[1;32mlibreoffice/4/user/gallery/sg30.thm[0m[K
+[1;32mlibreoffice/4/user/database/biblio/biblio.dbt[0m[K
+[1;32mlibreoffice/4/user/database/biblio/biblio.dbf[0m[K
+[1;32mlibreoffice/4/user/database/biblio.odb[0m[K
+[1;32mlibreoffice/4/user/database/evolocal.odb[0m[K
+[1;32mLightTable/settings/user.keymap[0m[K
+[1;32mLightTable/settings/user.behaviors[0m[K
+[1;32muser-dirs.locale[0m[K
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=lls[?1l>
+]2;ls --color=tty[0m[01;34mAtom-Shell[0m                [01;34mgoogle-chrome[0m  [01;34mmate[0m      [01;34mspotify[0m           [01;34mvolumeicon[0m
+[01;34mautostart[0m                 [01;34mgtk-2.0[0m        [01;34mmenus[0m     [01;34msublime-text-2[0m    [01;34mxfburn[0m
+[01;34mayr[0m                       [01;34mgtk-3.0[0m        [01;34mMousepad[0m  [01;34mThunar[0m            [01;36mxfce4[0m
+[01;34mbackintime[0m                [01;34mhotkeys[0m        [01;34mMumble[0m    [01;34mtox[0m               [01;34mxfce4-session[0m
+[01;34mBarracuda Networks, Inc.[0m  [01;34micedtea-web[0m    [01;34morage[0m     Trolltech.conf    [01;34mzathura[0m
+[01;34mcatfish[0m                   [01;34mInsync[0m         [01;34mpackup[0m    user-dirs.dirs    [01;34mZeal[0m
+[01;34mchromium[0m                  [01;34mlibfm[0m          [01;34mpcmanfm[0m   user-dirs.locale
+[01;34mconfigstore[0m               [01;34mlibreoffice[0m    [01;34mpulse[0m     [01;34mviewnior[0m
+[01;34mdconf[0m                     [01;34mLightTable[0m     [01;34mqgit[0m      [01;34mVirtualBox[0m
+[01;34mgconf[0m                     [01;34mmanjaro[0m        [01;36mranger[0m    [01;34mvlc[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.config[0m[27m[24m[J[01;32m➜ [01;32m [36m.config [01;34m[01;34m [00m[K[?1h=c[?1l>
+]2;cd[0m[01;36mfig[0m
+[01;34mDownloads[0m
+site.retry
+[01;34mansible[0m
+vim.retry
+tox_save
+utox_save
+[01;34mnode_modules[0m
+[01;34mdocker[0m
+packup-complete-20140803-1455
+lp.csv
+Rechnungsnr. 24 - Sebastian Bosum.pdf
+[01;34mGoogle Drive[0m
+workman.iso15.kmap
+nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+packup-complete-20140727-0010
+nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+setup.sh
+[01;34mVirtualBox VMs[0m
+nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+[01;34mnixbox[0m
+Vagrantfile
+[01;34mCache2[0m
+[01;36mbg-install[0m
+[01;36mwine-progs[0m
+[01;34mbg[0m
+GemRB.log
+[01;34mCache[0m
+main.jpg
+main.xcf
+[01;34mtmp[0m
+[01;34mdev[0m
+Untitled spreadsheet - Sheet1 (1).pdf
+Untitled spreadsheet - Sheet1.pdf
+[01;34mAngularFun[0m
+[01;34mLightTable[0m
+[01;34mycm_build[0m
+modern_javascript_scripts.zip
+ClojureScript- Up and Running.pdf
+om.js
+om.clj
+[01;34mlt-cljs-tutorial[0m
+vilog
+[01;36mAdmin[0m
+[01;34mbackup[0m
+[01;36mBackup[0m
+[01;34mplayground[0m
+[01;34mrepos[0m
+[01;36mtxt[0m
+[01;36mUni[0m
+[01;36mMusik[0m
+[01;36mPDFs[0m
+[01;36mBücher[0m
+[01;36mLatex[0m
+[01;34mold[0m
+[01;34mDesktop[0m
+[01;34mPictures[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=ll.[?1l>
+]2;ls --color=tty -oa -hX --group-directories-firsttotal 1.9G
+drwxr-xr-x   6 jwerner 4.0K Jul 15 17:08 [0m[01;34mAngularFun[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 23:18 [01;34mansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  7 13:24 [01;34mbackup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 11:07 [01;34mbg[0m
+drwx------   2 jwerner 4.0K Jul 18 11:06 [01;34mCache[0m
+drwx------   2 jwerner 4.0K Jul 18 14:40 [01;34mCache2[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 17 16:10 [01;34mDesktop[0m
+drwxr-xr-x  19 jwerner 4.0K Jul 17 11:37 [01;34mdev[0m
+drwxr-xr-x  17 jwerner 4.0K Aug  3 18:57 [01;34mdocker[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  7 13:18 [01;34mDownloads[0m
+drwxr-xr-x  16 jwerner 4.0K Aug  1 09:46 [01;34mGoogle Drive[0m
+drwxr-xr-x   6 jwerner 4.0K Jul 14 14:57 [01;34mLightTable[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 20:36 [01;34mlt-cljs-tutorial[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 11:50 [01;34mnixbox[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  3 19:28 [01;34mnode_modules[0m
+drwxr-xr-x  15 jwerner 4.0K Jun 24 11:57 [01;34mold[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 17:41 [01;34mPictures[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  4 13:26 [01;34mplayground[0m
+drwxr-xr-x   7 jwerner 4.0K Jul  3 09:29 [01;34mrepos[0m
+drwxr-xr-x   8 jwerner 4.0K Jul 17 13:24 [01;34mtmp[0m
+drwx------   4 jwerner 4.0K Jul 26 12:11 [01;34mVirtualBox VMs[0m
+drwxr-xr-x   5 jwerner 4.0K Jul 14 13:00 [01;34mycm_build[0m
+drwx------  91 jwerner 4.0K Aug  7 23:43 [01;34m.[0m
+drwxr-xr-x   3 root    4.0K Jun 11 13:58 [01;34m..[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 26 23:25 [01;34m.gstreamer-0.10[0m
+drwxr-xr-x  24 jwerner 4.0K Jul 18 16:43 [01;34m.gimp-2.8[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.adobe[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:19 [01;34m.ansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 20 00:37 [01;34m.atom[0m
+drwxr-xr-x  13 jwerner 4.0K Jul  3 09:29 [01;34m.dotfiles.backup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  1 14:31 [01;34m.bin[0m
+drwxr-xr-x   8 jwerner 4.0K Jul  9 15:32 [01;34m.cabal[0m
+drwxr-xr-x  25 jwerner 4.0K Aug  7 21:34 [01;34m.cache[0m
+drwxr-xr-x  43 jwerner 4.0K Aug  6 11:52 [01;34m.config[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 15 09:38 [01;34m.copy[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 23:07 [01;34m.vagrant.d[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  2 13:58 [01;34m.dartEditor[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  2 18:10 [01;34m.dartium[0m
+drwx------   3 jwerner 4.0K Jun 11 14:00 [01;34m.dbus[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 16 19:19 [01;34m.divshot[0m
+drwxr-xr-x  18 jwerner 4.0K Aug  7 23:36 [01;34m.dotfiles[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 11 16:59 [01;34m.dotfiles-deprecated[0m
+drwx------   5 jwerner 4.0K Aug  3 19:08 [01;34m.dropbox[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 21 23:23 [01;34m.dropbox-dist[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 30 20:27 [01;34m.eclipse[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 12:49 [01;34m.fontconfig[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 21 00:12 [01;34m.fzf[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 28 21:10 [01;34m.gem[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 14:13 [01;34m.gemrb[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  9 14:58 [01;34m.ghc[0m
+drwx------   2 jwerner 4.0K Jul 17 14:35 [01;34m.git-credential-cache[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.gnome[0m
+drwx------   3 jwerner 4.0K Jul  4 11:38 [01;34m.gnome2[0m
+drwx------   2 jwerner 4.0K Jun 12 11:06 [01;34m.gnome2_private[0m
+drwx------   3 jwerner 4.0K Aug  3 19:08 [01;34m.gnupg[0m
+drwx------   2 jwerner 4.0K Jul  7 12:26 [01;34m.grsync[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 18 10:15 [01;34m.ipython[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 16:42 [01;34m.java[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 16 15:20 [01;34m.julia[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 21:45 [01;34m.lein[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  5 13:16 [01;34m.local[0m
+drwxr-xr-x   6 jwerner 4.0K Jul  7 12:05 [01;34m.luckyBackup[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 14 14:12 [01;34m.m2[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.macromedia[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:01 [01;34m.mozilla[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 15 15:13 [01;34m.node-gyp[0m
+drwxr-xr-x 296 jwerner  36K Aug  3 19:34 [01;34m.npm[0m
+drwxr-xr-x  11 jwerner 4.0K Aug  3 13:47 [01;34m.oh-my-zsh[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  5 13:24 [01;34m.paktahn[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  5 12:24 [01;34m.pip[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.pki[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 12:42 [01;34m.plotly[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  7 23:36 [01;34m.pub-cache[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 16 18:58 [01;34m.rbenv[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  4 14:59 [01;34m.smartgit[0m
+drwx------   2 jwerner 4.0K Jun 29 21:27 [01;34m.ssh[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  4 15:00 [01;34m.subversion[0m
+drwx------   3 jwerner 4.0K Jun 20 16:17 [01;34m.telegram[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  7 23:04 [01;34m.templates[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:23 [01;34m.testapriori[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:24 [01;34m.testapriori2[0m
+drwx-----T   3 jwerner 4.0K Jun 20 02:57 [37;44m.texlive[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:46 [01;34m.thumbnails[0m
+drwx------   3 jwerner 4.0K Jun 11 16:33 [01;34m.thunderbird[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 19:08 [01;34m.urxvt[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 26 11:46 [01;34m.vagrant[0m
+drwxr-xr-x  11 jwerner 4.0K Jul 13 15:56 [01;34m.vim[0m
+drwxr-xr-x   7 jwerner 4.0K Aug  7 22:58 [01;34m.virtualenvs[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 28 21:14 [01;34m.vmail[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 27 00:12 [01;34m.wine[0m
+drwx------   2 jwerner 4.0K Jun 12 04:00 [01;34m.workrave[0m
+lrwxrwxrwx   1 jwerner   32 Jul  7 13:26 [01;36mAdmin[0m -> /home/jwerner/Google Drive/Admin
+lrwxrwxrwx   1 jwerner   33 Jul  7 13:23 [01;36mBackup[0m -> /home/jwerner/Google Drive/Backup
+lrwxrwxrwx   1 jwerner    1 Jul 18 12:16 [01;36mbg-install[0m -> .
+lrwxrwxrwx   1 jwerner   34 Jun 24 11:57 [01;36mBücher[0m -> /home/jwerner/Google Drive/Bücher
+lrwxrwxrwx   1 jwerner    3 Aug  7 22:22 [01;36mfig[0m -> fig
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mLatex[0m -> /home/jwerner/Google Drive/Latex
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mMusik[0m -> /home/jwerner/Google Drive/Musik
+-rw-r--r--   1 jwerner 5.5K Jul 27 00:10 packup-complete-20140727-0010
+-rw-r--r--   1 jwerner 5.1K Aug  3 14:55 packup-complete-20140803-1455
+lrwxrwxrwx   1 jwerner   31 Jun 24 11:57 [01;36mPDFs[0m -> /home/jwerner/Google Drive/PDFs
+-rw-r--r--   1 jwerner  23K Aug  5 12:47 tox_save
+lrwxrwxrwx   1 jwerner   30 Jun 25 13:56 [01;36mtxt[0m -> /home/jwerner/Google Drive/txt
+lrwxrwxrwx   1 jwerner   30 Jun 24 11:57 [01;36mUni[0m -> /home/jwerner/Google Drive/Uni
+-rw-r--r--   1 jwerner   10 Aug  5 12:47 utox_save
+-rw-r--r--   1 jwerner 4.8K Jul 26 11:43 Vagrantfile
+-rw-r--r--   1 jwerner 136K Jul  7 23:01 vilog
+lrwxrwxrwx   1 jwerner   34 Jul 18 12:01 [01;36mwine-progs[0m -> .wine/drive_c/Program Files (x86)/
+lrwxrwxrwx   1 jwerner   49 Jun 20 19:25 [01;36m..gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/.gtkrc-2.0.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 20 19:26 [01;36m.gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+-rw-r--r--   1 jwerner  31K Aug  7 23:36 .zcompdump-manjaro-5.0.5
+lrwxrwxrwx   1 jwerner   41 Jul  7 22:27 [01;36m.after[0m -> /home/jwerner/.dotfiles/vim/after.symlink
+lrwxrwxrwx   1 jwerner   35 Jun 11 14:55 [01;36m.vim.backup[0m -> /home/jwerner/.dotfiles/vim.symlink
+-rw-r--r--   1 jwerner  261 Jun  7 15:30 .xinitrc.backup
+-rw-r--r--   1 jwerner 2.4K Jun 21 00:12 .fzf.bash
+-rw-------   1 jwerner  193 Jun 11 14:45 .bash_history
+-rw-r--r--   1 jwerner   21 May 26 21:40 .bash_logout
+-rw-r--r--   1 jwerner   57 May 26 21:40 .bash_profile
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .bashrc
+lrwxrwxrwx   1 jwerner   42 Jun 29 22:04 [01;36m..bitbucket[0m -> /home/jwerner/.dotfiles/.bitbucket.symlink
+-rw-r--r--   1 jwerner  860 Jul 10 21:10 om.clj
+lrwxrwxrwx   1 jwerner   48 Jun 11 16:30 [01;36m.i3status.conf[0m -> /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 25 16:41 [01;36m.tmux.conf[0m -> /home/jwerner/.dotfiles/system/tmux.conf.symlink
+-rw-r--r--   1 jwerner   62 Jun  7 15:24 .conkyrc
+-rw-r--r--   1 jwerner  29K Aug  1 19:52 lp.csv
+lrwxrwxrwx   1 jwerner   37 Jun 11 15:15 [01;36m.ctags[0m -> /home/jwerner/.dotfiles/ctags.symlink
+-rw-r--r--   1 jwerner   14 Aug  7 23:43 .cwd
+-rw-------   1 jwerner   28 Aug  3 19:08 .dmrc
+lrwxrwxrwx   1 jwerner   38 Aug  3 13:44 [01;36m.docker[0m -> /home/jwerner/.dotfiles/docker.symlink
+-rw-------   1 jwerner   16 Jun 11 14:00 .esd_auth
+-rw-r--r--   1 jwerner   81 Aug  3 19:08 .fehbg
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitconfig[0m -> /home/jwerner/.dotfiles/git/gitconfig.symlink
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitignore[0m -> /home/jwerner/.dotfiles/git/gitignore.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 29 22:21 [01;36m.git_template[0m -> /home/jwerner/.dotfiles/git/git_template.symlink
+-rw-------   1 jwerner   69 Jun 15 12:54 .grive
+-rw-r--r--   1 jwerner  335 Aug  5 11:32 .gtk-bookmarks
+lrwxrwxrwx   1 jwerner   42 Jun 11 15:15 [01;36m.gvimrc[0m -> /home/jwerner/.dotfiles/vim/gvimrc.symlink
+lrwxrwxrwx   1 jwerner   37 Jun 11 16:30 [01;36m.i3[0m -> /home/jwerner/.dotfiles/i3/i3.symlink
+-rw-------   1 jwerner 6.0K Aug  3 19:08 .ICEauthority
+-rw-r--r--   1 jwerner 797M Jul 26 23:30 nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+-rw-r--r--   1 jwerner 797M Jul 26 12:10 nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 294M Jul 27 11:40 nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 368K Jul 17 15:02 main.jpg
+-rw-r--r--   1 jwerner 1.2K Jul 10 21:12 om.js
+-rw-r--r--   1 jwerner 1.1K Jun 25 16:53 .julia_history2
+-rw-r--r--   1 jwerner  45K Jul 27 11:40 workman.iso15.kmap
+-rw-------   1 jwerner   35 Aug  3 15:58 .lesshst
+-rw-r-----   1 jwerner    0 Jul  7 13:12 .gksu.lock
+-rw-r--r--   1 jwerner 3.1K Jun 12 11:08 .bzr.log
+-rw-r--r--   1 jwerner    0 Jul 18 11:06 GemRB.log
+-rw-r--r--   1 jwerner  324 Jun 19 20:22 .Space2Ctrl.log
+-rw-r--r--   1 jwerner 1.5K Aug  7 23:16 .packages.md
+-rw-r--r--   1 jwerner 1.1K Aug  7 23:17 .packages.old
+lrwxrwxrwx   1 jwerner   51 Jun 11 15:15 [01;36m.Xmodmap.orig[0m -> /home/jwerner/.dotfiles/system/Xmodmap.orig.symlink
+-rw-r--r--   1 jwerner 8.0M Jul 11 15:53 ClojureScript- Up and Running.pdf
+-rw-r--r--   1 jwerner  22K Aug  1 10:34 Rechnungsnr. 24 - Sebastian Bosum.pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:22 Untitled spreadsheet - Sheet1 (1).pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:21 Untitled spreadsheet - Sheet1.pdf
+lrwxrwxrwx   1 jwerner   45 Jun 24 12:27 [01;36m.ranger[0m -> /home/jwerner/.dotfiles/config/ranger.symlink
+-rw-r--r--   1 jwerner   10 Aug  6 23:36 site.retry
+-rw-r--r--   1 jwerner   10 Aug  6 23:02 vim.retry
+-rw-r--r--   1 jwerner  456 Jul 26 22:51 setup.sh
+lrwxrwxrwx   1 jwerner   42 Jul  1 14:32 [01;36m.tmuxinator[0m -> /home/jwerner/.dotfiles/tmuxinator.symlink
+lrwxrwxrwx   1 jwerner   35 Aug  7 23:32 [01;36m.vex[0m -> /home/jwerner/.dotfiles/vex.symlink
+-rw-------   1 jwerner  32K Aug  7 23:35 .viminfo
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.vimrc[0m -> /home/jwerner/.dotfiles/vim/vimrc.symlink
+-rw-------   1 jwerner  170 Aug  3 19:08 .Xauthority
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xcape[0m -> /home/jwerner/.dotfiles/system/xcape.symlink
+-rw-r--r--   1 jwerner 2.0M Jul 17 15:02 main.xcf
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.Xclients[0m
+-rw-------   1 jwerner  531 Jun 20 03:01 .xdvirc
+lrwxrwxrwx   1 jwerner   44 Jun 29 22:05 [01;36m.xfce4[0m -> /home/jwerner/.dotfiles/config/xfce4.symlink
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xinit[0m -> /home/jwerner/.dotfiles/system/xinit.symlink
+-rw-r--r--   1 jwerner  489 Jun 11 17:12 .xinitrc
+lrwxrwxrwx   1 jwerner   46 Jun 11 14:55 [01;36m.Xmodmap[0m -> /home/jwerner/.dotfiles/system/Xmodmap.symlink
+-rw-r--r--   1 jwerner  258 Jun  7 15:30 .xprofile
+lrwxrwxrwx   1 jwerner   49 Jun 24 14:50 [01;36m.Xresources[0m -> /home/jwerner/.dotfiles/system/Xresources.symlink
+-rw-r--r--   1 jwerner 7.7K Jun 16 13:32 .xscreensaver
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.xsession[0m
+-rw-r--r--   1 jwerner 342K Aug  7 23:30 .xsession-errors
+-rw-r--r--   1 jwerner  32K Aug  7 23:36 .zcompdump
+-rw-r--r--   1 jwerner 338K Jul 13 17:51 modern_javascript_scripts.zip
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .fzf.zsh
+lrwxrwxrwx   1 jwerner   45 Jul 26 23:58 [01;36m.zshenv[0m -> /home/jwerner/.dotfiles/system/zshenv.symlink
+-rw-------   1 jwerner 216K Aug  7 23:43 .zsh_history
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.zshrc[0m -> /home/jwerner/.dotfiles/zsh/zshrc.symlink
+-rw-r--r--   1 jwerner   17 Jul 26 11:35 .zsh-update
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=cc v .vim[?1l>
+]2;cd .vim[0m[01;34mbackup[0m  [01;34mtmp[0m      [01;34mautoload[0m  [01;34mftplugin[0m  Session.vim  [01;34msession[0m
+[01;34mundo[0m    [01;34mplugged[0m  [01;34mbundle[0m    [01;36mafter[0m     [01;34mUltiSnips[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.vim[0m[27m[24m[J[01;32m➜ [01;32m [36m.vim [01;34m[01;34m [00m[K[?1h=ll.[?1l>
+]2;ls --color=tty -oa -hX --group-directories-firsttotal 204K
+drwxr-xr-x   2 jwerner 4.0K Jul 13 15:43 [0m[01;34mautoload[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  7 23:43 [01;34mbackup[0m
+drwxr-xr-x 110 jwerner 4.0K Jul 13 15:40 [01;34mbundle[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  7 23:48 [01;34mftplugin[0m
+drwxr-xr-x  73 jwerner 4.0K Jul 17 14:20 [01;34mplugged[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 00:03 [01;34msession[0m
+drwxr-xr-x   2 jwerner  12K Aug  7 23:41 [01;34mtmp[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 13:40 [01;34mUltiSnips[0m
+drwxr-xr-x   2 jwerner  36K Aug  7 23:43 [01;34mundo[0m
+drwxr-xr-x  11 jwerner 4.0K Jul 13 15:56 [01;34m.[0m
+drwx------  91 jwerner 4.0K Aug  7 23:44 [01;34m..[0m
+lrwxrwxrwx   1 jwerner   20 Jul  7 22:28 [01;36mafter[0m -> /home/jwerner/.after
+-rw-r--r--   1 jwerner  168 Jul 13 15:41 .netrwhist
+-rw-r--r--   1 jwerner 111K Jul  7 20:20 Session.vim
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~/.vim[0m[27m[24m[J[01;32m➜ [01;32m [36m.vim [01;34m[01;34m [00m[K[?1h=c[?1l>
+]2;cd[0m[01;36mfig[0m
+[01;34mDownloads[0m
+site.retry
+[01;34mansible[0m
+vim.retry
+tox_save
+utox_save
+[01;34mnode_modules[0m
+[01;34mdocker[0m
+packup-complete-20140803-1455
+lp.csv
+Rechnungsnr. 24 - Sebastian Bosum.pdf
+[01;34mGoogle Drive[0m
+workman.iso15.kmap
+nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+packup-complete-20140727-0010
+nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+setup.sh
+[01;34mVirtualBox VMs[0m
+nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+[01;34mnixbox[0m
+Vagrantfile
+[01;34mCache2[0m
+[01;36mbg-install[0m
+[01;36mwine-progs[0m
+[01;34mbg[0m
+GemRB.log
+[01;34mCache[0m
+main.jpg
+main.xcf
+[01;34mtmp[0m
+[01;34mdev[0m
+Untitled spreadsheet - Sheet1 (1).pdf
+Untitled spreadsheet - Sheet1.pdf
+[01;34mAngularFun[0m
+[01;34mLightTable[0m
+[01;34mycm_build[0m
+modern_javascript_scripts.zip
+ClojureScript- Up and Running.pdf
+om.js
+om.clj
+[01;34mlt-cljs-tutorial[0m
+vilog
+[01;36mAdmin[0m
+[01;34mbackup[0m
+[01;36mBackup[0m
+[01;34mplayground[0m
+[01;34mrepos[0m
+[01;36mtxt[0m
+[01;36mUni[0m
+[01;36mMusik[0m
+[01;36mPDFs[0m
+[01;36mBücher[0m
+[01;36mLatex[0m
+[01;34mold[0m
+[01;34mDesktop[0m
+[01;34mPictures[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=ll.[?1l>
+]2;ls --color=tty -oa -hX --group-directories-firsttotal 1.9G
+drwxr-xr-x   6 jwerner 4.0K Jul 15 17:08 [0m[01;34mAngularFun[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 23:18 [01;34mansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  7 13:24 [01;34mbackup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 11:07 [01;34mbg[0m
+drwx------   2 jwerner 4.0K Jul 18 11:06 [01;34mCache[0m
+drwx------   2 jwerner 4.0K Jul 18 14:40 [01;34mCache2[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 17 16:10 [01;34mDesktop[0m
+drwxr-xr-x  19 jwerner 4.0K Jul 17 11:37 [01;34mdev[0m
+drwxr-xr-x  17 jwerner 4.0K Aug  3 18:57 [01;34mdocker[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  7 13:18 [01;34mDownloads[0m
+drwxr-xr-x  16 jwerner 4.0K Aug  1 09:46 [01;34mGoogle Drive[0m
+drwxr-xr-x   6 jwerner 4.0K Jul 14 14:57 [01;34mLightTable[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 20:36 [01;34mlt-cljs-tutorial[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 11:50 [01;34mnixbox[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  3 19:28 [01;34mnode_modules[0m
+drwxr-xr-x  15 jwerner 4.0K Jun 24 11:57 [01;34mold[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 17:41 [01;34mPictures[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  4 13:26 [01;34mplayground[0m
+drwxr-xr-x   7 jwerner 4.0K Jul  3 09:29 [01;34mrepos[0m
+drwxr-xr-x   8 jwerner 4.0K Jul 17 13:24 [01;34mtmp[0m
+drwx------   4 jwerner 4.0K Jul 26 12:11 [01;34mVirtualBox VMs[0m
+drwxr-xr-x   5 jwerner 4.0K Jul 14 13:00 [01;34mycm_build[0m
+drwx------  91 jwerner 4.0K Aug  7 23:44 [01;34m.[0m
+drwxr-xr-x   3 root    4.0K Jun 11 13:58 [01;34m..[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 26 23:25 [01;34m.gstreamer-0.10[0m
+drwxr-xr-x  24 jwerner 4.0K Jul 18 16:43 [01;34m.gimp-2.8[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.adobe[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:19 [01;34m.ansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 20 00:37 [01;34m.atom[0m
+drwxr-xr-x  13 jwerner 4.0K Jul  3 09:29 [01;34m.dotfiles.backup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  1 14:31 [01;34m.bin[0m
+drwxr-xr-x   8 jwerner 4.0K Jul  9 15:32 [01;34m.cabal[0m
+drwxr-xr-x  25 jwerner 4.0K Aug  7 21:34 [01;34m.cache[0m
+drwxr-xr-x  43 jwerner 4.0K Aug  6 11:52 [01;34m.config[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 15 09:38 [01;34m.copy[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 23:07 [01;34m.vagrant.d[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  2 13:58 [01;34m.dartEditor[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  2 18:10 [01;34m.dartium[0m
+drwx------   3 jwerner 4.0K Jun 11 14:00 [01;34m.dbus[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 16 19:19 [01;34m.divshot[0m
+drwxr-xr-x  18 jwerner 4.0K Aug  7 23:36 [01;34m.dotfiles[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 11 16:59 [01;34m.dotfiles-deprecated[0m
+drwx------   5 jwerner 4.0K Aug  3 19:08 [01;34m.dropbox[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 21 23:23 [01;34m.dropbox-dist[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 30 20:27 [01;34m.eclipse[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 12:49 [01;34m.fontconfig[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 21 00:12 [01;34m.fzf[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 28 21:10 [01;34m.gem[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 14:13 [01;34m.gemrb[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  9 14:58 [01;34m.ghc[0m
+drwx------   2 jwerner 4.0K Jul 17 14:35 [01;34m.git-credential-cache[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.gnome[0m
+drwx------   3 jwerner 4.0K Jul  4 11:38 [01;34m.gnome2[0m
+drwx------   2 jwerner 4.0K Jun 12 11:06 [01;34m.gnome2_private[0m
+drwx------   3 jwerner 4.0K Aug  3 19:08 [01;34m.gnupg[0m
+drwx------   2 jwerner 4.0K Jul  7 12:26 [01;34m.grsync[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 18 10:15 [01;34m.ipython[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 16:42 [01;34m.java[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 16 15:20 [01;34m.julia[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 21:45 [01;34m.lein[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  5 13:16 [01;34m.local[0m
+drwxr-xr-x   6 jwerner 4.0K Jul  7 12:05 [01;34m.luckyBackup[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 14 14:12 [01;34m.m2[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.macromedia[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:01 [01;34m.mozilla[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 15 15:13 [01;34m.node-gyp[0m
+drwxr-xr-x 296 jwerner  36K Aug  3 19:34 [01;34m.npm[0m
+drwxr-xr-x  11 jwerner 4.0K Aug  3 13:47 [01;34m.oh-my-zsh[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  5 13:24 [01;34m.paktahn[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  5 12:24 [01;34m.pip[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.pki[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 12:42 [01;34m.plotly[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  7 23:36 [01;34m.pub-cache[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 16 18:58 [01;34m.rbenv[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  4 14:59 [01;34m.smartgit[0m
+drwx------   2 jwerner 4.0K Jun 29 21:27 [01;34m.ssh[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  4 15:00 [01;34m.subversion[0m
+drwx------   3 jwerner 4.0K Jun 20 16:17 [01;34m.telegram[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  7 23:04 [01;34m.templates[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:23 [01;34m.testapriori[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:24 [01;34m.testapriori2[0m
+drwx-----T   3 jwerner 4.0K Jun 20 02:57 [37;44m.texlive[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:46 [01;34m.thumbnails[0m
+drwx------   3 jwerner 4.0K Jun 11 16:33 [01;34m.thunderbird[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 19:08 [01;34m.urxvt[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 26 11:46 [01;34m.vagrant[0m
+drwxr-xr-x  11 jwerner 4.0K Jul 13 15:56 [01;34m.vim[0m
+drwxr-xr-x   7 jwerner 4.0K Aug  7 22:58 [01;34m.virtualenvs[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 28 21:14 [01;34m.vmail[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 27 00:12 [01;34m.wine[0m
+drwx------   2 jwerner 4.0K Jun 12 04:00 [01;34m.workrave[0m
+lrwxrwxrwx   1 jwerner   32 Jul  7 13:26 [01;36mAdmin[0m -> /home/jwerner/Google Drive/Admin
+lrwxrwxrwx   1 jwerner   33 Jul  7 13:23 [01;36mBackup[0m -> /home/jwerner/Google Drive/Backup
+lrwxrwxrwx   1 jwerner    1 Jul 18 12:16 [01;36mbg-install[0m -> .
+lrwxrwxrwx   1 jwerner   34 Jun 24 11:57 [01;36mBücher[0m -> /home/jwerner/Google Drive/Bücher
+lrwxrwxrwx   1 jwerner    3 Aug  7 22:22 [01;36mfig[0m -> fig
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mLatex[0m -> /home/jwerner/Google Drive/Latex
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mMusik[0m -> /home/jwerner/Google Drive/Musik
+-rw-r--r--   1 jwerner 5.5K Jul 27 00:10 packup-complete-20140727-0010
+-rw-r--r--   1 jwerner 5.1K Aug  3 14:55 packup-complete-20140803-1455
+lrwxrwxrwx   1 jwerner   31 Jun 24 11:57 [01;36mPDFs[0m -> /home/jwerner/Google Drive/PDFs
+-rw-r--r--   1 jwerner  23K Aug  5 12:47 tox_save
+lrwxrwxrwx   1 jwerner   30 Jun 25 13:56 [01;36mtxt[0m -> /home/jwerner/Google Drive/txt
+lrwxrwxrwx   1 jwerner   30 Jun 24 11:57 [01;36mUni[0m -> /home/jwerner/Google Drive/Uni
+-rw-r--r--   1 jwerner   10 Aug  5 12:47 utox_save
+-rw-r--r--   1 jwerner 4.8K Jul 26 11:43 Vagrantfile
+-rw-r--r--   1 jwerner 136K Jul  7 23:01 vilog
+lrwxrwxrwx   1 jwerner   34 Jul 18 12:01 [01;36mwine-progs[0m -> .wine/drive_c/Program Files (x86)/
+lrwxrwxrwx   1 jwerner   49 Jun 20 19:25 [01;36m..gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/.gtkrc-2.0.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 20 19:26 [01;36m.gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+-rw-r--r--   1 jwerner  31K Aug  7 23:36 .zcompdump-manjaro-5.0.5
+lrwxrwxrwx   1 jwerner   41 Jul  7 22:27 [01;36m.after[0m -> /home/jwerner/.dotfiles/vim/after.symlink
+lrwxrwxrwx   1 jwerner   35 Jun 11 14:55 [01;36m.vim.backup[0m -> /home/jwerner/.dotfiles/vim.symlink
+-rw-r--r--   1 jwerner  261 Jun  7 15:30 .xinitrc.backup
+-rw-r--r--   1 jwerner 2.4K Jun 21 00:12 .fzf.bash
+-rw-------   1 jwerner  193 Jun 11 14:45 .bash_history
+-rw-r--r--   1 jwerner   21 May 26 21:40 .bash_logout
+-rw-r--r--   1 jwerner   57 May 26 21:40 .bash_profile
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .bashrc
+lrwxrwxrwx   1 jwerner   42 Jun 29 22:04 [01;36m..bitbucket[0m -> /home/jwerner/.dotfiles/.bitbucket.symlink
+-rw-r--r--   1 jwerner  860 Jul 10 21:10 om.clj
+lrwxrwxrwx   1 jwerner   48 Jun 11 16:30 [01;36m.i3status.conf[0m -> /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 25 16:41 [01;36m.tmux.conf[0m -> /home/jwerner/.dotfiles/system/tmux.conf.symlink
+-rw-r--r--   1 jwerner   62 Jun  7 15:24 .conkyrc
+-rw-r--r--   1 jwerner  29K Aug  1 19:52 lp.csv
+lrwxrwxrwx   1 jwerner   37 Jun 11 15:15 [01;36m.ctags[0m -> /home/jwerner/.dotfiles/ctags.symlink
+-rw-r--r--   1 jwerner   14 Aug  7 23:44 .cwd
+-rw-------   1 jwerner   28 Aug  3 19:08 .dmrc
+lrwxrwxrwx   1 jwerner   38 Aug  3 13:44 [01;36m.docker[0m -> /home/jwerner/.dotfiles/docker.symlink
+-rw-------   1 jwerner   16 Jun 11 14:00 .esd_auth
+-rw-r--r--   1 jwerner   81 Aug  3 19:08 .fehbg
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitconfig[0m -> /home/jwerner/.dotfiles/git/gitconfig.symlink
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitignore[0m -> /home/jwerner/.dotfiles/git/gitignore.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 29 22:21 [01;36m.git_template[0m -> /home/jwerner/.dotfiles/git/git_template.symlink
+-rw-------   1 jwerner   69 Jun 15 12:54 .grive
+-rw-r--r--   1 jwerner  335 Aug  5 11:32 .gtk-bookmarks
+lrwxrwxrwx   1 jwerner   42 Jun 11 15:15 [01;36m.gvimrc[0m -> /home/jwerner/.dotfiles/vim/gvimrc.symlink
+lrwxrwxrwx   1 jwerner   37 Jun 11 16:30 [01;36m.i3[0m -> /home/jwerner/.dotfiles/i3/i3.symlink
+-rw-------   1 jwerner 6.0K Aug  3 19:08 .ICEauthority
+-rw-r--r--   1 jwerner 797M Jul 26 23:30 nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+-rw-r--r--   1 jwerner 797M Jul 26 12:10 nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 294M Jul 27 11:40 nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 368K Jul 17 15:02 main.jpg
+-rw-r--r--   1 jwerner 1.2K Jul 10 21:12 om.js
+-rw-r--r--   1 jwerner 1.1K Jun 25 16:53 .julia_history2
+-rw-r--r--   1 jwerner  45K Jul 27 11:40 workman.iso15.kmap
+-rw-------   1 jwerner   35 Aug  3 15:58 .lesshst
+-rw-r-----   1 jwerner    0 Jul  7 13:12 .gksu.lock
+-rw-r--r--   1 jwerner 3.1K Jun 12 11:08 .bzr.log
+-rw-r--r--   1 jwerner    0 Jul 18 11:06 GemRB.log
+-rw-r--r--   1 jwerner  324 Jun 19 20:22 .Space2Ctrl.log
+-rw-r--r--   1 jwerner 1.5K Aug  7 23:16 .packages.md
+-rw-r--r--   1 jwerner 1.1K Aug  7 23:17 .packages.old
+lrwxrwxrwx   1 jwerner   51 Jun 11 15:15 [01;36m.Xmodmap.orig[0m -> /home/jwerner/.dotfiles/system/Xmodmap.orig.symlink
+-rw-r--r--   1 jwerner 8.0M Jul 11 15:53 ClojureScript- Up and Running.pdf
+-rw-r--r--   1 jwerner  22K Aug  1 10:34 Rechnungsnr. 24 - Sebastian Bosum.pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:22 Untitled spreadsheet - Sheet1 (1).pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:21 Untitled spreadsheet - Sheet1.pdf
+lrwxrwxrwx   1 jwerner   45 Jun 24 12:27 [01;36m.ranger[0m -> /home/jwerner/.dotfiles/config/ranger.symlink
+-rw-r--r--   1 jwerner   10 Aug  6 23:36 site.retry
+-rw-r--r--   1 jwerner   10 Aug  6 23:02 vim.retry
+-rw-r--r--   1 jwerner  456 Jul 26 22:51 setup.sh
+lrwxrwxrwx   1 jwerner   42 Jul  1 14:32 [01;36m.tmuxinator[0m -> /home/jwerner/.dotfiles/tmuxinator.symlink
+lrwxrwxrwx   1 jwerner   35 Aug  7 23:32 [01;36m.vex[0m -> /home/jwerner/.dotfiles/vex.symlink
+-rw-------   1 jwerner  32K Aug  7 23:35 .viminfo
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.vimrc[0m -> /home/jwerner/.dotfiles/vim/vimrc.symlink
+-rw-------   1 jwerner  170 Aug  3 19:08 .Xauthority
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xcape[0m -> /home/jwerner/.dotfiles/system/xcape.symlink
+-rw-r--r--   1 jwerner 2.0M Jul 17 15:02 main.xcf
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.Xclients[0m
+-rw-------   1 jwerner  531 Jun 20 03:01 .xdvirc
+lrwxrwxrwx   1 jwerner   44 Jun 29 22:05 [01;36m.xfce4[0m -> /home/jwerner/.dotfiles/config/xfce4.symlink
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xinit[0m -> /home/jwerner/.dotfiles/system/xinit.symlink
+-rw-r--r--   1 jwerner  489 Jun 11 17:12 .xinitrc
+lrwxrwxrwx   1 jwerner   46 Jun 11 14:55 [01;36m.Xmodmap[0m -> /home/jwerner/.dotfiles/system/Xmodmap.symlink
+-rw-r--r--   1 jwerner  258 Jun  7 15:30 .xprofile
+lrwxrwxrwx   1 jwerner   49 Jun 24 14:50 [01;36m.Xresources[0m -> /home/jwerner/.dotfiles/system/Xresources.symlink
+-rw-r--r--   1 jwerner 7.7K Jun 16 13:32 .xscreensaver
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.xsession[0m
+-rw-r--r--   1 jwerner 342K Aug  7 23:30 .xsession-errors
+-rw-r--r--   1 jwerner  32K Aug  7 23:36 .zcompdump
+-rw-r--r--   1 jwerner 338K Jul 13 17:51 modern_javascript_scripts.zip
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .fzf.zsh
+lrwxrwxrwx   1 jwerner   45 Jul 26 23:58 [01;36m.zshenv[0m -> /home/jwerner/.dotfiles/system/zshenv.symlink
+-rw-------   1 jwerner 216K Aug  7 23:44 .zsh_history
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.zshrc[0m -> /home/jwerner/.dotfiles/zsh/zshrc.symlink
+-rw-r--r--   1 jwerner   17 Jul 26 11:35 .zsh-update
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=[H[2J[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[Kl.[?1l>
+]2;ls --color=tty -oa -hX --group-directories-firsttotal 1.9G
+drwxr-xr-x   6 jwerner 4.0K Jul 15 17:08 [0m[01;34mAngularFun[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 23:18 [01;34mansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  7 13:24 [01;34mbackup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 11:07 [01;34mbg[0m
+drwx------   2 jwerner 4.0K Jul 18 11:06 [01;34mCache[0m
+drwx------   2 jwerner 4.0K Jul 18 14:40 [01;34mCache2[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 17 16:10 [01;34mDesktop[0m
+drwxr-xr-x  19 jwerner 4.0K Jul 17 11:37 [01;34mdev[0m
+drwxr-xr-x  17 jwerner 4.0K Aug  3 18:57 [01;34mdocker[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  7 13:18 [01;34mDownloads[0m
+drwxr-xr-x  16 jwerner 4.0K Aug  1 09:46 [01;34mGoogle Drive[0m
+drwxr-xr-x   6 jwerner 4.0K Jul 14 14:57 [01;34mLightTable[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 20:36 [01;34mlt-cljs-tutorial[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 11:50 [01;34mnixbox[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  3 19:28 [01;34mnode_modules[0m
+drwxr-xr-x  15 jwerner 4.0K Jun 24 11:57 [01;34mold[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 17:41 [01;34mPictures[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  4 13:26 [01;34mplayground[0m
+drwxr-xr-x   7 jwerner 4.0K Jul  3 09:29 [01;34mrepos[0m
+drwxr-xr-x   8 jwerner 4.0K Jul 17 13:24 [01;34mtmp[0m
+drwx------   4 jwerner 4.0K Jul 26 12:11 [01;34mVirtualBox VMs[0m
+drwxr-xr-x   5 jwerner 4.0K Jul 14 13:00 [01;34mycm_build[0m
+drwx------  91 jwerner 4.0K Aug  7 23:44 [01;34m.[0m
+drwxr-xr-x   3 root    4.0K Jun 11 13:58 [01;34m..[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 26 23:25 [01;34m.gstreamer-0.10[0m
+drwxr-xr-x  24 jwerner 4.0K Jul 18 16:43 [01;34m.gimp-2.8[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.adobe[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:19 [01;34m.ansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 20 00:37 [01;34m.atom[0m
+drwxr-xr-x  13 jwerner 4.0K Jul  3 09:29 [01;34m.dotfiles.backup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  1 14:31 [01;34m.bin[0m
+drwxr-xr-x   8 jwerner 4.0K Jul  9 15:32 [01;34m.cabal[0m
+drwxr-xr-x  25 jwerner 4.0K Aug  7 21:34 [01;34m.cache[0m
+drwxr-xr-x  43 jwerner 4.0K Aug  6 11:52 [01;34m.config[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 15 09:38 [01;34m.copy[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 23:07 [01;34m.vagrant.d[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  2 13:58 [01;34m.dartEditor[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  2 18:10 [01;34m.dartium[0m
+drwx------   3 jwerner 4.0K Jun 11 14:00 [01;34m.dbus[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 16 19:19 [01;34m.divshot[0m
+drwxr-xr-x  18 jwerner 4.0K Aug  7 23:36 [01;34m.dotfiles[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 11 16:59 [01;34m.dotfiles-deprecated[0m
+drwx------   5 jwerner 4.0K Aug  3 19:08 [01;34m.dropbox[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 21 23:23 [01;34m.dropbox-dist[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 30 20:27 [01;34m.eclipse[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 12:49 [01;34m.fontconfig[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 21 00:12 [01;34m.fzf[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 28 21:10 [01;34m.gem[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 14:13 [01;34m.gemrb[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  9 14:58 [01;34m.ghc[0m
+drwx------   2 jwerner 4.0K Jul 17 14:35 [01;34m.git-credential-cache[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.gnome[0m
+drwx------   3 jwerner 4.0K Jul  4 11:38 [01;34m.gnome2[0m
+drwx------   2 jwerner 4.0K Jun 12 11:06 [01;34m.gnome2_private[0m
+drwx------   3 jwerner 4.0K Aug  3 19:08 [01;34m.gnupg[0m
+drwx------   2 jwerner 4.0K Jul  7 12:26 [01;34m.grsync[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 18 10:15 [01;34m.ipython[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 16:42 [01;34m.java[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 16 15:20 [01;34m.julia[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 21:45 [01;34m.lein[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  5 13:16 [01;34m.local[0m
+drwxr-xr-x   6 jwerner 4.0K Jul  7 12:05 [01;34m.luckyBackup[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 14 14:12 [01;34m.m2[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.macromedia[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:01 [01;34m.mozilla[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 15 15:13 [01;34m.node-gyp[0m
+drwxr-xr-x 296 jwerner  36K Aug  3 19:34 [01;34m.npm[0m
+drwxr-xr-x  11 jwerner 4.0K Aug  3 13:47 [01;34m.oh-my-zsh[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  5 13:24 [01;34m.paktahn[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  5 12:24 [01;34m.pip[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.pki[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 12:42 [01;34m.plotly[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  7 23:36 [01;34m.pub-cache[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 16 18:58 [01;34m.rbenv[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  4 14:59 [01;34m.smartgit[0m
+drwx------   2 jwerner 4.0K Jun 29 21:27 [01;34m.ssh[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  4 15:00 [01;34m.subversion[0m
+drwx------   3 jwerner 4.0K Jun 20 16:17 [01;34m.telegram[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  7 23:04 [01;34m.templates[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:23 [01;34m.testapriori[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:24 [01;34m.testapriori2[0m
+drwx-----T   3 jwerner 4.0K Jun 20 02:57 [37;44m.texlive[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:46 [01;34m.thumbnails[0m
+drwx------   3 jwerner 4.0K Jun 11 16:33 [01;34m.thunderbird[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 19:08 [01;34m.urxvt[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 26 11:46 [01;34m.vagrant[0m
+drwxr-xr-x  11 jwerner 4.0K Jul 13 15:56 [01;34m.vim[0m
+drwxr-xr-x   7 jwerner 4.0K Aug  7 22:58 [01;34m.virtualenvs[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 28 21:14 [01;34m.vmail[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 27 00:12 [01;34m.wine[0m
+drwx------   2 jwerner 4.0K Jun 12 04:00 [01;34m.workrave[0m
+lrwxrwxrwx   1 jwerner   32 Jul  7 13:26 [01;36mAdmin[0m -> /home/jwerner/Google Drive/Admin
+lrwxrwxrwx   1 jwerner   33 Jul  7 13:23 [01;36mBackup[0m -> /home/jwerner/Google Drive/Backup
+lrwxrwxrwx   1 jwerner    1 Jul 18 12:16 [01;36mbg-install[0m -> .
+lrwxrwxrwx   1 jwerner   34 Jun 24 11:57 [01;36mBücher[0m -> /home/jwerner/Google Drive/Bücher
+lrwxrwxrwx   1 jwerner    3 Aug  7 22:22 [01;36mfig[0m -> fig
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mLatex[0m -> /home/jwerner/Google Drive/Latex
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mMusik[0m -> /home/jwerner/Google Drive/Musik
+-rw-r--r--   1 jwerner 5.5K Jul 27 00:10 packup-complete-20140727-0010
+-rw-r--r--   1 jwerner 5.1K Aug  3 14:55 packup-complete-20140803-1455
+lrwxrwxrwx   1 jwerner   31 Jun 24 11:57 [01;36mPDFs[0m -> /home/jwerner/Google Drive/PDFs
+-rw-r--r--   1 jwerner  23K Aug  5 12:47 tox_save
+lrwxrwxrwx   1 jwerner   30 Jun 25 13:56 [01;36mtxt[0m -> /home/jwerner/Google Drive/txt
+lrwxrwxrwx   1 jwerner   30 Jun 24 11:57 [01;36mUni[0m -> /home/jwerner/Google Drive/Uni
+-rw-r--r--   1 jwerner   10 Aug  5 12:47 utox_save
+-rw-r--r--   1 jwerner 4.8K Jul 26 11:43 Vagrantfile
+-rw-r--r--   1 jwerner 136K Jul  7 23:01 vilog
+lrwxrwxrwx   1 jwerner   34 Jul 18 12:01 [01;36mwine-progs[0m -> .wine/drive_c/Program Files (x86)/
+lrwxrwxrwx   1 jwerner   49 Jun 20 19:25 [01;36m..gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/.gtkrc-2.0.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 20 19:26 [01;36m.gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+-rw-r--r--   1 jwerner  31K Aug  7 23:36 .zcompdump-manjaro-5.0.5
+lrwxrwxrwx   1 jwerner   41 Jul  7 22:27 [01;36m.after[0m -> /home/jwerner/.dotfiles/vim/after.symlink
+lrwxrwxrwx   1 jwerner   35 Jun 11 14:55 [01;36m.vim.backup[0m -> /home/jwerner/.dotfiles/vim.symlink
+-rw-r--r--   1 jwerner  261 Jun  7 15:30 .xinitrc.backup
+-rw-r--r--   1 jwerner 2.4K Jun 21 00:12 .fzf.bash
+-rw-------   1 jwerner  193 Jun 11 14:45 .bash_history
+-rw-r--r--   1 jwerner   21 May 26 21:40 .bash_logout
+-rw-r--r--   1 jwerner   57 May 26 21:40 .bash_profile
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .bashrc
+lrwxrwxrwx   1 jwerner   42 Jun 29 22:04 [01;36m..bitbucket[0m -> /home/jwerner/.dotfiles/.bitbucket.symlink
+-rw-r--r--   1 jwerner  860 Jul 10 21:10 om.clj
+lrwxrwxrwx   1 jwerner   48 Jun 11 16:30 [01;36m.i3status.conf[0m -> /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 25 16:41 [01;36m.tmux.conf[0m -> /home/jwerner/.dotfiles/system/tmux.conf.symlink
+-rw-r--r--   1 jwerner   62 Jun  7 15:24 .conkyrc
+-rw-r--r--   1 jwerner  29K Aug  1 19:52 lp.csv
+lrwxrwxrwx   1 jwerner   37 Jun 11 15:15 [01;36m.ctags[0m -> /home/jwerner/.dotfiles/ctags.symlink
+-rw-r--r--   1 jwerner   14 Aug  7 23:44 .cwd
+-rw-------   1 jwerner   28 Aug  3 19:08 .dmrc
+lrwxrwxrwx   1 jwerner   38 Aug  3 13:44 [01;36m.docker[0m -> /home/jwerner/.dotfiles/docker.symlink
+-rw-------   1 jwerner   16 Jun 11 14:00 .esd_auth
+-rw-r--r--   1 jwerner   81 Aug  3 19:08 .fehbg
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitconfig[0m -> /home/jwerner/.dotfiles/git/gitconfig.symlink
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitignore[0m -> /home/jwerner/.dotfiles/git/gitignore.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 29 22:21 [01;36m.git_template[0m -> /home/jwerner/.dotfiles/git/git_template.symlink
+-rw-------   1 jwerner   69 Jun 15 12:54 .grive
+-rw-r--r--   1 jwerner  335 Aug  5 11:32 .gtk-bookmarks
+lrwxrwxrwx   1 jwerner   42 Jun 11 15:15 [01;36m.gvimrc[0m -> /home/jwerner/.dotfiles/vim/gvimrc.symlink
+lrwxrwxrwx   1 jwerner   37 Jun 11 16:30 [01;36m.i3[0m -> /home/jwerner/.dotfiles/i3/i3.symlink
+-rw-------   1 jwerner 6.0K Aug  3 19:08 .ICEauthority
+-rw-r--r--   1 jwerner 797M Jul 26 23:30 nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+-rw-r--r--   1 jwerner 797M Jul 26 12:10 nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 294M Jul 27 11:40 nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 368K Jul 17 15:02 main.jpg
+-rw-r--r--   1 jwerner 1.2K Jul 10 21:12 om.js
+-rw-r--r--   1 jwerner 1.1K Jun 25 16:53 .julia_history2
+-rw-r--r--   1 jwerner  45K Jul 27 11:40 workman.iso15.kmap
+-rw-------   1 jwerner   35 Aug  3 15:58 .lesshst
+-rw-r-----   1 jwerner    0 Jul  7 13:12 .gksu.lock
+-rw-r--r--   1 jwerner 3.1K Jun 12 11:08 .bzr.log
+-rw-r--r--   1 jwerner    0 Jul 18 11:06 GemRB.log
+-rw-r--r--   1 jwerner  324 Jun 19 20:22 .Space2Ctrl.log
+-rw-r--r--   1 jwerner 1.5K Aug  7 23:16 .packages.md
+-rw-r--r--   1 jwerner 1.1K Aug  7 23:17 .packages.old
+lrwxrwxrwx   1 jwerner   51 Jun 11 15:15 [01;36m.Xmodmap.orig[0m -> /home/jwerner/.dotfiles/system/Xmodmap.orig.symlink
+-rw-r--r--   1 jwerner 8.0M Jul 11 15:53 ClojureScript- Up and Running.pdf
+-rw-r--r--   1 jwerner  22K Aug  1 10:34 Rechnungsnr. 24 - Sebastian Bosum.pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:22 Untitled spreadsheet - Sheet1 (1).pdf
+-rw-r--r--   1 jwerner  17K Jul 16 16:21 Untitled spreadsheet - Sheet1.pdf
+lrwxrwxrwx   1 jwerner   45 Jun 24 12:27 [01;36m.ranger[0m -> /home/jwerner/.dotfiles/config/ranger.symlink
+-rw-r--r--   1 jwerner   10 Aug  6 23:36 site.retry
+-rw-r--r--   1 jwerner   10 Aug  6 23:02 vim.retry
+-rw-r--r--   1 jwerner  456 Jul 26 22:51 setup.sh
+lrwxrwxrwx   1 jwerner   42 Jul  1 14:32 [01;36m.tmuxinator[0m -> /home/jwerner/.dotfiles/tmuxinator.symlink
+lrwxrwxrwx   1 jwerner   35 Aug  7 23:32 [01;36m.vex[0m -> /home/jwerner/.dotfiles/vex.symlink
+-rw-------   1 jwerner  32K Aug  7 23:35 .viminfo
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.vimrc[0m -> /home/jwerner/.dotfiles/vim/vimrc.symlink
+-rw-------   1 jwerner  170 Aug  3 19:08 .Xauthority
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xcape[0m -> /home/jwerner/.dotfiles/system/xcape.symlink
+-rw-r--r--   1 jwerner 2.0M Jul 17 15:02 main.xcf
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.Xclients[0m
+-rw-------   1 jwerner  531 Jun 20 03:01 .xdvirc
+lrwxrwxrwx   1 jwerner   44 Jun 29 22:05 [01;36m.xfce4[0m -> /home/jwerner/.dotfiles/config/xfce4.symlink
+lrwxrwxrwx   1 jwerner   44 Jun 11 15:15 [01;36m.xinit[0m -> /home/jwerner/.dotfiles/system/xinit.symlink
+-rw-r--r--   1 jwerner  489 Jun 11 17:12 .xinitrc
+lrwxrwxrwx   1 jwerner   46 Jun 11 14:55 [01;36m.Xmodmap[0m -> /home/jwerner/.dotfiles/system/Xmodmap.symlink
+-rw-r--r--   1 jwerner  258 Jun  7 15:30 .xprofile
+lrwxrwxrwx   1 jwerner   49 Jun 24 14:50 [01;36m.Xresources[0m -> /home/jwerner/.dotfiles/system/Xresources.symlink
+-rw-r--r--   1 jwerner 7.7K Jun 16 13:32 .xscreensaver
+-rwxr-xr-x   1 jwerner  100 Jun  7 15:30 [01;32m.xsession[0m
+-rw-r--r--   1 jwerner 342K Aug  7 23:30 .xsession-errors
+-rw-r--r--   1 jwerner  32K Aug  7 23:36 .zcompdump
+-rw-r--r--   1 jwerner 338K Jul 13 17:51 modern_javascript_scripts.zip
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .fzf.zsh
+lrwxrwxrwx   1 jwerner   45 Jul 26 23:58 [01;36m.zshenv[0m -> /home/jwerner/.dotfiles/system/zshenv.symlink
+-rw-------   1 jwerner 216K Aug  7 23:44 .zsh_history
+lrwxrwxrwx   1 jwerner   41 Jun 11 14:55 [01;36m.zshrc[0m -> /home/jwerner/.dotfiles/zsh/zshrc.symlink
+-rw-r--r--   1 jwerner   17 Jul 26 11:35 .zsh-update
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=ddot p .packages.md[?1l>
+]2;dot .packages.md
+  [ [00;34m..[0m ] installing dotfiles[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/docker.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/zshenv.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/tmux.conf.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/xcape.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xmodmap.orig.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xresources.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xmodmap.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/zsh/zshrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/i3/i3.symlink
+[2K  [ [00;32mOK[0m ] linked /home/jwerner/.dotfiles/packages.md.symlink to /home/jwerner/.packages.md
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/config/xfce4.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/config/ranger.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/ctags.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vex.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/gvimrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/after.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/vimrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/git_template.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/gitconfig.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/gitignore.symlink
+
+  All installed!
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=dot .packages.md  old[?1l>
+]2;dot .packages.old
+  [ [00;34m..[0m ] installing dotfiles[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/docker.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/zshenv.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/tmux.conf.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/xcape.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xmodmap.orig.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xresources.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/system/Xmodmap.symlink
+[2K  [ [00;32mOK[0m ] linked /home/jwerner/.dotfiles/packages.old.symlink to /home/jwerner/.packages.old
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/zsh/zshrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/i3/i3.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/packages.md.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/config/xfce4.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/config/ranger.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/ctags.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vex.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/gvimrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/after.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/vim/vimrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/git_template.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/gitconfig.symlink
+[2K  [ [00;32mOK[0m ] skipped /home/jwerner/.dotfiles/git/gitignore.symlink
+
+  All installed!
+[1m[7m%[27m[1m[0m                                                                                        ]2;jwerner@manjaro: ~[0m[27m[24m[J[01;32m➜ [01;32m [36m~ [01;34m[01;34m [00m[K[?1h=ll.[?1l>
+]2;ls --color=tty -oa -hX --group-directories-firsttotal 1.9G
+drwxr-xr-x   6 jwerner 4.0K Jul 15 17:08 [0m[01;34mAngularFun[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 23:18 [01;34mansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  7 13:24 [01;34mbackup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 11:07 [01;34mbg[0m
+drwx------   2 jwerner 4.0K Jul 18 11:06 [01;34mCache[0m
+drwx------   2 jwerner 4.0K Jul 18 14:40 [01;34mCache2[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 17 16:10 [01;34mDesktop[0m
+drwxr-xr-x  19 jwerner 4.0K Jul 17 11:37 [01;34mdev[0m
+drwxr-xr-x  17 jwerner 4.0K Aug  3 18:57 [01;34mdocker[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  7 13:18 [01;34mDownloads[0m
+drwxr-xr-x  16 jwerner 4.0K Aug  1 09:46 [01;34mGoogle Drive[0m
+drwxr-xr-x   6 jwerner 4.0K Jul 14 14:57 [01;34mLightTable[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 20:36 [01;34mlt-cljs-tutorial[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 11:50 [01;34mnixbox[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  3 19:28 [01;34mnode_modules[0m
+drwxr-xr-x  15 jwerner 4.0K Jun 24 11:57 [01;34mold[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 17:41 [01;34mPictures[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  4 13:26 [01;34mplayground[0m
+drwxr-xr-x   7 jwerner 4.0K Jul  3 09:29 [01;34mrepos[0m
+drwxr-xr-x   8 jwerner 4.0K Jul 17 13:24 [01;34mtmp[0m
+drwx------   4 jwerner 4.0K Jul 26 12:11 [01;34mVirtualBox VMs[0m
+drwxr-xr-x   5 jwerner 4.0K Jul 14 13:00 [01;34mycm_build[0m
+drwx------  91 jwerner 4.0K Aug  7 23:45 [01;34m.[0m
+drwxr-xr-x   3 root    4.0K Jun 11 13:58 [01;34m..[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 26 23:25 [01;34m.gstreamer-0.10[0m
+drwxr-xr-x  24 jwerner 4.0K Jul 18 16:43 [01;34m.gimp-2.8[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.adobe[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:19 [01;34m.ansible[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 20 00:37 [01;34m.atom[0m
+drwxr-xr-x  13 jwerner 4.0K Jul  3 09:29 [01;34m.dotfiles.backup[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  1 14:31 [01;34m.bin[0m
+drwxr-xr-x   8 jwerner 4.0K Jul  9 15:32 [01;34m.cabal[0m
+drwxr-xr-x  25 jwerner 4.0K Aug  7 21:34 [01;34m.cache[0m
+drwxr-xr-x  43 jwerner 4.0K Aug  6 11:52 [01;34m.config[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 15 09:38 [01;34m.copy[0m
+drwxr-xr-x   7 jwerner 4.0K Jul 26 23:07 [01;34m.vagrant.d[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  2 13:58 [01;34m.dartEditor[0m
+drwxr-xr-x   4 jwerner 4.0K Jul  2 18:10 [01;34m.dartium[0m
+drwx------   3 jwerner 4.0K Jun 11 14:00 [01;34m.dbus[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 16 19:19 [01;34m.divshot[0m
+drwxr-xr-x  18 jwerner 4.0K Aug  7 23:45 [01;34m.dotfiles[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 11 16:59 [01;34m.dotfiles-deprecated[0m
+drwx------   5 jwerner 4.0K Aug  3 19:08 [01;34m.dropbox[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 21 23:23 [01;34m.dropbox-dist[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 30 20:27 [01;34m.eclipse[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 12:49 [01;34m.fontconfig[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 21 00:12 [01;34m.fzf[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 28 21:10 [01;34m.gem[0m
+drwxr-xr-x   2 jwerner 4.0K Jul 18 14:13 [01;34m.gemrb[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  9 14:58 [01;34m.ghc[0m
+drwx------   2 jwerner 4.0K Jul 17 14:35 [01;34m.git-credential-cache[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.gnome[0m
+drwx------   3 jwerner 4.0K Jul  4 11:38 [01;34m.gnome2[0m
+drwx------   2 jwerner 4.0K Jun 12 11:06 [01;34m.gnome2_private[0m
+drwx------   3 jwerner 4.0K Aug  3 19:08 [01;34m.gnupg[0m
+drwx------   2 jwerner 4.0K Jul  7 12:26 [01;34m.grsync[0m
+drwxr-xr-x   6 jwerner 4.0K Jun 18 10:15 [01;34m.ipython[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 11 16:42 [01;34m.java[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 16 15:20 [01;34m.julia[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 10 21:45 [01;34m.lein[0m
+drwxr-xr-x   5 jwerner 4.0K Jul  5 13:16 [01;34m.local[0m
+drwxr-xr-x   6 jwerner 4.0K Jul  7 12:05 [01;34m.luckyBackup[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 14 14:12 [01;34m.m2[0m
+drwx------   3 jwerner 4.0K Jun 11 14:06 [01;34m.macromedia[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:01 [01;34m.mozilla[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 15 15:13 [01;34m.node-gyp[0m
+drwxr-xr-x 296 jwerner  36K Aug  3 19:34 [01;34m.npm[0m
+drwxr-xr-x  11 jwerner 4.0K Aug  3 13:47 [01;34m.oh-my-zsh[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  5 13:24 [01;34m.paktahn[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  5 12:24 [01;34m.pip[0m
+drwx------   3 jwerner 4.0K Jun 11 14:10 [01;34m.pki[0m
+drwxr-xr-x   2 jwerner 4.0K Jun 30 12:42 [01;34m.plotly[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  7 23:36 [01;34m.pub-cache[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 16 18:58 [01;34m.rbenv[0m
+drwxr-xr-x   3 jwerner 4.0K Jul  4 14:59 [01;34m.smartgit[0m
+drwx------   2 jwerner 4.0K Jun 29 21:27 [01;34m.ssh[0m
+drwxr-xr-x   2 jwerner 4.0K Jul  4 15:00 [01;34m.subversion[0m
+drwx------   3 jwerner 4.0K Jun 20 16:17 [01;34m.telegram[0m
+drwxr-xr-x   4 jwerner 4.0K Aug  7 23:04 [01;34m.templates[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:23 [01;34m.testapriori[0m
+drwxr-xr-x   3 jwerner 4.0K Aug  6 22:24 [01;34m.testapriori2[0m
+drwx-----T   3 jwerner 4.0K Jun 20 02:57 [37;44m.texlive[0m
+drwxr-xr-x   4 jwerner 4.0K Jun 11 14:46 [01;34m.thumbnails[0m
+drwx------   3 jwerner 4.0K Jun 11 16:33 [01;34m.thunderbird[0m
+drwxr-xr-x   2 jwerner 4.0K Aug  3 19:08 [01;34m.urxvt[0m
+drwxr-xr-x   3 jwerner 4.0K Jul 26 11:46 [01;34m.vagrant[0m
+drwxr-xr-x  11 jwerner 4.0K Jul 13 15:56 [01;34m.vim[0m
+drwxr-xr-x   7 jwerner 4.0K Aug  7 22:58 [01;34m.virtualenvs[0m
+drwxr-xr-x   3 jwerner 4.0K Jun 28 21:14 [01;34m.vmail[0m
+drwxr-xr-x   4 jwerner 4.0K Jul 27 00:12 [01;34m.wine[0m
+drwx------   2 jwerner 4.0K Jun 12 04:00 [01;34m.workrave[0m
+lrwxrwxrwx   1 jwerner   32 Jul  7 13:26 [01;36mAdmin[0m -> /home/jwerner/Google Drive/Admin
+lrwxrwxrwx   1 jwerner   33 Jul  7 13:23 [01;36mBackup[0m -> /home/jwerner/Google Drive/Backup
+lrwxrwxrwx   1 jwerner    1 Jul 18 12:16 [01;36mbg-install[0m -> .
+lrwxrwxrwx   1 jwerner   34 Jun 24 11:57 [01;36mBücher[0m -> /home/jwerner/Google Drive/Bücher
+lrwxrwxrwx   1 jwerner    3 Aug  7 22:22 [01;36mfig[0m -> fig
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mLatex[0m -> /home/jwerner/Google Drive/Latex
+lrwxrwxrwx   1 jwerner   32 Jun 24 11:57 [01;36mMusik[0m -> /home/jwerner/Google Drive/Musik
+-rw-r--r--   1 jwerner 5.5K Jul 27 00:10 packup-complete-20140727-0010
+-rw-r--r--   1 jwerner 5.1K Aug  3 14:55 packup-complete-20140803-1455
+lrwxrwxrwx   1 jwerner   31 Jun 24 11:57 [01;36mPDFs[0m -> /home/jwerner/Google Drive/PDFs
+-rw-r--r--   1 jwerner  23K Aug  5 12:47 tox_save
+lrwxrwxrwx   1 jwerner   30 Jun 25 13:56 [01;36mtxt[0m -> /home/jwerner/Google Drive/txt
+lrwxrwxrwx   1 jwerner   30 Jun 24 11:57 [01;36mUni[0m -> /home/jwerner/Google Drive/Uni
+-rw-r--r--   1 jwerner   10 Aug  5 12:47 utox_save
+-rw-r--r--   1 jwerner 4.8K Jul 26 11:43 Vagrantfile
+-rw-r--r--   1 jwerner 136K Jul  7 23:01 vilog
+lrwxrwxrwx   1 jwerner   34 Jul 18 12:01 [01;36mwine-progs[0m -> .wine/drive_c/Program Files (x86)/
+lrwxrwxrwx   1 jwerner   49 Jun 20 19:25 [01;36m..gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/.gtkrc-2.0.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 20 19:26 [01;36m.gtkrc-2.0[0m -> /home/jwerner/.dotfiles/system/gtkrc-2.0.symlink
+-rw-r--r--   1 jwerner  31K Aug  7 23:36 .zcompdump-manjaro-5.0.5
+lrwxrwxrwx   1 jwerner   41 Jul  7 22:27 [01;36m.after[0m -> /home/jwerner/.dotfiles/vim/after.symlink
+lrwxrwxrwx   1 jwerner   35 Jun 11 14:55 [01;36m.vim.backup[0m -> /home/jwerner/.dotfiles/vim.symlink
+-rw-r--r--   1 jwerner  261 Jun  7 15:30 .xinitrc.backup
+-rw-r--r--   1 jwerner 2.4K Jun 21 00:12 .fzf.bash
+-rw-------   1 jwerner  193 Jun 11 14:45 .bash_history
+-rw-r--r--   1 jwerner   21 May 26 21:40 .bash_logout
+-rw-r--r--   1 jwerner   57 May 26 21:40 .bash_profile
+-rw-r--r--   1 jwerner 1.6K Jun 21 00:12 .bashrc
+lrwxrwxrwx   1 jwerner   42 Jun 29 22:04 [01;36m..bitbucket[0m -> /home/jwerner/.dotfiles/.bitbucket.symlink
+-rw-r--r--   1 jwerner  860 Jul 10 21:10 om.clj
+lrwxrwxrwx   1 jwerner   48 Jun 11 16:30 [01;36m.i3status.conf[0m -> /home/jwerner/.dotfiles/i3/i3status.conf.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 25 16:41 [01;36m.tmux.conf[0m -> /home/jwerner/.dotfiles/system/tmux.conf.symlink
+-rw-r--r--   1 jwerner   62 Jun  7 15:24 .conkyrc
+-rw-r--r--   1 jwerner  29K Aug  1 19:52 lp.csv
+lrwxrwxrwx   1 jwerner   37 Jun 11 15:15 [01;36m.ctags[0m -> /home/jwerner/.dotfiles/ctags.symlink
+-rw-r--r--   1 jwerner   14 Aug  7 23:44 .cwd
+-rw-------   1 jwerner   28 Aug  3 19:08 .dmrc
+lrwxrwxrwx   1 jwerner   38 Aug  3 13:44 [01;36m.docker[0m -> /home/jwerner/.dotfiles/docker.symlink
+-rw-------   1 jwerner   16 Jun 11 14:00 .esd_auth
+-rw-r--r--   1 jwerner   81 Aug  3 19:08 .fehbg
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitconfig[0m -> /home/jwerner/.dotfiles/git/gitconfig.symlink
+lrwxrwxrwx   1 jwerner   45 Jun 11 14:55 [01;36m.gitignore[0m -> /home/jwerner/.dotfiles/git/gitignore.symlink
+lrwxrwxrwx   1 jwerner   48 Jun 29 22:21 [01;36m.git_template[0m -> /home/jwerner/.dotfiles/git/git_template.symlink
+-rw-------   1 jwerner   69 Jun 15 12:54 .grive
+-rw-r--r--   1 jwerner  335 Aug  5 11:32 .gtk-bookmarks
+lrwxrwxrwx   1 jwerner   42 Jun 11 15:15 [01;36m.gvimrc[0m -> /home/jwerner/.dotfiles/vim/gvimrc.symlink
+lrwxrwxrwx   1 jwerner   37 Jun 11 16:30 [01;36m.i3[0m -> /home/jwerner/.dotfiles/i3/i3.symlink
+-rw-------   1 jwerner 6.0K Aug  3 19:08 .ICEauthority
+-rw-r--r--   1 jwerner 797M Jul 26 23:30 nixos-graphical-14.04.376.f6ad69a-x86_64-linux (1).iso
+-rw-r--r--   1 jwerner 797M Jul 26 12:10 nixos-graphical-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 294M Jul 27 11:40 nixos-minimal-14.04.376.f6ad69a-x86_64-linux.iso
+-rw-r--r--   1 jwerner 368K Jul 17 15:02 main.jpg
+-rw-r--r--   1 jwerner 1.2K Jul 10 21:12 om.js
+-rw-r--r--   1 jwerner 1.1K Jun 25 16:53 .julia_history2
+-rw-r--r--   1 jwerner  45K Jul 27 11:40 workman.iso15.kmap
+-rw-------   1 jwerner   35 Aug  3 15:58 .lesshst
+-rw-r-----   1 jwerner    0 Jul  7 13:12 .gksu.lock
+-rw-r--r--   1 jwerner 3.1K Jun 12 11:08 .bzr.log
+-rw-r--r--   1 jwerner    0 Jul 18 11:06 GemRB.log
+-rw-r--r--   1 jwerner  324 Jun 19 20:22 .Space2Ctrl.log
+lrwxrwxrwx   1 jwerner   43 Aug  7 23:45 [01;36m.packages.md[0m -> /home/jwerner/.dotfile

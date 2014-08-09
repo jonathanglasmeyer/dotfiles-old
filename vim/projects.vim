@@ -24,3 +24,10 @@ fu! RunHaskell()
     exec "!runghc %"
 endfunction
 au! BufWritePost ~/dev/haskell/fastandhard/*.hs call RunHaskell()
+
+
+au! BufRead ~/.packages.md nnoremap <buffer> <silent> <F2> :!pacman -Qi <C-r><C-w><cr>
+" au! BufWritePost ~/.packages.md exec "!sudo python2 ~/packages"
+au! BufRead ~/.packages.md nnoremap <buffer> <F3> :Packer<space>
+
+
