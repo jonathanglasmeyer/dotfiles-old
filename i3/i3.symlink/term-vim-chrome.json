@@ -11,10 +11,31 @@
             // tabbed split container with 2 children
             "border": "normal",
             "floating": "auto_off",
-            "layout": "tabbed",
+            "layout": "stacked",
             "percent": 0.5,
             "type": "con",
             "nodes": [
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 386,
+                       "width": 722,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "shell",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "instance": "^xfce4\\-terminal$",
+                       "title": "shell"
+                       // "window_role": "^xfce4\\-terminal\\-1405263469\\-130430882$"
+                       }
+                    ],
+                    "type": "con"
+                },
                 {
                     "border": "normal",
                     "floating": "auto_off",
@@ -80,27 +101,6 @@
                        {
                        "class": "^Google\\-chrome\\-stable$",
                        "instance": "^Google\\-chrome\\-stable$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "normal",
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 386,
-                       "width": 722,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "shell",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                       "class": "^Xfce4\\-terminal$",
-                       "instance": "^xfce4\\-terminal$",
-                       "title": "shell"
-                       // "window_role": "^xfce4\\-terminal\\-1405263469\\-130430882$"
                        }
                     ],
                     "type": "con"

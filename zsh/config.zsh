@@ -45,3 +45,5 @@ alias cwd='cd "$(cat ~/.cwd)"'
 # }
 
 # export PROMPT='$(virtualenv_prompt)%n@%m> ' cwd
+
+

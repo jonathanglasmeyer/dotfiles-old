@@ -375,6 +375,6 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 nnoremap <leader>! :Shell
 
 function! Packer(pkg)
-  exec "Shell packer -Ss " . a:pkg
+  exec "Runcmd packer -Ss " . a:pkg
 endfunction
 command! -nargs=1 Packer call Packer(<f-args>)

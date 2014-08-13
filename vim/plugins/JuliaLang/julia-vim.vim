@@ -1,1 +1,1 @@
-let g:julia_auto_latex_to_unicode = 1
+let g:julia_auto_latex_to_unicode = 0

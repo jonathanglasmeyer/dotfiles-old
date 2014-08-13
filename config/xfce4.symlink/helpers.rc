@@ -1,4 +1,4 @@
 FileManager=Thunar
 MailReader=thunderbird
+WebBrowser=custom-WebBrowser
 
-WebBrowser=google-chrome

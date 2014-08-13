@@ -51,7 +51,7 @@ Plugin Valloric/YouCompleteMe
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
 Plugin jpalardy/vim-slime
-
+Plugin epeli/slimux
 " Plugin SirVer/ultisnips
 " Plugin honza/vim-snippets
 
@@ -78,7 +78,7 @@ Plugin chreekat/vim-paren-crosshairs
 Plugin Yggdroot/indentLine
 Plugin gregsexton/gitv
 
-Plugin junegunn/vim-oblique
+" Plugin junegunn/vim-oblique
 Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
 

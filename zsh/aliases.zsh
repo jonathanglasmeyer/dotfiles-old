@@ -43,7 +43,7 @@ vex-build() {
 
 vex-run() {
   # run, possibly install first
-  (test -f ~/.vex/.built/$1 || vex-build $1) && vex $1 $1
+  (test -f ~/.vex/.built/$1 || vex-build $1) && vex $1 "$@"
 }
 vex-rm() {
   rm -r ~/.virtualenvs/$1
@@ -80,7 +80,7 @@ alias i='sudo packer --noconfirm'
 # alias i='sudo yum -y install'
 alias upd='sudo packer -Syu --noconfirm'
 alias u="sudo packages.py"
-alias ue="e ~/.packages.md"
+alias ue="gvim ~/.packages.md"
 alias R='reload!'
 
 
@@ -153,12 +153,14 @@ alias sessioncreate="tmux new-session -s 'session'"
 alias rake="noglob rake"
 
 # -- docker --------------------------------------------------------------------
-alias D="docker run --rm -it"
+alias docker-run='docker run --rm -v $PWD:/REPL -w=/REPL -e="HOME=/REPL" -it'
 alias Ds="docker search"
 
-
+# -- docker based apps ---------------------------------------------------------
+alias julia="docker-run ontouchstart/julia-master"
 # -- vex -----------------------------------------------------------------------
 alias fig="vex-run fig"
+
 
 
 
