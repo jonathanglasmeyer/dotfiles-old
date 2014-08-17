@@ -2,7 +2,7 @@
 from subprocess import call
 from subprocess import check_call
 import subprocess
-old_file = "/home/jwerner/.packages.old"
+# old_file = "/home/jw/.packages.old"
 
 # ----------------- functions -------------------
 def package_is_installed(package):
@@ -31,14 +31,15 @@ def update_package_file():
 
 
 # ----------- read old --------------
-with open(old_file, "r") as f:
-  packages_old = set(f.read().splitlines())
+# with open(old_file, "r") as f:
+#   packages_old = set(f.read().splitlines())
   
 # ----------- read new --------------
-with open("/home/jwerner/.packages.md", "r") as f:
+with open("/home/jw/.packages.md", "r") as f:
   packages = set([line for line in f.read().splitlines() 
                   if not (len(line) == 0 or line.startswith("#")
                     or line.startswith(">"))])
+  print packages
 
 
 to_remove = packages_old - packages

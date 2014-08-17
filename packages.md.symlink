@@ -4,38 +4,42 @@
 # themes
 > plank-theme-moka-git
 adwaita-manjaro-themes
-circle-flat-icons-git
+> circle-flat-icons-git
 faenzaflattr_darkdecoration-icon-theme
-faenza-green-icon-theme
-elementary-xfce-icons
-gtk-theme-adwaita-cupertino
-gtk-theme-ceti
-gtk-theme-elementary
+> faenza-green-icon-theme
+> elementary-xfce-icons
+> gtk-theme-adwaita-cupertino
+> gtk-theme-ceti
+> gtk-theme-elementary
 > gtk-theme-flattastic
-gtk-theme-menda
-numix-circle-icon-theme-git
-numix-manjaro-themes
-numix-themes
-kdeartwork-desktopthemes
-kdeartwork-iconthemes
-lxdm-manjaro-theme
-mdm-themes
-moka-gtk-git
-moka-icons-git
-xfce-theme-greenbird
-xfwm4-themes
-plymouth-theme-manjaro-elegant
+> gtk-theme-menda
+> numix-circle-icon-theme-git
+> numix-manjaro-themes
+> numix-themes
+> kdeartwork-desktopthemes
+> kdeartwork-iconthemes
+> lxdm-manjaro-theme
+> mdm-themes
+> moka-gtk-git
+> moka-icons-git
+> xfce-theme-greenbird
+> xfwm4-themes
+> plymouth-theme-manjaro-elegant
 
 # system
 packer
 zsh
 tmux
 tmuxinator
+pkg_scripts
 
 # wm
-i3-git
+> i3-git
+i3
 i3lock
 i3status
+perl-anyevent-i3
+perl-json-xs
 j4-dmenu-desktop-git
 
 # file system / sync
@@ -118,6 +122,7 @@ python2-pip
 python2-virtualenv
 python-pip
 
+
 # virtualisation
 docker
 vagrant
@@ -127,9 +132,12 @@ virtualbox
 firefox-i18n-en-us
 icedtea-web-java7
 flashplugin
-google-chrome
+> google-chrome
 
 #try
 chromium-plugins 
 chromium 
-# cloudprint-git
+
+#remove from manjaro base
+> libreoffice
+> thunderbird

@@ -32,12 +32,12 @@ Plugin vim-scripts/ReplaceWithRegister
 " Plugin airblade/vim-rooter
 Plugin ton/vim-bufsurf
 Plugin tpope/vim-commentary
-Plugin tpope/vim-unimpaired
+" Plugin tpope/vim-unimpaired
 Plugin tpope/vim-eunuch
 " Plugin EasyGrep
 Plugin godlygeek/tabular
 " Plugin Raimondi/delimitMate
-Plugin jiangmiao/auto-pairs
+" Plugin jiangmiao/auto-pairs
 Plugin rking/ag.vim
 Plugin tpope/vim-obsession
 Plugin tpope/vim-fugitive
@@ -50,7 +50,7 @@ Plugin Valloric/YouCompleteMe
 " Plugin Shougo/neosnippet
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
-Plugin jpalardy/vim-slime
+" Plugin jpalardy/vim-slime
 Plugin epeli/slimux
 " Plugin SirVer/ultisnips
 " Plugin honza/vim-snippets

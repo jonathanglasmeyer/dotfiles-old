@@ -207,3 +207,4 @@ set iskeyword=a-z,A-Z,_,.,39
 
 " auto reload on external change
 set autoread 
+set shell=/usr/bin/zsh

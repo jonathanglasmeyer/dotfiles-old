@@ -30,4 +30,9 @@ au! BufRead ~/.packages.md nnoremap <buffer> <silent> <F2> :!pacman -Qi <C-r><C-
 " au! BufWritePost ~/.packages.md exec "!sudo python2 ~/packages"
 au! BufRead ~/.packages.md nnoremap <buffer> <F3> :Packer<space>
 
+" solution with Makefile
+au! BufWritePost ~/dev/* silent exec "!SESSION=$(basename `pwd`) make"
+
+
+
 

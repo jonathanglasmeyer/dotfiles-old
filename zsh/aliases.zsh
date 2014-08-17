@@ -1,5 +1,5 @@
 alias reload!='. ~/.zshrc'
-function mkc () {
+function m () {
 mkdir $1 && cd $1
 }
 function o () {
@@ -158,6 +158,16 @@ alias Ds="docker search"
 
 # -- docker based apps ---------------------------------------------------------
 alias julia="docker-run ontouchstart/julia-master"
+=======
+alias D="docker run --rm -it"
+alias docker-run="docker run --rm -v $PWD:/REPL -w=/REPL -e="HOME=/REPL" -it"
+alias Ds="docker search"
+
+
+# docker apps ------------------------------------------------------------------
+alias julia="docker-run ontouchstart/julia-master" 
+
+
 # -- vex -----------------------------------------------------------------------
 alias fig="vex-run fig"
 

@@ -99,8 +99,8 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                       "class": "^Google\\-chrome\\-stable$",
-                       "instance": "^Google\\-chrome\\-stable$"
+                       "class": "^Chromium$",
+                       "instance": "^Chromium$"
                        }
                     ],
                     "type": "con"

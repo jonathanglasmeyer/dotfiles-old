@@ -1,3 +1,4 @@
+# export PROMPT='$(virtualenv_prompt)%n@%m> ' cwd
 path+=('/home/jwerner/bin')
 path+=('/home/jwerner/.dotfiles/bin')
 path+=('/home/jwerner/.cabal/bin')

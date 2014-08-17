@@ -1,5 +1,5 @@
 inoremap <esc> <esc>l
-inoremap ) 0
+" inoremap ) 0
 " nnoremap 4 $
 " nnoremap $ 4
 

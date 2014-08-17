@@ -8,19 +8,13 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="8"/>
-        <value type="int" value="12"/>
-        <value type="int" value="9"/>
         <value type="int" value="3"/>
         <value type="int" value="7"/>
         <value type="int" value="1"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
-        <value type="int" value="2"/>
-        <value type="int" value="10"/>
-        <value type="int" value="11"/>
         <value type="int" value="5"/>
-        <value type="int" value="16"/>
-        <value type="int" value="13"/>
+        <value type="int" value="2"/>
       </property>
       <property name="role" type="string" value="xfce4-panel-12965750720"/>
       <property name="autohide" type="bool" value="false"/>
@@ -46,69 +40,32 @@
         <value type="string" value="-shutdown"/>
       </property>
     </property>
-    <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-    </property>
+    <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="vlc"/>
         <value type="string" value="pnmixer"/>
-        <value type="string" value="mumble"/>
         <value type="string" value="manjaro-settings-manager-daemon"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="task manager"/>
         <value type="string" value="orage"/>
-        <value type="string" value="copyagent"/>
         <value type="string" value="pamac-tray"/>
         <value type="string" value="blueman-applet"/>
-        <value type="string" value="workrave tray icon"/>
+        <value type="string" value="pidgin"/>
         <value type="string" value="clipman"/>
-        <value type="string" value="dropbox"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="pa-applet"/>
-        <value type="string" value="workrave"/>
         <value type="string" value="xnoise"/>
-        <value type="string" value="déjà dup backup tool"/>
-        <value type="string" value="insync.py"/>
       </property>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
-      <property name="grouping" type="uint" value="0"/>
-      <property name="flat-buttons" type="bool" value="false"/>
-      <property name="sort-order" type="uint" value="1"/>
-      <property name="middle-click" type="uint" value="1"/>
+      <property name="grouping" type="uint" value="1"/>
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
-    <property name="plugin-5" type="string" value="clock">
-      <property name="mode" type="uint" value="2"/>
-    </property>
+    <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-1" type="string" value="showdesktop"/>
-    <property name="clipman" type="empty">
-      <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="true"/>
-      </property>
-    </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14028273561.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-10" type="string" value="cpugraph"/>
-    <property name="plugin-11" type="string" value="directorymenu">
-      <property name="base-directory" type="string" value="/home/jwerner"/>
-    </property>
-    <property name="plugin-12" type="string" value="separator"/>
-    <property name="plugin-16" type="string" value="weather"/>
-    <property name="plugin-13" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14029974911.desktop"/>
-      </property>
-    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

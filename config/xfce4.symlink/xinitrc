@@ -79,7 +79,7 @@ test -r "$HOME/.Xresources" && XRESOURCES="$XRESOURCES $HOME/.Xresources"
 cat /dev/null $XRESOURCES | xrdb -nocpp -merge -
 
 # load my xinit
-source ~/.dotfiles/system/xinit
+(sleep 5 && source ~/.dotfiles/system/xinit)
 
 # load local modmap
 # test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap

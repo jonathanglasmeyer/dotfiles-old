@@ -43,7 +43,3 @@ alias cwd='cd "$(cat ~/.cwd)"'
 #         echo "(${VIRTUAL_ENV##*/}) "
 #     fi
 # }
-
-# export PROMPT='$(virtualenv_prompt)%n@%m> ' cwd
-
-

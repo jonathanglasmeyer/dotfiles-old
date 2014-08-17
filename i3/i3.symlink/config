@@ -25,7 +25,8 @@ for_window [class="zeal"] move scratchpad
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+shift+d exec xfce4-appfinder
 # bindsym $mod+r [title="ranger"] scratchpad show
-# bindsym $mod+r exec --no-startup-id ~/.dotfiles/bin/session-dev
+bindsym $mod+shift+r exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
+bindsym $mod+r mode "resize"
 # w
 # b
 
@@ -79,7 +80,6 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+shift+p focus child
 bindsym $mod+Shift+c restart
 bindsym $mod+Shift+k exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# bindsym $mod+shift+r mode "resize"
 bindsym $mod+Shift+s exec xfce4-settings-manager
 bindsym $mod+Shift+f exec thunar
  
