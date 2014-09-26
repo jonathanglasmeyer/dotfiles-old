@@ -45,7 +45,7 @@ SESSION="${PWD##*/}"
 _safe_window() {
   if [ -x "$2" ]; then
     tmux new-window -n "$1" -t "$SESSION"
-    tmux send-keys -t "$SESSION" "fig run main" C-m
+    tmux send-keys -t "$SESSION" "$2" C-m
   fi
 }
 
@@ -58,9 +58,8 @@ if ! (tmux has-session -t "$SESSION" >/dev/null 2>&1); then
     tmux send-keys "ls" C-m
     # tmux new-window -n shell -t "$SESSION"
     # _safe_window console script/console
-    # _safe_window server script/server
-    tmux new-window -n "fig" -t "$SESSION"
-    tmux send-keys -t "$SESSION" "fig run main" C-m
+    _safe_window env scripts/env
+
     # _safe_window fig fig.yml
 
     tmux select-window -t "$SESSION":1

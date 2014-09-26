@@ -8,18 +8,17 @@ import subprocess
 def package_is_installed(package):
   try:
     check_call(["pacman", "-Q", package])
-    print "Package added to list, but is already installed."
   except subprocess.CalledProcessError as e:
     return False
 
   return True
 
-def packer():
-  for package in to_remove:
-    if package_is_installed(package):
-      call(["pacman", "-Rns", "--noconfirm", package])
+def packer(packages):
+  # for package in to_remove:
+    # if package_is_installed(package):
+      # call(["pacman", "-Rns", "--noconfirm", package])
 
-  for package in new:
+  for package in packages:
     if not package_is_installed(package):
       call(["packer", "-S", "--noconfirm", package])
 
@@ -35,15 +34,15 @@ def update_package_file():
 #   packages_old = set(f.read().splitlines())
   
 # ----------- read new --------------
-with open("/home/jw/.packages.md", "r") as f:
+with open("/home/jwerner/.packages.md", "r") as f:
   packages = set([line for line in f.read().splitlines() 
                   if not (len(line) == 0 or line.startswith("#")
                     or line.startswith(">"))])
-  print packages
+  # print packages
 
 
-to_remove = packages_old - packages
-new = packages - packages_old
+# to_remove = packages_old - packages
+# new = packages - packages_old
 
-update_package_file()
-packer()
+# update_package_file()
+packer(packages)
