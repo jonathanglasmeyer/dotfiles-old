@@ -22,7 +22,8 @@ vnoremap j n
 vnoremap n gj
 
 " nnoremap J N
-nnoremap N J
+" nnoremap N J
+" nnoremap J N
 
 nnoremap k e
 noremap e gk
@@ -110,26 +111,24 @@ vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 " command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 
-nnoremap <F12> :silent call FillLine( '-' )<cr>
-nnoremap <F1> :NewProject<space>
-inoremap <F2> <c-o>:SaveToDic<cr>
-nnoremap <F3> :RainbowParenthesesToggleAll<cr>
-nnoremap <F4> :SyntasticCheck<cr>
+
+nnoremap <F1> :e .run<cr>
+nnoremap <F2> :e .run2<cr>
+nnoremap <F3> :e .local.vimrc<cr>
+
+" inoremap <F2> <c-o>:SaveToDic<cr>
+nnoremap <F4> :RainbowParenthesesToggleAll<cr>
+" nnoremap <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
 nnoremap <F5> :e!<cr>
 noremap <F6> :Invbg<CR>
-
-nnoremap 1 `A
-nnoremap 2 `S
-nnoremap 3 `H
-nnoremap 4 `T
-
-nnoremap <leader>1 mA
-nnoremap <leader>2 mS
-nnoremap <leader>3 mH
-nnoremap <leader>4 mT
+nnoremap <F12> :silent call FillLine( '-' )<cr>
 
 
 nnoremap <silent> god :e ~/dev<cr>
-nnoremap <silent> <f1> :e ~/dev<cr>
 " c:nnoremap <silent> gop :Tmux
+
+
+" select pasted 
+nnoremap <expr> `` '`[' . strpart(getregtype(), 0, 1) . '`]'
+

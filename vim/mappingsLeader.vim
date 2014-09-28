@@ -18,11 +18,13 @@ nnoremap <silent> <leader>bd :CtrlPDir ~/dev<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <leader>S :Gwrite<bar>Gcommit<cr>i
+nnoremap <silent> <leader>S :silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run2)" Enter'<cr>
 nnoremap <Leader>ha <Plug>GitGutterStageHunk
 nnoremap <Leader>hu <Plug>GitGutterRevertHunk
 nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
-nnoremap <leader>t :CtrlPTag<cr>
+" nnoremap <leader>t :CtrlPTag<cr>
+nnoremap <leader>t :Tabularize<cr>
+nnoremap <leader>T :TabularizeWithChar \<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <silent> <leader>gco :Git checkout<space>
@@ -59,9 +61,10 @@ nnoremap <leader>C :AgConfig<space>
 "f
 nnoremap <leader>F :%s/<c-r><c-/>/
 "p
-nnoremap <silent> <leader>u :SubstituteCWord<cr>
-vnoremap <silent> <leader>u :<C-u>SubstituteCWordVisual<cr>
-nnoremap <silent> <leader>U :UndoSubstitution<cr>
+map <silent> <leader>u *Ncgn
+nnoremap <silent> <leader>U :SubstituteCWord<cr>
+vnoremap <silent> <leader>U :<C-u>SubstituteCWordVisual<cr>
+" nnoremap <silent> <leader>U :UndoSubstitution<cr>
 nnoremap <silent> <leader>p :CtrlPBookmarkDir<cr>
 nnoremap <silent> <leader>P :e ~/.cache/ctrlp/bkd/cache.txt<cr>
 " nnoremap <silent> <leader>P :e ~/dev<cr>
@@ -72,7 +75,6 @@ nnoremap <leader>n :CtrlP ~/txt/tech<cr>
 nnoremap <leader>N :NewProject<space>
 nnoremap <silent> <leader>e :Mx<cr>
 nnoremap <silent> <leader>E :call RestartMX()<cr>
-" nnoremap <leader>E :TabularizeWithChar<space>
 nnoremap <silent> <leader>o :b#<cr>
 nnoremap <silent> <leader>i :CtrlPCmdPalette<cr>
 " reindent whole file

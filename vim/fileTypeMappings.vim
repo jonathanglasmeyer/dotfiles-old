@@ -23,6 +23,7 @@ au FileType python nnoremap <buffer> <silent> <leader>w :PythonExec2<cr>
 " sudo -----------------------------------------------------------------------
 au! BufRead /etc/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>
 au BufRead /etc/netctl/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>
+au BufRead /etc/udev/rules.d/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>
 au BufRead /sys/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>
 
 " vim ------------------------------------------------------------------------
@@ -31,3 +32,6 @@ autocmd! BufRead ~/.dotfiles/vim/* map <buffer> <cr> 0w"ahiW:CtrlPCurFile<CR>plu
 autocmd! BufRead ~/.vim/config/* noremap <leader>g :AgFromCurrentFile<space> -
 au! BufRead ~/.dotfiles/vim/plugins.vim nnoremap <buffer> <F5> :w\|:PlugInstall<cr>
 au! BufRead ~/.dotfiles/vim/filePlugins.vim nnoremap <buffer> <F5> :w\|:PlugInstall<cr>
+
+
+

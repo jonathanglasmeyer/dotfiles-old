@@ -32,10 +32,12 @@ zsh
 tmux
 tmuxinator
 pkg_scripts
+openssh
+sshfs
 
 # wm
-> i3-git
-i3
+i3-git
+> i3
 i3lock
 i3status
 perl-anyevent-i3
@@ -132,11 +134,11 @@ virtualbox
 firefox-i18n-en-us
 icedtea-web-java7
 flashplugin
-> google-chrome
+google-chrome
 
 #try
-chromium-plugins 
-chromium 
+> chromium-plugins 
+> chromium 
 
 #remove from manjaro base
 > libreoffice

@@ -1,10 +1,10 @@
 filetype plugin indent on
 
 "Source vundleInit
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
 Source setupFunctions
-Plugin gmarik/vundle
+" Plugin gmarik/vundle
 
 "Source filePlugins
 Source colorschemes
@@ -23,6 +23,7 @@ Plugin mkitt/tabline.vim
 " Plugin tsukkee/unite-tag
 
 " tweaks
+Plugin terryma/vim-multiple-cursors
 Plugin tpope/vim-repeat
 Plugin tpope/vim-endwise
 Plugin wellle/targets.vim
@@ -41,6 +42,7 @@ Plugin godlygeek/tabular
 Plugin rking/ag.vim
 Plugin tpope/vim-obsession
 Plugin tpope/vim-fugitive
+Plugin idanarye/vim-merginal
 Plugin tommcdo/vim-fugitive-blame-ext
 Plugin bling/vim-airline
 " Plugin bling/vim-bufferline
@@ -67,7 +69,6 @@ Plugin airblade/vim-gitgutter
 Plugin terryma/vim-smooth-scroll
 Plugin tpope/vim-vinegar
 Plugin tpope/vim-rsi
-Plugin restart.vim
 " Plugin prendradjaja/vim-vertigo
 Plugin terryma/vim-expand-region
 Plugin kana/vim-textobj-line
@@ -76,6 +77,7 @@ Plugin tpope/vim-dispatch
 Plugin wojtekmach/vim-rename
 Plugin chreekat/vim-paren-crosshairs
 Plugin Yggdroot/indentLine
+" Plugin nathanaelkane/vim-indent-guides
 Plugin gregsexton/gitv
 
 " Plugin junegunn/vim-oblique
@@ -89,22 +91,22 @@ Plugin scrooloose/syntastic
 
 " filetype -------------------------------------------------------------------
 " haskell
-Plugin Shougo/vimproc
-Plugin eagletmt/ghcmod-vim
-Plugin eagletmt/neco-ghc
-Plugin dag/vim2hs
+" Plugin Shougo/vimproc
+" Plugin eagletmt/ghcmod-vim
+" Plugin eagletmt/neco-ghc
+" Plugin dag/vim2hs
 " haskell --------------------------------------------------------------------
 Plugin pbrisbin/vim-syntax-shakespeare
 
 " html -----------------------------------------------------------------------
 Plugin mattn/emmet-vim
-Plugin indenthtml.vim
+" Plugin indenthtml.vim
 Plugin othree/xml.vim
 Plugin digitaltoad/vim-jade
 
 " css ------------------------------------------------------------------------
 Plugin hail2u/vim-css3-syntax
-Plugin gorodinskiy/vim-coloresque
+" Plugin gorodinskiy/vim-coloresque
 " Plugin vim-pandoc/vim-pandoc
 
 " scala ----------------------------------------------------------------------
@@ -146,10 +148,25 @@ Plugin wavded/vim-stylus
 Plugin kchmck/vim-coffee-script
 Plugin groenewege/vim-less
 
+
+" c
+Plugin justinmk/vim-syntax-extra
+
+
+" elm
+Plugin lambdatoast/elm.vim 
+
+" markdown
+" Plugin plasticboy/vim-markdown
+" Plugin tpope/vim-markdown
+" Plugin jtratner/vim-flavored-markdown
+
 " =============================================================================
 "Source vundleEnd
-call plug#end()
+" call plug#end()
 
 
 
-colorscheme gruvbox
+Plugin flazz/vim-colorschemes
+Plugin chriskempson/base16-vim
+colorscheme base16-eighties

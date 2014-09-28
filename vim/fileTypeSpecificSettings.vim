@@ -1,4 +1,5 @@
 " settings -------------------------------------------------------------------
+au! FileType python set iskeyword -=.
 au! FileType html set shiftwidth=2
 au! FileType html set tabstop=2
 au! FileType scala setlocal omnifunc=syntaxcomplete#Complete
@@ -9,6 +10,10 @@ au! FileType lisp setlocal ft=julia
 au! FileType scheme set ft=racket
 au! FileType modula2 set ft=markdown
 au! FileType tex set ft=plaintex
+au! FileType c set commentstring=//\ %s
+
+au! FileType markdown set shiftwidth=4
+au! FileType markdown set tabstop=4
 
 " save hooks -----------------------------------------------------------------
 au! TextChanged  *tex silent w
@@ -39,10 +44,15 @@ Source fileTypeMappings
 " custom filetypes
 
 autocmd! BufRead *.dart set ft=dart
+" autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
 autocmd! BufRead *.jade set ft=jade
 autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guibg=#282828
 
 autocmd! BufEnter ~/dev/* call RunMx()
-" autocmd! BufRead *.dart set 
+
+" C-l : clear screen
+au! BufWritePost ~/dev/* silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter' 
+
+" au! BufRead ~/dev/* silent nnoremap '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter' 
 

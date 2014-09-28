@@ -3,7 +3,7 @@
 nnoremap <C-l> :BufSurfForward<cr>
 " nnoremap <c-j> zj
 " nnoremap <c-k> zk
-let g:UltiSnipsExpandTrigger="<c-j>"
+" let g:UltiSnipsExpandTrigger="<c-j>"
 
 " insert mode easy paste 
 inoremap <C-p> <c-o>:set paste<cr><C-R>*<c-o>:set nopaste<cr>

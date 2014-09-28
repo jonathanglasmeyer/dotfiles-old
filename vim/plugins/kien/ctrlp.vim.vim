@@ -1,3 +1,5 @@
+" let g:ctrlp_regexp = 1
+let g:ctrlp_by_filename = 0
 let g:ctrlp_map = ''
 let g:ctrlp_prompt_mappings = {
 \ 'PrtSelectMove("j")':   ['<c-n>', '<down>'],
@@ -101,7 +103,7 @@ let g:ctrlp_use_caching = 0
 
 "                                                  *'g:ctrlp_mruf_default_order'*
 " Set this to 1 to disable sorting when searching in MRU mode: >
-let g:ctrlp_mruf_default_order = 1
+" let g:ctrlp_mruf_default_order = 1
 " <
 
 "                                                 *'g:ctrlp_mruf_case_sensitive'*
@@ -124,4 +126,4 @@ let g:ctrlp_mruf_default_order = 1
 "   order:ttb - from top to bottom.
 "   order:btt - from bottom to top.
 
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10'

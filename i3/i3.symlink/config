@@ -7,9 +7,12 @@ font pango:Cantarell 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+workspace_auto_back_and_forth yes
 # STARTUP
 exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/metal-textures_00240944.jpg
 exec --no-startup-id zeal
+# exec --no-startup-id i3-msg 'workspace 1:vim; exec ec'
+# exec --no-startup-id i3-msg 'workspace 2:chrome; exec google-chrome-stable'
 for_window [class="zeal"] move scratchpad
 
 # WORKSPACES
@@ -23,9 +26,9 @@ for_window [class="zeal"] move scratchpad
 # ----- TOP -----------
 # q
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
-bindsym $mod+shift+d exec xfce4-appfinder
+bindsym $mod+shift+d exec dmenu_run
 # bindsym $mod+r [title="ranger"] scratchpad show
-bindsym $mod+shift+r exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
+bindsym $mod+shift+r exec --no-startup-id ~/.dotfiles/bin/session-dev
 bindsym $mod+r mode "resize"
 # w
 # b
@@ -61,7 +64,10 @@ bindsym $mod+backslash split h
 bindsym $mod+bar split v
 bindsym $mod+Return exec xfce4-terminal
 # bindsym $mod+minus scratchpad show
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
+bindsym $mod+space exec --no-startup-id quickswitch.py -w
+bindsym $mod+Shift+space exec --no-startup-id quickswitch.py -w -m
+# bindcode 133 exec --no-startup-id quickswitch.py -w
 # bindsym $mod+space [title="Webogram"] scratchpad show
 # bindsym $mod+minus [class="Gvim"] scratchpad show
 bindsym $mod+minus scratchpad show
@@ -75,7 +81,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+n move down
 bindsym $mod+Shift+e move up
 bindsym $mod+Shift+o move right
-bindsym $mod+shift+space floating toggle
+# bindsym $mod+shift+space floating toggle
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+shift+p focus child
 bindsym $mod+Shift+c restart
@@ -85,6 +91,7 @@ bindsym $mod+Shift+f exec thunar
  
 bindsym $mod+Shift+BackSpace exec xfce4-session-logout
 
+bindsym $mod+m move workspace to output left
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -107,9 +114,11 @@ bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $$mod+Shift+0 move container to workspace 10
 
+bindsym $mod+comma exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P ''
+bindsym $mod+c exec --no-startup-id quickswitch.py -e && i3-input -F 'rename workspace to "%s"' -P ''
+bindsym $mod+l workspace back_and_forth
 mode "resize" {
         bindsym o resize shrink width 10 px or 10 ppt
         bindsym e resize grow height 10 px or 10 ppt
@@ -153,6 +162,9 @@ for_window [class="Lxpolkit"] floating enable
 # for_window [class="Xfce4-terminal"] border none
 for_window [title="ranger"] border 1pixel
 for_window [window_role="pop-up"] floating enable
+for_window [class="Meld"] floating enable
+# for_window [class="jetbrains-android-studio"] floating disable
+
 
 client.focused #504945 #504945 #ffffff #dddddd
 # client.focused #0088CC #0088CC #ffffff #dddddd

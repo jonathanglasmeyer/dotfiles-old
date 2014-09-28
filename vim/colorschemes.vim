@@ -3,12 +3,13 @@
 " Plugin quanganhdo/grb256
 " Plugin xoria256.vim
 " Plugin Wombat
-" Plugin altercation/vim-colors-solarized
+Plugin altercation/vim-colors-solarized
 
 " colorscheme xoria256
 " colorscheme grb256
 Plugin morhetz/gruvbox
-colorscheme gruvbox
+" colorscheme gruvbox
+" colorscheme solarized
 set background=dark
 " set background=light
 " if strftime("%H") < 12

@@ -1,3 +1,4 @@
+set nocompatible | filetype indent plugin on | syn on
 
 function! Source(arg)
     let l:f=expand('~/.dotfiles/vim/' . a:arg . ".vim")

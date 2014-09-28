@@ -7,16 +7,18 @@
         name = Jonathan Werner
         email = jwerner@posteo.de
 [credential]
-        helper = cache
+	helper = store
 [alias]
+        up = pull --rebase
+        rbm = rebase master --preserve-merges
+        rbc = rebase --continue
         co = checkout
         ci = commit
         nb = checkout -b
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
-	ctags = !.git/hooks/ctags
+        ctags = !.git/hooks/ctags
+        difftool = difftool -y
+        mergetool = mergetool -y
 [color]
         diff = auto
         status = auto
@@ -27,10 +29,13 @@
         editor = gvim -f
 [apply]
         whitespace = nowarn
-[mergetool]
-        keepBackup = false
-[difftool]
-        prompt = false
+[merge]
+    tool = meld
+    keepBackup = false
+[diff]
+    tool = meld
+    prompt = false
+    keepBackup = false
 [help]
         autocorrect = 0
 [push]

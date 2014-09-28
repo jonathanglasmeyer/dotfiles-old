@@ -1,0 +1,20 @@
+#/bin/sh
+
+# i3-msg "workspace 2: dev"
+i3-msg "focus parent"
+i3-msg "focus parent"
+i3-msg "kill"
+i3-msg "append_layout ~/.i3/term-tmux-vim.json"
+# i3-msg "append_layout /home/jw/layout.json"
+# i3-msg "exec chromium"
+# i3-msg "exec xfce4-terminal --title shell"
+i3-msg "exec xfce4-terminal --title tmux -e 'tmux -2 attach -t session'"
+
+# TODO: this doesn't run with the right SYSTEM PATH
+i3-msg "exec gvim --servername vim"
+# i3-msg "exec gvim"
+
+
+
+
+

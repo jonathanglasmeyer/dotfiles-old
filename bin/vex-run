@@ -1,0 +1,2 @@
+  # run, possibly install first
+  (test -f ~/.vex/.built/$1 || vex-build $1) && vex $1 "$@"

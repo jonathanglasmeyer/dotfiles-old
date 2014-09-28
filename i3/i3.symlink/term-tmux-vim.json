@@ -1,0 +1,85 @@
+// vim:ts=4:sw=4:et
+{
+    // splith split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 388,
+               "width": 724,
+               "x": 0,
+               "y": 0
+            },
+            "name": "[No Name] - VIM",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gvim$",
+               "instance": "^gvim$"
+               // "title": "^\\[No\\ Name\\]\\ \\-\\ VIM$",
+               // "window_role": "^vim\\-7891\\-2105327120\\-1408352322$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // stacked split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "stacked",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 386,
+                       "width": 722,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "tmux",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "instance": "^xfce4\\-terminal$"
+                       // "title": "^tmux$",
+                       // "window_role": "^xfce4\\-terminal\\-1408352322\\-1222312883$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 386,
+                       "width": 722,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "shell",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "instance": "^xfce4\\-terminal$"
+                       // "title": "^shell$",
+                       // "window_role": "^xfce4\\-terminal\\-1408352322\\-\\-795874346$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+

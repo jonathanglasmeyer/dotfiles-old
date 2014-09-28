@@ -2,6 +2,7 @@
 set modeline
 Source initBackupDir
 call InitBackupDir()
+set noswapfile
 " set fileencodings=utf-8
 
 set tabstop=2

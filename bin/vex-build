@@ -1,0 +1,7 @@
+  if [ ! -f ~/.vex/builds/$1 ]; then 
+    # normal case: no build file for pip exists in ~/.vex/builds/
+    (cd ~/.virtualenvs && virtualenv2 $1 && $1/bin/pip install $1)
+  else
+    (cd ~/.virtualenvs && virtualenv2 $1 && $1/bin/pip install -r .vex/builds/$1)
+  fi
+  touch ~/.vex/.built/$1

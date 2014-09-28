@@ -11,6 +11,6 @@ export TERM=xterm-256color
 path+=('/home/jwerner/bin')
 path+=('/home/jwerner/.dotfiles/bin')
 path+=('/home/jwerner/.cabal/bin')
-PATH=.env/bin:~/.docker:.cabal-sandbox/bin:$PATH
+PATH=.virtualenv/bin:.env/bin:~/.docker:.cabal-sandbox/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 

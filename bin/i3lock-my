@@ -1,0 +1,12 @@
+i3lock \
+    --insidevercolor=FFFFFF44 \
+    --insidewrongcolor=FF000088 \
+    --insidecolor=000000BB \
+    --ringvercolor=FFFFFFFF \
+    --ringwrongcolor=FFFFFFFF \
+    --ringcolor=ffffff88 \
+    --textcolor=ffffffff \
+    --linecolor=ffffff00 \
+    --keyhlcolor=FFFFFFFF \
+    --bshlcolor=000000FF \
+    -i ~/Pictures/Backgrounds/metal.png
