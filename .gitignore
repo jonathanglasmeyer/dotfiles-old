@@ -6,3 +6,4 @@ atom.symlink/themes
 
 config/xfce4.symlink/xfconf/xfce-perchannel-xml/xfwm4.xml
 .git/
+i3log
