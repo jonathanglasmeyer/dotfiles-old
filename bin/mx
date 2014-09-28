@@ -43,6 +43,7 @@ set -e
 SESSION="${PWD##*/}"
 
 _safe_window() {
+  # if script is executable
   if [ -x "$2" ]; then
     tmux new-window -n "$1" -t "$SESSION"
     tmux send-keys -t "$SESSION" "$2" C-m
