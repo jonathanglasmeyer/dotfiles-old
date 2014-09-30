@@ -17,8 +17,8 @@
         nb = checkout -b
         count   = !git shortlog -sn
         ctags = !.git/hooks/ctags
-        difftool = difftool -y
-        mergetool = mergetool -y
+        dt = difftool -y
+        mt = mergetool -y
 [color]
         diff = auto
         status = auto

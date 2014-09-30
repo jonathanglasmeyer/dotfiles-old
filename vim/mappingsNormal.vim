@@ -120,7 +120,7 @@ nnoremap <F3> :e .local.vimrc<cr>
 nnoremap <F4> :RainbowParenthesesToggleAll<cr>
 " nnoremap <F4> :SyntasticCheck<cr>
 nnoremap <F8> :TagbarToggle<cr>
-nnoremap <F5> :e!<cr>
+nnoremap <F5> :source %<cr>
 noremap <F6> :Invbg<CR>
 nnoremap <F12> :silent call FillLine( '-' )<cr>
 
@@ -132,3 +132,14 @@ nnoremap <silent> god :e ~/dev<cr>
 " select pasted 
 nnoremap <expr> `` '`[' . strpart(getregtype(), 0, 1) . '`]'
 
+function! SaveQuickF(num)
+  silent exec "!sed -i '/F " . a:num . "/d' .local.vimrc"
+  silent exec "!echo F " . a:num . " ". expand("%:p") . " >> .local.vimrc"
+  silent source .local.vimrc
+endfunction
+nnoremap <silent> <leader>1 :call SaveQuickF(1)<cr>
+nnoremap <silent> <leader>2 :call SaveQuickF(2)<cr>
+nnoremap <silent> <leader>3 :call SaveQuickF(3)<cr>
+nnoremap <silent> <leader>4 :call SaveQuickF(4)<cr>
+nnoremap <silent> <leader>5 :call SaveQuickF(5)<cr>
+nnoremap <silent> <leader>6 :call SaveQuickF(6)<cr>

@@ -5,7 +5,7 @@ export TERM=xterm-256color
 
 # Setting ag as the default source for fzf
 # export FZF_DEFAULT_COMMAND='ag -l -g ""'
-
+export BROWSER="google-chrome-stable"
 
 # PATH
 path+=('/home/jwerner/bin')

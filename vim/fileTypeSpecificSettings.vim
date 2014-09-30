@@ -40,6 +40,8 @@ Source fileTypeMappings
 " au! FileType netrw nnoremap <buffer> gos :NP <C-r><C-f>
 
 
+autocmd! BufWritePost *.vimrc source %
+autocmd! BufWritePost *vimrc source ~/.dotfiles/vim/mappingsNormal.vim
 
 " custom filetypes
 

@@ -352,8 +352,18 @@ function! TabMessage(cmd)
   silent put=message
   set nomodified
 endfunction
-command! -nargs=+ -complete=command TabMessage call TabMessage(<q-args>)
+command! -nargs=+ -complete=command TabMessage call TabMessage(<f-args>)
 
+function! Fload(num, fname)
+  exec "nnoremap <silent>" . a:num . " :e " . a:fname ."<cr>"
+endfunction
+command! -nargs=* F call Fload(<f-args>)
+
+
+" function! Foo(a,b)
+"   echo a:a
+" endfunction
+" command! -nargs=+ Foo call s:Foo(<q-args>)
 
 " Shell ------------------------------------------------------------------- {{{
 
