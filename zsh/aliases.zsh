@@ -8,7 +8,7 @@ m() {
   mkdir $1 && cd $1
 }
 
-#  
+#
 n() {
   m ~/dev/$1 && git init && e README.md
 }
@@ -18,7 +18,7 @@ o() {
 }
 
 untar() {
-  tar -zxvf $1 
+  tar -zxvf $1
 }
 
 f() {
@@ -35,7 +35,7 @@ orphans() {
 
 i-aur() {
   # install when not already installed
- # >/dev/null 2>&1 
+ # >/dev/null 2>&1
   pacman -Q $1 || sudo packer -S --noconfirm $1
 }
 
@@ -75,7 +75,7 @@ alias pac-search="yaourt -Qe --date | grep"
 alias pac-rem='sudo pacman -Rns'		# Remove the specified package(s), its configuration(s) and unneeded dependencies
 alias pac-cleancache="sudo pacman -Scc"		# Clean cache - delete all not currently installed package files
 alias paclf="pacman -Ql"		# List all files installed by a given package
-alias pacexpl="pacman -D --asexp"	# Mark one or more installed packages as explicitly installed 
+alias pacexpl="pacman -D --asexp"	# Mark one or more installed packages as explicitly installed
 alias pacimpl="pacman -D --asdep"	# Mark one or more installed packages as non explicitly installed
 alias pac-info="pacman -Qi"
 
@@ -120,6 +120,7 @@ alias mouse-on='synclient TouchpadOff=0'
 # source ~/.funcs
 alias notebook="ipython3 notebook"
 alias clus="sshfs -o reconnect cluster:/home/werner/ ~/cluster/"
+# fusermount -f path'
 alias recent="ls -1t | head -10"
 alias copykey="xclip -sel clip < ~/.ssh/id_rsa.pub"
 alias tmux="tmux -2"
@@ -142,7 +143,7 @@ alias Ds="docker search"
 
 
 # docker apps ------------------------------------------------------------------
-alias julia="docker-run ontouchstart/julia-master" 
+alias julia="docker-run ontouchstart/julia-master"
 
 
 # -- vex -----------------------------------------------------------------------
@@ -154,3 +155,18 @@ alias disk-usage="sudo du -hsx * | sort -rh | head -10"
 alias tg="~/dev/tg/bin/telegram-cli -l 1 -W"
 alias w="which"
 alias lock="i3lock-my"
+alias sng="~/.screenlayout/single.sh"
+alias npmi="npm install --save"
+alias npmid="npm install --save-dev"
+alias npmig="sudo npm install -g"
+
+
+fix-zsh-history() {
+  cd ~
+  mv .zsh_history .zsh_history_bad
+  strings .zsh_history_bad > .zsh_history
+  fc -R .zsh_history
+}
+alias insync-status="insync get_sync_progress"
+
+alias cmon="sudo !!"

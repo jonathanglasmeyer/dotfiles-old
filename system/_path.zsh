@@ -10,3 +10,6 @@ export PATH
 
 export PATH="/home/jwerner/bin/haskell/elm/.cabal-sandbox/bin:$PATH"
 export ELM_HOME="/home/jwerner/bin/haskell/elm/.cabal-sandbox/share"
+
+export NVM_DIR="/home/jwerner/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

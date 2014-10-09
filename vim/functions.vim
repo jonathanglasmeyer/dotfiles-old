@@ -357,7 +357,12 @@ command! -nargs=+ -complete=command TabMessage call TabMessage(<f-args>)
 function! Fload(num, fname)
   exec "nnoremap <silent>" . a:num . " :e " . a:fname ."<cr>"
 endfunction
+
+function! FloadChar(c, fname)
+  exec 'nnoremap <silent> "' . a:c . ' :e ' . a:fname .'<cr>'
+endfunction
 command! -nargs=* F call Fload(<f-args>)
+command! -nargs=* Fc call FloadChar(<f-args>)
 
 
 " function! Foo(a,b)

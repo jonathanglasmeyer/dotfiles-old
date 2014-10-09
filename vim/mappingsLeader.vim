@@ -1,8 +1,10 @@
+set nocompatible | filetype indent plugin on | syn on
+
 nnoremap <silent> <leader>! :e index.html<cr>
 nnoremap <silent> <leader>@ :e scripts/app.js<cr>
-nnoremap <silent> <leader># :tabn 3<cr> 
-nnoremap <silent> <leader>$ :tabn 4<cr> 
-nnoremap <silent> <leader>% :tabn 5<cr> 
+nnoremap <silent> <leader># :tabn 3<cr>
+nnoremap <silent> <leader>$ :tabn 4<cr>
+nnoremap <silent> <leader>% :tabn 5<cr>
 
 " left ---------------------------------------------------------------------
 nnoremap <silent> <leader>q :wqall!<cr>
@@ -50,8 +52,8 @@ nnoremap <silent> <leader>gl :Gitv<cr>
 nnoremap <silent> <leader>gL :Gitv!<cr>
 "-----------------------------------------------------------------------------
 "z
-noremap <silent> <leader>x :close<cr> 
-noremap <silent> <leader>X :only<cr> 
+noremap <silent> <leader>x :close<cr>
+noremap <silent> <leader>X :only<cr>
 nnoremap <leader>m :verbose map<space>
 nnoremap <leader>m :map <space
 nnoremap <silent> <leader>c :CtrlP ~/.dotfiles<cr>
@@ -59,6 +61,7 @@ nnoremap <leader>C :AgConfig<space>
 "v
 "=============================================================================
 "f
+nnoremap <leader>f :Ag<space>
 nnoremap <leader>F :%s/<c-r><c-/>/
 "p
 map <silent> <leader>u *Ncgn
@@ -70,7 +73,7 @@ nnoremap <silent> <leader>P :e ~/.cache/ctrlp/bkd/cache.txt<cr>
 " nnoremap <silent> <leader>P :e ~/dev<cr>
 ";
 "----------------------------------------------------------------------------
-nnoremap <silent> <leader>y :vs<cr> 
+nnoremap <silent> <leader>y :vs<cr>
 nnoremap <leader>n :CtrlP ~/txt/tech<cr>
 nnoremap <leader>N :NewProject<space>
 nnoremap <silent> <leader>e :Mx<cr>

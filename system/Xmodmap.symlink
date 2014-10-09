@@ -22,7 +22,8 @@ keycode 46 = o O odiaeresis Odiaeresis
 keycode 31 = u U udiaeresis Udiaeresis
 keycode 39 = s S ssharp
 
-keycode  48 = quotedbl apostrophe quotedbl apostrophe
+! keycode  48 = quotedbl apostrophe quotedbl apostrophe
+keycode  48 = apostrophe quotedbl apostrophe quotedbl
 keycode  34 = braceleft bracketleft bracketleft braceleft
 keycode  35 = braceright bracketright bracketright braceright
 

@@ -1,0 +1,18 @@
+m() {
+  mkdir $1 && cd $1
+}
+alias ls='ls --color=auto -hX --group-directories-first -t'
+alias ll='ls -o -hX --group-directories-first'
+alias l.='ls -oa -hX --group-directories-first'
+alias lss='ll | grep '
+alias ..='cd ..'
+alias ...='cd ../../..'
+alias ....='cd ../../../..'
+alias h="history"
+alias e="vim"
+alias g="git"
+alias cmon="sudo !!"
+alias docker="sudo docker"
+alias w="which"
+c() { builtin cd "$@" && ls; }
+export VIMINIT="let \$MYVIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$MYVIMRC"

@@ -1,4 +1,3 @@
-filetype plugin indent on
 
 "Source vundleInit
 " call plug#begin('~/.vim/plugged')
@@ -11,7 +10,6 @@ Source colorschemes
 
 " navigation -----------------------------------------------------------------
 Plugin justinmk/vim-sneak
-
 Plugin kien/ctrlp.vim
 Plugin fisadev/vim-ctrlp-cmdpalette
 
@@ -40,9 +38,9 @@ Plugin godlygeek/tabular
 " Plugin Raimondi/delimitMate
 " Plugin jiangmiao/auto-pairs
 Plugin rking/ag.vim
-Plugin tpope/vim-obsession
+" Plugin tpope/vim-obsession
 Plugin tpope/vim-fugitive
-Plugin idanarye/vim-merginal
+" Plugin idanarye/vim-merginal
 Plugin tommcdo/vim-fugitive-blame-ext
 Plugin bling/vim-airline
 " Plugin bling/vim-bufferline
@@ -53,11 +51,11 @@ Plugin Valloric/YouCompleteMe
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
 " Plugin jpalardy/vim-slime
-Plugin epeli/slimux
+" Plugin epeli/slimux
 " Plugin SirVer/ultisnips
 " Plugin honza/vim-snippets
 
-Plugin kien/rainbow_parentheses.vim
+" Plugin kien/rainbow_parentheses.vim
 " Plugin luochen1990/rainbow
 " Plugin int3/vim-extradite
 Plugin ivan-cukic/vim-ctrlp-switcher
@@ -65,17 +63,17 @@ Plugin ivan-cukic/vim-ctrlp-switcher
 Plugin kana/vim-textobj-user
 Plugin bps/vim-textobj-python
 Plugin vim-scripts/UnconditionalPaste
-Plugin airblade/vim-gitgutter
-Plugin terryma/vim-smooth-scroll
-Plugin tpope/vim-vinegar
+" Plugin airblade/vim-gitgutter
+" Plugin terryma/vim-smooth-scroll
+" Plugin tpope/vim-vinegar
 Plugin tpope/vim-rsi
 " Plugin prendradjaja/vim-vertigo
 Plugin terryma/vim-expand-region
 Plugin kana/vim-textobj-line
 Plugin kana/vim-textobj-entire
 Plugin tpope/vim-dispatch
-Plugin wojtekmach/vim-rename
-Plugin chreekat/vim-paren-crosshairs
+" Plugin wojtekmach/vim-rename
+" Plugin chreekat/vim-paren-crosshairs
 Plugin Yggdroot/indentLine
 " Plugin nathanaelkane/vim-indent-guides
 Plugin gregsexton/gitv
@@ -103,6 +101,7 @@ Plugin mattn/emmet-vim
 " Plugin indenthtml.vim
 Plugin othree/xml.vim
 Plugin digitaltoad/vim-jade
+Plugin othree/html5.vim
 
 " css ------------------------------------------------------------------------
 Plugin hail2u/vim-css3-syntax
@@ -116,7 +115,7 @@ Plugin hail2u/vim-css3-syntax
 
 " latex ----------------------------------------------------------------------
 " Plugin LaTeX-Box-Team/LaTeX-Box
- 
+
 " python ----------------------------------------------------------------------
 " Plugin davidhalter/jedi-vim
 
@@ -133,7 +132,10 @@ Plugin othree/javascript-libraries-syntax.vim
 " Plugin burnettk/vim-angular
 
 " jsx
+Plugin pangloss/vim-javascript
 Plugin mxw/vim-jsx
+" Plugin jsx/jsx.vim
+Plugin marijnh/tern_for_vim
 
 " " closure
 " Plugin guns/vim-clojure-static
@@ -154,7 +156,7 @@ Plugin justinmk/vim-syntax-extra
 
 
 " elm
-Plugin lambdatoast/elm.vim 
+Plugin lambdatoast/elm.vim
 
 " markdown
 " Plugin plasticboy/vim-markdown

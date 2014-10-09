@@ -66,7 +66,8 @@ bindsym $mod+Return exec xfce4-terminal
 # bindsym $mod+minus scratchpad show
 # bindsym $mod+space focus mode_toggle
 bindsym $mod+space exec --no-startup-id quickswitch.py -w
-bindsym $mod+Shift+space exec --no-startup-id quickswitch.py -w -m
+# bindsym $mod+Shift+space exec --no-startup-id quickswitch.py -w -m
+bindsym $mod+Shift+space floating toggle
 # bindcode 133 exec --no-startup-id quickswitch.py -w
 # bindsym $mod+space [title="Webogram"] scratchpad show
 # bindsym $mod+minus [class="Gvim"] scratchpad show
@@ -83,7 +84,7 @@ bindsym $mod+Shift+e move up
 bindsym $mod+Shift+o move right
 # bindsym $mod+shift+space floating toggle
 bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+shift+p focus child
+bindsym $mod+shift+p exec "scrot -s"
 bindsym $mod+Shift+c restart
 bindsym $mod+Shift+k exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+s exec xfce4-settings-manager
@@ -171,3 +172,5 @@ client.focused #504945 #504945 #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused #333333 #333333 #888888 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
+
+bindcode 107 exec "scrot -s"

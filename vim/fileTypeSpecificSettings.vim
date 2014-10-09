@@ -45,6 +45,7 @@ autocmd! BufWritePost *vimrc source ~/.dotfiles/vim/mappingsNormal.vim
 
 " custom filetypes
 
+
 autocmd! BufRead *.dart set ft=dart
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
