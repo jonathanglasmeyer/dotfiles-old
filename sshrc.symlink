@@ -12,7 +12,6 @@ alias h="history"
 alias e="vim"
 alias g="git"
 alias cmon="sudo !!"
-alias docker="sudo docker"
 alias w="which"
 c() { builtin cd "$@" && ls; }
 export VIMINIT="let \$MYVIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$MYVIMRC"
