@@ -23,12 +23,15 @@ nnoremap <silent> <leader>bd :CtrlPDir ~/dev<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
+nnoremap <leader>h :GitGutterStageHunk<cr>
+
 " nnoremap <silent> <leader>S :silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run2)" Enter'<cr>
 nnoremap <silent> <leader>t :call SendQuickCmd()<cr>
 " nnoremap <leader>t :Tabularize<cr>
 nnoremap <leader>T :TabularizeWithChar \<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gg :silent exec '!git-cola &'<cr>
 nnoremap <silent> <leader>gco :Git checkout<space>
 nnoremap <silent> <leader>gcc :Gcommit<cr>
 nnoremap <silent> <leader>gC :silent Git add --all<bar>Gcommit<cr>
