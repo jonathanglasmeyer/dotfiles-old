@@ -20,7 +20,11 @@ for_window [class="zeal"] move scratchpad
 # exec i3-msg 'workspace 4; exec xdg-open ~/.local/share/applications/chrome-https___whatsremote.com_login.php.desktop; workspace 1'
 
 # BINDINGS
-
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.dotfiles/bin/vol-higher.sh
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.dotfiles/bin/vol-lower.sh
+bindsym XF86AudioMute exec --no-startup-id ~/.dotfiles/bin/vol-mute.sh
+bindsym $mod+F7 exec --no-startup-id ~/bin/automirror
+bindsym --release Print exec --no-startup-id scrot -s ~/screenshot.png
 # ####### LEFT ###########################
 
 # ----- TOP -----------
@@ -60,6 +64,8 @@ bindsym $mod+quotedbl [title="Sunrise"] scratchpad show
 
 
 # ###### SPECIAL #############
+bindsym $mod+F9 exec --no-startup-id xbacklight -inc 15
+bindsym $mod+F8 exec --no-startup-id xbacklight -dec 15
 bindsym $mod+backslash split h
 bindsym $mod+bar split v
 bindsym $mod+Return exec xfce4-terminal
@@ -69,6 +75,7 @@ bindsym $mod+space exec --no-startup-id quickswitch.py -w
 # bindsym $mod+Shift+space exec --no-startup-id quickswitch.py -w -m
 bindsym $mod+Shift+space floating toggle
 # bindcode 133 exec --no-startup-id quickswitch.py -w
+bindcode 105 exec --no-startup-id ~/.dotfiles/bin/screen-off
 # bindsym $mod+space [title="Webogram"] scratchpad show
 # bindsym $mod+minus [class="Gvim"] scratchpad show
 bindsym $mod+minus scratchpad show
@@ -78,7 +85,7 @@ bindsym $mod+F3 exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
 
 # shift
 bindsym $mod+Shift+y move left
-bindsym $mod+Shift+q kill 
+bindsym $mod+Shift+q kill
 bindsym $mod+Shift+n move down
 bindsym $mod+Shift+e move up
 bindsym $mod+Shift+o move right
@@ -89,7 +96,7 @@ bindsym $mod+Shift+c restart
 bindsym $mod+Shift+k exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+s exec xfce4-settings-manager
 bindsym $mod+Shift+f exec thunar
- 
+
 bindsym $mod+Shift+BackSpace exec xfce4-session-logout
 
 bindsym $mod+m move workspace to output left
@@ -157,8 +164,8 @@ for_window [class="Workrave" instance="workrave"] floating enable
 # for_window [class="Thunar"] floating enable
 for_window [class="XTerm"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
-for_window [class="Pamac-updater"] floating enable 
-for_window [class="Lxpolkit"] floating enable 
+for_window [class="Pamac-updater"] floating enable
+for_window [class="Lxpolkit"] floating enable
 # for_window [class="Gvim"] border 1pixel
 # for_window [class="Xfce4-terminal"] border none
 for_window [title="ranger"] border 1pixel
