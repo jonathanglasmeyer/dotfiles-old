@@ -21,7 +21,7 @@
 " filename without extension: expand('%:r')
 
 function! SlimeSendParagraph()
-   " SlimeSend1 '\n'
+   " Slimeend1 '\n'
     exec "normal \<Plug>SlimeParagraphSend"
 endfunction
 command! SlimeSendParagraph call SlimeSendParagraph()
