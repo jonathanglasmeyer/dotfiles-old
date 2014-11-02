@@ -42,3 +42,4 @@ unset config_files
 
 eval "$(rbenv init -)"
 
+export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
