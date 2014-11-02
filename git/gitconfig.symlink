@@ -4,7 +4,7 @@
 [hub]
         protocol = https
 [user]
-        name = Jonathan Werner
+	name = Jonathan Werner
         email = jwerner@posteo.de
 [credential]
 	helper = store
@@ -17,15 +17,15 @@
         nb = checkout -b
         count   = !git shortlog -sn
         ctags = !.git/hooks/ctags
-        dt = difftool -y
-        mt = mergetool -y
+        d = difftool -y
+        m = mergetool -y
 [color]
         diff = auto
         status = auto
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+	excludesfile = /home/jwerner/.gitignore_global
         editor = gvim -f
 [apply]
         whitespace = nowarn
@@ -50,3 +50,5 @@
 	# templatedir = ~/.git_template
 [pull]
 	rebase = true
+[gui]
+	editor = gvim --servername vim --remote-silent
