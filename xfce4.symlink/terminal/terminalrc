@@ -20,16 +20,11 @@ BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=1.000000
 FontName=Liberation Mono 11
 FontAllowBold=FALSE
-ColorForeground=#dcdcdc
-ColorBackground=#2c2c2c
-ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
-ColorCursor=#dcdcdc
+ColorForeground=#d3d0c8
+ColorBackground=#2d2d2d
+ColorPalette=#2d2d2d;#f2777a;#99cc99;#ffcc66;#6699cc;#cc99cc;#66cccc;#d3d0c8;#747369;#f2777a;#99cc99;#ffcc66;#6699cc;#cc99cc;#66cccc;#f2f0ec
+ColorCursor=#d3d0c8
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TitleInitial=
 TitleMode=TERMINAL_TITLE_REPLACE
 
-[Configuration]
-ColorCursor=#d3d0c8
-ColorForeground=#d3d0c8
-ColorBackground=#2d2d2d
-ColorPalette=#2d2d2d;#f2777a;#99cc99;#ffcc66;#6699cc;#cc99cc;#66cccc;#d3d0c8;#747369;#f2777a;#99cc99;#ffcc66;#6699cc;#cc99cc;#66cccc;#f2f0ec
