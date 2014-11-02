@@ -2,11 +2,11 @@
 #
 setxkbmap -option '' -option 'ctrl:nocaps'
 xmodmap ~/.Xmodmap &
-nm-applet &
 parcellite &
 workrave &
 # urxvtd &
-redshift -t 6500:4500 &
+# redshift -t 6500:4500 &
+redshift &
 
 xset r rate 200 60 &
 
@@ -27,5 +27,5 @@ compton -b &
 # exec dbus-launch --exit-with-session gnome-session
 #exec dbus-launch --exit-with-session openbox-session
 exec i3 -V >> ~/.i3/i3log 2>&1
-# exec 
+# exec
 # exec i3 &
