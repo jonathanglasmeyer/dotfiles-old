@@ -29,8 +29,8 @@ function chpwd() {
     ls -t
     echo "$PWD" > ~/.cwd;
 }
-export cd  
-alias cwd='cd "$(cat ~/.cwd)"'  
+export cd
+alias cwd='cd "$(cat ~/.cwd)"'
 
 # eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 
@@ -42,4 +42,21 @@ alias cwd='cd "$(cat ~/.cwd)"'
 #     if [ -n "$VIRTUAL_ENV" ]; then
 #         echo "(${VIRTUAL_ENV##*/}) "
 #     fi
-# }
+#globalias() {
+
+# ------------------------------------------------------------------------------
+# http://blog.patshead.com/2012/11/automatically-expaning-zsh-global-aliases---simplified.html
+globalias() {
+   if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
+     zle _expand_alias
+   fi
+   zle self-insert
+}
+
+zle -N globalias
+
+bindkey " " globalias
+bindkey "^ " magic-space           # control-space to bypass completion
+bindkey -M isearch " " magic-space # normal space during searches
+# ------------------------------------------------------------------------------
+
