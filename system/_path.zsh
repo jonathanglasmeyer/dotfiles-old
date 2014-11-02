@@ -1,4 +1,4 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
+export PATH=".env/bin:./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 path+=('/home/jwerner/bin')
@@ -6,6 +6,12 @@ path+=('/home/jwerner/bin')
 path+=('/home/jwerner/bin/android-studio/bin')
 path+=('/home/jwerner/bin/android-studio/sdk/tools')
 path+=('/home/jwerner/bin/android-studio/sdk/platform-tools')
+
+
+# own tools
+path+=('/home/jwerner/dev/workrave-stats')
+path+=('/home/jwerner/dev/loc')
+
 export PATH
 
 export PATH="/home/jwerner/bin/haskell/elm/.cabal-sandbox/bin:$PATH"
