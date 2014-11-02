@@ -105,7 +105,7 @@ alias s-failed='systemctl --failed'
 alias s-all='systemctl --all'
 #else {{{1
 
-alias ping='ping www.google.com'
+alias ping='while { true } { sleep 2; ping www.google.com  }'
 alias source-xresources="xrdb ~/.Xresources"
 alias ecs="gvim --servername vim -S"
 
@@ -155,7 +155,6 @@ alias disk-usage="sudo du -hsx * | sort -rh | head -10"
 alias tg="~/dev/tg/bin/telegram-cli -l 1 -W"
 alias w="which"
 alias lock="i3lock-my"
-alias sng="~/.screenlayout/single.sh"
 alias npmi="npm install --save"
 alias npmid="npm install --save-dev"
 alias npmig="sudo npm install -g"
@@ -170,3 +169,69 @@ fix-zsh-history() {
 alias insync-status="insync get_sync_progress"
 
 alias cmon="sudo !!"
+
+alias dpl="fab push"
+alias up="fab pull"
+
+alias traffic='sudo nethogs wlp7s0'
+# screen off
+alias ssh='sshrc'
+
+transfer() {
+  # tmpfile=$( mktemp -t transfer.XXX)
+  tmpfile=tmp
+  curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) >> $tmpfile
+  cat $tmpfile;
+  cat $tmpfile | xclip
+  rm -f $tmpfile;
+}
+alias u=transfer
+alias hg='history | grep'
+
+#screen
+alias beamer='xrandr --output VGA1 --auto'
+alias so='sleep .1 && xset dpms force off'
+alias snd='xrandr --output HDMI1 --auto --right-of LVDS1'
+alias sng="~/.screenlayout/single.sh"
+
+
+# python
+py() {
+  rootDir=$(git rev-parse --show-toplevel)
+  $rootDir/.env/bin/python "$@"
+}
+ipy() {
+  rootDir=$(git rev-parse --show-toplevel)
+  $rootDir/.env/bin/ipython
+}
+
+p() {
+  root=$(git rev-parse --show-toplevel)
+  $root/.env/bin/pip "$@"
+}
+
+
+alias wifi-menu='sudo wifi-menu -o'
+
+
+# sloccount --duplicates --details . | grep -v -e '.env' -e 'src-excerpts' -e 'g2p' -e 'data' > sloccount.sc
+alias cc='cd $(git rev-parse --show-toplevel)'
+alias -g NULL='>/dev/null'
+alias -g G='| grep -i '
+
+alias -s pdf=evince
+
+send-res() {scp $1.* cluster:/home/werner/dev/prosub/ressources}
+convert-to-wav() {ffmpeg -i $1.mp4 -acodec pcm_s16le -ar 16000 -ac 1 $1.wav}
+
+sub() { ag -l $1 | xargs sed -i "s/$1/$2/g" }
+upl() { scp $1.{wav,txt} uni:/informatik/isr/nats/projects/subtitling/resources }
+ls-res() { ssh uni "ls /informatik/isr/nats/projects/subtitling/resources/*.wav" }
+
+alias goo='google-chrome-stable'
+
+alias wr-kill='killall workrave'
+alias wr='workrave &'
+alias wr-s='workrave-stats'
+run-prolog-main() { swipl -g "consult($1), main, halt" }
+
