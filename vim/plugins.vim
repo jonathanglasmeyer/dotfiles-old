@@ -50,12 +50,12 @@ Plugin Valloric/YouCompleteMe
 " Plugin Shougo/neosnippet
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
-" Plugin jpalardy/vim-slime
+Plugin jpalardy/vim-slime
 " Plugin epeli/slimux
 " Plugin SirVer/ultisnips
 " Plugin honza/vim-snippets
 
-" Plugin kien/rainbow_parentheses.vim
+Plugin kien/rainbow_parentheses.vim
 " Plugin luochen1990/rainbow
 " Plugin int3/vim-extradite
 Plugin ivan-cukic/vim-ctrlp-switcher
@@ -158,6 +158,9 @@ Plugin justinmk/vim-syntax-extra
 " elm
 Plugin lambdatoast/elm.vim
 
+" prolog
+Plugin adimit/prolog.vim
+
 " markdown
 " Plugin plasticboy/vim-markdown
 " Plugin tpope/vim-markdown
@@ -167,8 +170,7 @@ Plugin lambdatoast/elm.vim
 "Source vundleEnd
 " call plug#end()
 
-
-
+" VAMActivate github:rhysd/open-pdf.vim
 Plugin flazz/vim-colorschemes
 Plugin chriskempson/base16-vim
 colorscheme base16-eighties

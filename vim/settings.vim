@@ -1,4 +1,4 @@
-
+set breakindent
 set modeline
 Source initBackupDir
 call InitBackupDir()
@@ -35,7 +35,7 @@ syntax enable
 set scrolloff=4
 
 set autoindent
-set smartindent
+" set smartindent
 
 set showmode
 set showcmd
@@ -52,16 +52,16 @@ set laststatus=2
 set undofile
 
 " disable welcome screen
-set shortmess+=I            
+set shortmess+=I
 
 " a buffer becomes hidden when it is abandoned
-set hid                     
+set hid
 
 " don't redraw while executing macros (good performance config)
-set lazyredraw              
+set lazyredraw
 
 " for reg exp
-set magic                   
+set magic
 
 
 
@@ -92,9 +92,9 @@ set gdefault
 set incsearch
 
 " show matching brackets
-set showmatch               
+set showmatch
 " how many tenths of a second to blink when matching brackets
-set matchtime=2                   
+set matchtime=2
 
 " set hlsearch
 set ignorecase
@@ -110,7 +110,7 @@ set wrap
 " set textwidth=79
 " match ErrorMsg '\%>80v.\+'
 
-" visualize column / line overlength 
+" visualize column / line overlength
    " augroup vimrc_autocmds
      " autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
      " autocmd BufEnter * match OverLength /\%74v.*/
@@ -207,7 +207,7 @@ set iskeyword=a-z,A-Z,_,.,39
   autocmd BufEnter * call s:setcwd()
 
 " auto reload on external change
-set autoread 
+set autoread
 set shell=/usr/bin/zsh
 
 

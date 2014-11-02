@@ -18,7 +18,7 @@
 			" :r		root (one extension removed)
 			" :e		extension only
 
-" filename without extension: expand('%:r') 
+" filename without extension: expand('%:r')
 
 function! SlimeSendParagraph()
    " SlimeSend1 '\n'
@@ -66,7 +66,7 @@ command! JuliaExec call JuliaExec()
 
 function! ScalaExec()
     write
-    exec "SlimeSend1 :load " . expand('%p') 
+    exec "SlimeSend1 :load " . expand('%p')
     wincmd w
     SlimeSendParagraph
     wincmd w
@@ -79,7 +79,7 @@ command! ScalaExec call ScalaExec()
 
 function! ScalaCompile()
     write
-    exec "SlimeSend1 :load " . expand('%p') 
+    exec "SlimeSend1 :load " . expand('%p')
 endfunction
 command! ScalaCompile call ScalaCompile()
 
@@ -113,12 +113,12 @@ let g:nmb = 0
 function! AgFromCurrentFile(arg)
     silent exec "Ag " . a:arg expand('%:p:h')
 endfunction
-command! -nargs=1 AgFromCurrentFile call AgFromCurrentFile(<f-args>) 
+command! -nargs=1 AgFromCurrentFile call AgFromCurrentFile(<f-args>)
 
 function! AgConfig(arg)
     silent exec "Ag " . a:arg . " ~/.dotfiles/vim"
 endfunction
-command! -nargs=1 AgConfig call AgConfig(<f-args>) 
+command! -nargs=1 AgConfig call AgConfig(<f-args>)
 
 function! ReloadMaps()
   silent mapclear
@@ -158,7 +158,7 @@ function! TabularizeWithChar(c)
     normal `m
     normal <esc>
 endfunction
-command! -nargs=1 TabularizeWithChar call TabularizeWithChar(<f-args>) 
+command! -nargs=1 TabularizeWithChar call TabularizeWithChar(<f-args>)
 
 function! DartExec()
     write
@@ -182,12 +182,12 @@ endfunction
 function! Zeal(arg)
     silent exec 'silent !zeal-show '. &ft . ':' . a:arg
 endfunction
-command! -nargs=1 Zeal call Zeal(<f-args>) 
+command! -nargs=1 Zeal call Zeal(<f-args>)
 
 function! ZealCurrentWord()
     silent exec '!zeal-show ' . &ft . ':' . expand("<cword>")
 endfunction
-command! ZealCurrentWord call ZealCurrentWord() 
+command! ZealCurrentWord call ZealCurrentWord()
 
 command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
 function! QuickfixFilenames()
@@ -281,7 +281,7 @@ function! SetCWD()
   if exists(':Glcd')
     silent Glcd
   else
-    echo "No git repo, using file path as WD" 
+    echo "No git repo, using file path as WD"
     silent lcd %:p:h
   endif
 endfunction
@@ -291,10 +291,10 @@ function! RunMx()
   " call SetCWD()
   if !exists(':Glcd')
     echo "No git repo, git init for RunMx to work"
-    return 
+    return
   endif
 
-  let dir = getcwd() 
+  let dir = getcwd()
     " exec 'silent !tmux send-keys C-q "(cd ' . dir . ' && mx)" C-m'
     silent exec "!~/.dotfiles/bin/mx"
   " endif
@@ -310,11 +310,14 @@ function! RestartMX()
   call RunMx()
 endfunction
 
+
+
 function! TmuxCDCurrentFile()
     let dir = expand('%:p:h')
     exec 'silent !tmux send-keys C-q "cd \"' . dir . '\"" C-m ls C-m'
 
 endfunction
+
 command! TmuxCDCurrentFile call TmuxCDCurrentFile()
 
 function! TmuxCD(dir)
@@ -358,8 +361,21 @@ function! Fload(num, fname)
   exec "nnoremap <silent>" . a:num . " :e " . a:fname ."<cr>"
 endfunction
 
+function! QuickCmd(...)
+  let cmd = join(a:000)
+  exec "let g:quickCmd = '" . cmd . "'"
+
+endfunction
+command! -nargs=* QuickCmd call QuickCmd(<f-args>)
+
+function! SendQuickCmd()
+  silent w
+  let cmd = '!tmux send-keys C-u "' . g:quickCmd . '" C-m'
+  silent exec cmd
+endfunction
+
 function! FloadChar(c, fname)
-  exec 'nnoremap <silent> "' . a:c . ' :e ' . a:fname .'<cr>'
+  exec "nnoremap <silent> '" . a:c . " :e " . a:fname ."<cr>"
 endfunction
 command! -nargs=* F call Fload(<f-args>)
 command! -nargs=* Fc call FloadChar(<f-args>)
@@ -393,3 +409,9 @@ function! Packer(pkg)
   exec "Runcmd packer -Ss " . a:pkg
 endfunction
 command! -nargs=1 Packer call Packer(<f-args>)
+
+
+function! CopyPath()
+  let @* = expand('%')
+endfunction
+command! CopyPath call CopyPath()

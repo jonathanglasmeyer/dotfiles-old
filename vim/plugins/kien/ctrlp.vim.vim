@@ -126,4 +126,4 @@ let g:ctrlp_use_caching = 0
 "   order:ttb - from top to bottom.
 "   order:btt - from bottom to top.
 
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25'

@@ -1,5 +1,8 @@
 set nocompatible | filetype indent plugin on | syn on
 
+
+" nnoremap <leader><leader> :Quick<space>
+
 nnoremap <silent> <leader>! :e index.html<cr>
 nnoremap <silent> <leader>@ :e scripts/app.js<cr>
 nnoremap <silent> <leader># :tabn 3<cr>
@@ -20,12 +23,9 @@ nnoremap <silent> <leader>bd :CtrlPDir ~/dev<cr>
 nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
-nnoremap <silent> <leader>S :silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run2)" Enter'<cr>
-nnoremap <Leader>ha <Plug>GitGutterStageHunk
-nnoremap <Leader>hu <Plug>GitGutterRevertHunk
-nnoremap <Leader>hv <Plug>GitGutterPreviewHunk
-" nnoremap <leader>t :CtrlPTag<cr>
-nnoremap <leader>t :Tabularize<cr>
+" nnoremap <silent> <leader>S :silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run2)" Enter'<cr>
+nnoremap <silent> <leader>t :call SendQuickCmd()<cr>
+" nnoremap <leader>t :Tabularize<cr>
 nnoremap <leader>T :TabularizeWithChar \<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gb :Gblame<cr>
@@ -68,7 +68,7 @@ map <silent> <leader>u *Ncgn
 nnoremap <silent> <leader>U :SubstituteCWord<cr>
 vnoremap <silent> <leader>U :<C-u>SubstituteCWordVisual<cr>
 " nnoremap <silent> <leader>U :UndoSubstitution<cr>
-nnoremap <silent> <leader>p :CtrlPBookmarkDir<cr>
+nnoremap <leader>p :Quick<space>
 nnoremap <silent> <leader>P :e ~/.cache/ctrlp/bkd/cache.txt<cr>
 " nnoremap <silent> <leader>P :e ~/dev<cr>
 ";

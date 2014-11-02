@@ -19,6 +19,7 @@ au FileType python nnoremap <buffer> <silent> <leader>w :PythonExec2<cr>
 " autocmd! BufRead ~/.vim/config/* nnoremap K :AgFromCurrentFile <C-R><C-W><CR>
 
 
+au FileType text nnoremap <silent> <leader>t :SlimeSendParagraph<cr>
 
 " sudo -----------------------------------------------------------------------
 au! BufRead /etc/* nnoremap <buffer> <leader>s :w !sudo tee > /dev/null %<CR>

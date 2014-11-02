@@ -34,6 +34,7 @@ au! BufWritePost imap-cmds.vim source %
 au! BufWritePost arpeggio.vim source %
 
 
+" au! BufWritePost *.py silent !source %
 " au!     nnoremap <leader>N :NewProject<space>
 Source fileTypeMappings
 " au! FileType netrw nnoremap <buffer> gon :NP <C-r><C-f>
@@ -50,12 +51,14 @@ autocmd! BufRead *.dart set ft=dart
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
 autocmd! BufRead *.jade set ft=jade
+autocmd! BufRead *.pl set ft=prolog
 autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guibg=#282828
 
+" au BufRead *.pdf sil exe "!xdg-open " . shellescape(expand("%:p")) . " &" | bd | let &ft=&ft | redraw!
 autocmd! BufEnter ~/dev/* call RunMx()
 
 " C-l : clear screen
-au! BufWritePost ~/dev/* silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter' 
+" au! BufWritePost ~/dev/* silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter'
 
-" au! BufRead ~/dev/* silent nnoremap '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter' 
+" au! BufRead ~/dev/* silent nnoremap '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter'
 

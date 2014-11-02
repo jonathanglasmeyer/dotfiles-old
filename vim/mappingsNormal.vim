@@ -112,7 +112,8 @@ vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 
 
 
-nnoremap <F1> :e .run<cr>
+" nnoremap <F1> :e .run<cr>
+nnoremap <silent> <F1> :silent exec '!2to3 % -w'<cr>
 nnoremap <F2> :e .run2<cr>
 nnoremap <F3> :e .local.vimrc<cr>
 
@@ -133,7 +134,7 @@ nnoremap <silent> god :e ~/dev<cr>
 " c:nnoremap <silent> gop :Tmux
 
 
-" select pasted 
+" select pasted
 nnoremap <expr> `` '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 function! SaveQuickF(num)
@@ -146,6 +147,17 @@ function! SaveQuickFChar(c)
   silent exec "!echo Fc " . a:c . " " . expand("%:p") . " >> .local.vimrc"
   silent source .local.vimrc
 endfunction
+
+function! SaveQuickCmd(...)
+  let cmd = join(a:000)
+  silent exec "!sed -i '/QuickCmd/d' .local.vimrc"
+  silent exec "!echo QuickCmd " . cmd . " >> .local.vimrc"
+  silent source .local.vimrc
+  silent call SendQuickCmd()
+  echo ''
+endfunction
+command! -nargs=* -complete=shellcmd Quick call SaveQuickCmd(<f-args>)
+
 nnoremap <silent> <leader>1 :call SaveQuickF(1)<cr>
 nnoremap <silent> <leader>2 :call SaveQuickF(2)<cr>
 nnoremap <silent> <leader>3 :call SaveQuickF(3)<cr>
