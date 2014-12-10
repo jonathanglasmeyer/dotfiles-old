@@ -51,11 +51,17 @@ autocmd! BufRead *.dart set ft=dart
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
 autocmd! BufRead *.jade set ft=jade
+autocmd! BufRead *.es6 set ft=javascript
 autocmd! BufRead *.pl set ft=prolog
 autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guibg=#282828
 
 " au BufRead *.pdf sil exe "!xdg-open " . shellescape(expand("%:p")) . " &" | bd | let &ft=&ft | redraw!
-autocmd! BufEnter ~/dev/* call RunMx()
+function! Foo()
+  source .local.vimrc
+  call RunMx()
+endfunction
+autocmd! BufEnter ~/dev/* call Foo()
+autocmd! BufEnter ~/dev/* call Foo()
 
 " C-l : clear screen
 " au! BufWritePost ~/dev/* silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter'

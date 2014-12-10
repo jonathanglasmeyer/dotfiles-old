@@ -5,7 +5,7 @@ nnoremap <C-l> :BufSurfForward<cr>
 " nnoremap <c-k> zk
 " let g:UltiSnipsExpandTrigger="<c-j>"
 
-" insert mode easy paste 
+" insert mode easy paste
 inoremap <C-p> <c-o>:set paste<cr><C-R>*<c-o>:set nopaste<cr>
 ":r
 vnoremap p "0p
@@ -46,4 +46,5 @@ imap <buffer> <M-c> <Plug>LatexCloseCurEnv
 
 " nnoremap <cr> zA:
 
-
+nnoremap <silent> <C-Down> :res-5<cr>
+nnoremap <silent> <C-Up> :res+5<cr>

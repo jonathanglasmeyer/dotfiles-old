@@ -1,8 +1,5 @@
-
 keycode  18 = parenleft 9 parenleft 9
 keycode  19 = parenright 0 parenright 0
-
-
 
 ! keycode  43 = h H minus H
 ! ! keycode  45 = k K 5 K

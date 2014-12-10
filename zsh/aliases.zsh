@@ -106,8 +106,15 @@ alias s-all='systemctl --all'
 #else {{{1
 
 alias ping='while { true } { sleep 2; ping www.google.com  }'
+
+# net() {
+#     sudo systemctl restart netctl-auto@wlp7s0
+#     while { true } { sleep 2; ping 'www.google.com' }
+# }
+
 alias source-xresources="xrdb ~/.Xresources"
 alias ecs="gvim --servername vim -S"
+alias ecb="gvim --servername vim -S -c 'set guifont=Liberation\ Mono\ for\ Powerline\ 15'"
 
 
 #burn dvd
@@ -152,9 +159,9 @@ alias julia="docker-run ontouchstart/julia-master"
 
 
 alias disk-usage="sudo du -hsx * | sort -rh | head -10"
-alias tg="~/dev/tg/bin/telegram-cli -l 1 -W"
+# alias tg="~/dev/tg/bin/telegram-cli -l 1 -W"
 alias w="which"
-alias lock="i3lock-my"
+alias lock="i3lock -f -u -r 20"
 alias npmi="npm install --save"
 alias npmid="npm install --save-dev"
 alias npmig="sudo npm install -g"
@@ -170,7 +177,7 @@ alias insync-status="insync get_sync_progress"
 
 alias cmon="sudo !!"
 
-alias dpl="fab push"
+alias dpl="fab deploy"
 alias up="fab pull"
 
 alias traffic='sudo nethogs wlp7s0'
@@ -230,8 +237,14 @@ ls-res() { ssh uni "ls /informatik/isr/nats/projects/subtitling/resources/*.wav"
 
 alias goo='google-chrome-stable'
 
-alias wr-kill='killall workrave'
-alias wr='workrave &'
+alias wrs="dbus-send --type=method_call --dest=org.workrave.Workrave /org/workrave/Workrave/Core org.workrave.CoreInterface.SetOperationMode string:'suspended'"
+alias wrn="dbus-send --type=method_call --dest=org.workrave.Workrave /org/workrave/Workrave/Core org.workrave.CoreInterface.SetOperationMode string:'normal'"
+alias wr='workrave >/dev/null &'
 alias wr-s='workrave-stats'
 run-prolog-main() { swipl -g "consult($1), main, halt" }
 
+tg() {
+  cd ~/dev/webogram
+  node server.js &
+}
+alias copy='xclip -selection clipboard'

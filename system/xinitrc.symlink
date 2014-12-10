@@ -4,6 +4,7 @@ setxkbmap -option '' -option 'ctrl:nocaps'
 xmodmap ~/.Xmodmap &
 parcellite &
 workrave &
+insync start &
 # urxvtd &
 # redshift -t 6500:4500 &
 redshift &

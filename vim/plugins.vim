@@ -13,6 +13,9 @@ Plugin justinmk/vim-sneak
 Plugin kien/ctrlp.vim
 Plugin fisadev/vim-ctrlp-cmdpalette
 
+Plugin dahu/VimFindsMe
+Plugin dahu/MarkMyWords
+
 " make tabline prettier
 Plugin mkitt/tabline.vim
 
@@ -21,6 +24,8 @@ Plugin mkitt/tabline.vim
 " Plugin tsukkee/unite-tag
 
 " tweaks
+" Plugin vim-scripts/SearchHighlighting
+Plugin PeterRincker/vim-argumentative
 Plugin terryma/vim-multiple-cursors
 Plugin tpope/vim-repeat
 Plugin tpope/vim-endwise
@@ -51,8 +56,10 @@ Plugin Valloric/YouCompleteMe
 " Plugin honza/vim-snippets
 " Plugin kikijump/tslime.vim
 Plugin jpalardy/vim-slime
+Plugin junegunn/vim-easy-align
 " Plugin epeli/slimux
-" Plugin SirVer/ultisnips
+Plugin ervandew/supertab
+Plugin SirVer/ultisnips
 " Plugin honza/vim-snippets
 
 Plugin kien/rainbow_parentheses.vim
@@ -63,10 +70,10 @@ Plugin ivan-cukic/vim-ctrlp-switcher
 Plugin kana/vim-textobj-user
 Plugin bps/vim-textobj-python
 Plugin vim-scripts/UnconditionalPaste
-Plugin airblade/vim-gitgutter
+" Plugin airblade/vim-gitgutter
 " Plugin terryma/vim-smooth-scroll
 " Plugin tpope/vim-vinegar
-Plugin tpope/vim-rsi
+Plugin jonathanewerner/vim-rsi
 " Plugin prendradjaja/vim-vertigo
 Plugin terryma/vim-expand-region
 Plugin kana/vim-textobj-line
@@ -105,7 +112,8 @@ Plugin othree/html5.vim
 
 " css ------------------------------------------------------------------------
 Plugin hail2u/vim-css3-syntax
-" Plugin gorodinskiy/vim-coloresque
+Plugin gorodinskiy/vim-coloresque
+" Plugin chrisbra/Colorizer
 " Plugin vim-pandoc/vim-pandoc
 
 " scala ----------------------------------------------------------------------
@@ -127,15 +135,18 @@ Plugin JuliaLang/julia-vim
 Plugin bartlomiejdanek/vim-dart
 
 " angular --------------------------------------------------------------------
-Plugin othree/javascript-libraries-syntax.vim
 " Plugin matthewsimo/angular-vim-snippets
 " Plugin burnettk/vim-angular
 
 " jsx
+" Plugin pangloss/vim-javascript
+" Plugin jelera/vim-javascript-syntax
 Plugin pangloss/vim-javascript
+" Plugin othree/yajs.vim
+" Plugin othree/javascript-libraries-syntax.vim
 Plugin mxw/vim-jsx
 " Plugin jsx/jsx.vim
-Plugin marijnh/tern_for_vim
+" Plugin marijnh/tern_for_vim
 
 " " closure
 " Plugin guns/vim-clojure-static
@@ -163,7 +174,7 @@ Plugin adimit/prolog.vim
 
 " markdown
 " Plugin plasticboy/vim-markdown
-" Plugin tpope/vim-markdown
+Plugin tpope/vim-markdown
 " Plugin jtratner/vim-flavored-markdown
 
 " =============================================================================
@@ -173,4 +184,5 @@ Plugin adimit/prolog.vim
 " VAMActivate github:rhysd/open-pdf.vim
 Plugin flazz/vim-colorschemes
 Plugin chriskempson/base16-vim
+Plugin blerins/flattown
 colorscheme base16-eighties

@@ -24,7 +24,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.dotfiles/bin/vol-higher.sh
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.dotfiles/bin/vol-lower.sh
 bindsym XF86AudioMute exec --no-startup-id ~/.dotfiles/bin/vol-mute.sh
 bindsym $mod+F7 exec --no-startup-id ~/bin/automirror
-bindsym --release Print exec --no-startup-id scrot -s ~/screenshot.png
+bindsym --release Print exec --no-startup-id "maim -s -c 1,0,0,0.6 ~/screenshot.png && imgurbash ~/screenshot.png 2> ~/.imgur-lastupload"
 # ####### LEFT ###########################
 
 # ----- TOP -----------
@@ -32,7 +32,7 @@ bindsym --release Print exec --no-startup-id scrot -s ~/screenshot.png
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+shift+d exec dmenu_run
 # bindsym $mod+r [title="ranger"] scratchpad show
-bindsym $mod+shift+r exec --no-startup-id ~/.dotfiles/bin/session-dev
+# bindsym $mod+shift+r exec --no-startup-id ~/.dotfiles/bin/session-dev
 bindsym $mod+r mode "resize"
 # w
 # b
@@ -79,8 +79,8 @@ bindcode 105 exec --no-startup-id ~/.dotfiles/bin/screen-off
 # bindsym $mod+space [title="Webogram"] scratchpad show
 # bindsym $mod+minus [class="Gvim"] scratchpad show
 bindsym $mod+minus scratchpad show
-bindsym $mod+F2 exec --no-startup-id ~/.dotfiles/bin/session-dev
-bindsym $mod+F3 exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
+# bindsym $mod+F2 exec --no-startup-id ~/.dotfiles/bin/session-dev
+# bindsym $mod+F3 exec --no-startup-id ~/.dotfiles/bin/session-dev-chrome
 
 
 # shift

@@ -5,9 +5,9 @@ call InitBackupDir()
 set noswapfile
 " set fileencodings=utf-8
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set smarttab
 set winfixheight
@@ -24,9 +24,10 @@ autocmd BufLeave,FocusLost * silent! wall
 " remember window split sizes when deleting a split
 " noequalalways
 set noea
+
 " change where window split are positioned
 set splitright
-set nosplitbelow
+set splitbelow
 
 set history=700
 
@@ -51,8 +52,6 @@ set laststatus=2
 " set relativenumber
 set undofile
 
-" disable welcome screen
-set shortmess+=I
 
 " a buffer becomes hidden when it is abandoned
 set hid

@@ -113,8 +113,9 @@ vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 
 
 " nnoremap <F1> :e .run<cr>
-nnoremap <silent> <F1> :silent exec '!2to3 % -w'<cr>
-nnoremap <F2> :e .run2<cr>
+" nnoremap <silent> <F1> :silent exec '!2to3 % -w'<cr>
+nnoremap <silent> <F1> :e .local.vimrc<cr>
+nnoremap <F2> :UltiSnipsEdit<cr>
 nnoremap <F3> :e .local.vimrc<cr>
 
 " inoremap <F2> <c-o>:SaveToDic<cr>
@@ -123,6 +124,7 @@ nnoremap <F4> :RainbowParenthesesToggleAll<cr>
 nnoremap <F8> :TagbarToggle<cr>
 nnoremap <F5> :source %<cr>
 noremap <F6> :Invbg<CR>
+nnoremap <F7> :set guifont=Liberation\ Mono\ for\ Powerline\ 16<cr>
 nnoremap <F12> :silent call FillLine( '-' )<cr>
 
 " show syntax highlighting under cursor

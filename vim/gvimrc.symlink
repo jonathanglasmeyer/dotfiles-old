@@ -1,6 +1,6 @@
 set guioptions-=M
 
-" no auto select 
+" no auto select
 set guioptions-=a
 
 set guioptions-=e  "console tabs"
@@ -20,3 +20,6 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 set guiheadroom=0
 
+
+" disable welcome screen
+set shortmess+=I
