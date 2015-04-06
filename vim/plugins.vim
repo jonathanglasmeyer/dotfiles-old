@@ -70,7 +70,7 @@ Plugin ivan-cukic/vim-ctrlp-switcher
 Plugin kana/vim-textobj-user
 Plugin bps/vim-textobj-python
 Plugin vim-scripts/UnconditionalPaste
-" Plugin airblade/vim-gitgutter
+Plugin airblade/vim-gitgutter
 " Plugin terryma/vim-smooth-scroll
 " Plugin tpope/vim-vinegar
 Plugin jonathanewerner/vim-rsi
@@ -88,6 +88,7 @@ Plugin gregsexton/gitv
 " Plugin junegunn/vim-oblique
 Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
+
 
 
 " Plugin scrooloose/syntastic
