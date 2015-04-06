@@ -28,7 +28,6 @@ function! Eslint()
   silent! update
   exec 'silent !tmux send-keys -t 0 C-l "eslint ' . expand('%:p') . '" C-m'
 endfunction
-autocmd! BufEnter,InsertLeave,TextChanged *.js,*.jsx silent call Eslint()
 " save hooks -----------------------------------------------------------------
 au! TextChanged  *tex silent w
 au! InsertLeave *tex silent w
