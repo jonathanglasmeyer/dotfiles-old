@@ -269,5 +269,5 @@ fres() {
 
 alias hg="history | grep"
 alias pull='(cd ~/veloyo && ./pull-all)'
-alias ts="xfce4-terminal --command='tig status' --maximize"
+alias ts="tig status"
 
