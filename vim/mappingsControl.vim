@@ -11,8 +11,8 @@ inoremap <C-p> <c-o>:set paste<cr><C-R>*<c-o>:set nopaste<cr>
 vnoremap p "0p
 
 " insert empty lines
-nnoremap <M-y> :BufSurfBack<cr>
-nnoremap <M-o> :BufSurfForward<cr>
+nnoremap <M-u> :BufSurfBack<cr>
+nnoremap <M-p> :BufSurfForward<cr>
 nnoremap <M-e> m`O<Esc>``
 nnoremap <M-n> m`o<Esc>``
 

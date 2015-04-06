@@ -14,7 +14,21 @@ au! FileType c set commentstring=//\ %s
 
 au! FileType markdown set shiftwidth=4
 au! FileType markdown set tabstop=4
+au! FileType markdown set softtabstop=4
+au! FileType markdown set linebreak
 
+au! FileType javascript set shiftwidth=2
+au! FileType javascript set tabstop=2
+
+" open hooks -----------------------------------------------------------------
+set updatetime=2000
+autocmd! BufRead *.jsx set ft=javascript
+  let dir = getcwd()
+function! Eslint()
+  silent! update
+  exec 'silent !tmux send-keys -t 0 C-l "eslint ' . expand('%:p') . '" C-m'
+endfunction
+autocmd! BufEnter,InsertLeave,TextChanged *.js,*.jsx silent call Eslint()
 " save hooks -----------------------------------------------------------------
 au! TextChanged  *tex silent w
 au! InsertLeave *tex silent w
@@ -48,6 +62,7 @@ autocmd! BufWritePost *vimrc source ~/.dotfiles/vim/mappingsNormal.vim
 
 
 autocmd! BufRead *.dart set ft=dart
+autocmd! BufRead *.less set ft=less
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
 autocmd! BufRead *.jade set ft=jade
@@ -57,11 +72,13 @@ autocmd! BufRead *.haskell hi Conceal ctermfg=223 ctermbg=235 guifg=#ebdbb2 guib
 
 " au BufRead *.pdf sil exe "!xdg-open " . shellescape(expand("%:p")) . " &" | bd | let &ft=&ft | redraw!
 function! Foo()
-  source .local.vimrc
-  call RunMx()
+    if filereadable("\.local\.vimrc")
+      source .local.vimrc
+      call RunMx()
+    endif
 endfunction
 autocmd! BufEnter ~/dev/* call Foo()
-autocmd! BufEnter ~/dev/* call Foo()
+" autocmd! BufEnter ~/veloyo/* call Foo()
 
 " C-l : clear screen
 " au! BufWritePost ~/dev/* silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run)" Enter'

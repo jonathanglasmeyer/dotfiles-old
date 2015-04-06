@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="af-magic"
+ZSH_THEME="af-magic-my"
 
 plugins=(git wd virtualenv)
 
@@ -17,7 +17,7 @@ bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
 
-# setopt auto_cd
+setopt auto_cd
 # setopt autopushd
 setopt completealiases
 setopt HIST_IGNORE_DUPS

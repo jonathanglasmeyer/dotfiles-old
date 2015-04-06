@@ -68,6 +68,8 @@ vnoremap y h
 
 " deactivate Q / ex mode
 nnoremap Q <nop>
+nnoremap Q <nop>
+
 
 " change behaviour of goto first column
 nnoremap 0 ^
@@ -166,6 +168,8 @@ nnoremap <silent> <leader>3 :call SaveQuickF(3)<cr>
 nnoremap <silent> <leader>4 :call SaveQuickF(4)<cr>
 nnoremap <silent> <leader>5 :call SaveQuickF(5)<cr>
 nnoremap <silent> <leader>6 :call SaveQuickF(6)<cr>
+nnoremap <silent> <leader>7 :call SaveQuickF(7)<cr>
+nnoremap <silent> <leader>8 :call SaveQuickF(8)<cr>
 
 nnoremap <silent> ,a :call SaveQuickFChar("a")<cr>
 nnoremap <silent> ,b :call SaveQuickFChar("b")<cr>
@@ -220,4 +224,6 @@ nnoremap <silent> ,W :call SaveQuickFChar("W")<cr>
 nnoremap <silent> ,X :call SaveQuickFChar("X")<cr>
 nnoremap <silent> ,Y :call SaveQuickFChar("Y")<cr>
 nnoremap <silent> ,Z :call SaveQuickFChar("Z")<cr>
+
+nnoremap <silent> <cr> :lnext<cr>
 

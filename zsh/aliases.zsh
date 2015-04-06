@@ -2,6 +2,7 @@ alias reload!='. ~/.zshrc'
 
 e() {
   gvim --servername vim --remote-silent "$@"
+  # atom "$@"
 }
 
 m() {
@@ -41,7 +42,7 @@ i-aur() {
 
 I() {
   echo $1 >> ~/.packages-manually-added
-  sudo packer -S --noconfirm $1
+  packer -S --noconfirm $1
 }
 
 docker-remove-unused() {
@@ -81,9 +82,9 @@ alias pac-info="pacman -Qi"
 
 alias gs='git status'
 alias rm='trash-put'
-alias i='sudo packer --noconfirm'
+alias i='packer --noconfirm'
 # alias i='sudo yum -y install'
-alias upd='sudo packer -Syu --noconfirm'
+alias upd='packer -Syu --noconfirm'
 alias R='reload!'
 
 
@@ -106,6 +107,7 @@ alias s-all='systemctl --all'
 #else {{{1
 
 alias ping='while { true } { sleep 2; ping www.google.com  }'
+alias pnig='while { true } { sleep 2; ping www.google.com  }'
 
 # net() {
 #     sudo systemctl restart netctl-auto@wlp7s0
@@ -225,6 +227,7 @@ alias wifi-menu='sudo wifi-menu -o'
 alias cc='cd $(git rev-parse --show-toplevel)'
 alias -g NULL='>/dev/null'
 alias -g G='| grep -i '
+hash -d dl=~/Downloads
 
 alias -s pdf=evince
 
@@ -234,8 +237,9 @@ convert-to-wav() {ffmpeg -i $1.mp4 -acodec pcm_s16le -ar 16000 -ac 1 $1.wav}
 sub() { ag -l $1 | xargs sed -i "s/$1/$2/g" }
 upl() { scp $1.{wav,txt} uni:/informatik/isr/nats/projects/subtitling/resources }
 ls-res() { ssh uni "ls /informatik/isr/nats/projects/subtitling/resources/*.wav" }
+cpres() { "scp uni:/informatik/isr/nats/projects/subtitling/all_videos/data/$1.wav .  " }
 
-alias goo='google-chrome-stable'
+alias goo='google-chrome-beta'
 
 alias wrs="dbus-send --type=method_call --dest=org.workrave.Workrave /org/workrave/Workrave/Core org.workrave.CoreInterface.SetOperationMode string:'suspended'"
 alias wrn="dbus-send --type=method_call --dest=org.workrave.Workrave /org/workrave/Workrave/Core org.workrave.CoreInterface.SetOperationMode string:'normal'"
@@ -248,3 +252,22 @@ tg() {
   node server.js &
 }
 alias copy='xclip -selection clipboard'
+cpres() {
+    # $1: icon folder, $2: icon name, $3: color
+    formats=(drawable-hdpi drawable-mdpi drawable-xhdpi drawable-xxhdpi drawable-xxxhdpi)
+    for format in $formats; do
+        from=~/android-assets/material-design-icons/$1/$format/ic_$2_$3_24dp.png
+        # to=~/AndroidStudioProjects/MMD/app/src/main/res/$format/
+        to=~/AndroidStudioProjects/Metronome/app/src/main/res/$format/
+        cp $from $to
+    done
+}
+
+fres() {
+    (cd ~/android-assets/material-design-icons/ && ag --smart-case --hidden -g $1)
+}
+
+alias hg="history | grep"
+alias pull='(cd ~/veloyo && ./pull-all)'
+alias ts="xfce4-terminal --command='tig status' --maximize"
+

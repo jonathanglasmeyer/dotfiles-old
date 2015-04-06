@@ -30,6 +30,7 @@ nnoremap <silent> <leader>w :call ToggleStyleFyle()<cr>
 " nnoremap <silent> <leader>bv :CtrlP ~/.vim/bundle<cr>
 " nnoremap <silent> <leader>bd :CtrlPDir ~/dev<cr>
 " nnoremap <leader>b <Plug>MMW_MarkLine
+nmap <leader>M q
 nmap <leader>i <Plug>MMW_Select
 nmap <silent> <leader>b <Plug>MMW_MarkLine
 nmap <leader>I <Plug>MMW_Browse
@@ -37,11 +38,17 @@ nmap <leader>I <Plug>MMW_Browse
 " nnoremap <silent> <leader>a :ZealCurrentWord<cr>
 nnoremap <leader>A :Zeal<space>
 nnoremap <leader>s :w!<CR>
+" nnoremap <leader>S vip:!sort<cr>
+fun! MyOver()
+  exec "OverCommandLine %s/" . expand("<cword>") . "/"
+  set nohlsearch
+endfun
+nnoremap <silent> <leader>S :call MyOver()<cr>
 " nnoremap <leader>h :GitGutterStageHunk<cr>
 nnoremap <silent> <leader>h :CtrlPTag<cr>
 
 " nnoremap <silent> <leader>S :silent exec '!tmux send-keys -t $(basename `pwd`):2 C-u "$(cat .run2)" Enter'<cr>
-nnoremap <silent> <leader>t :call SendQuickCmd()<cr>
+" nnoremap <silent> <leader>t :call SendQuickCmd()<cr>
 " nnoremap <leader>t :Tabularize<cr>
 nnoremap <leader>T :TabularizeWithChar :<cr>
 nnoremap <leader>gw :Gwrite<cr>

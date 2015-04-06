@@ -169,6 +169,7 @@ for_window [class="Lxpolkit"] floating enable
 # for_window [class="Gvim"] border 1pixel
 # for_window [class="Xfce4-terminal"] border none
 for_window [title="ranger"] border 1pixel
+for_window [title="Android"] floating disable
 for_window [window_role="pop-up"] floating enable
 for_window [class="Meld"] floating enable
 # for_window [class="jetbrains-android-studio"] floating disable

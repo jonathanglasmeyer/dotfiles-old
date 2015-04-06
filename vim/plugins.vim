@@ -9,12 +9,12 @@ Source setupFunctions
 Source colorschemes
 
 " navigation -----------------------------------------------------------------
-Plugin justinmk/vim-sneak
+" Plugin justinmk/vim-sneak
 Plugin kien/ctrlp.vim
 Plugin fisadev/vim-ctrlp-cmdpalette
 
-Plugin dahu/VimFindsMe
-Plugin dahu/MarkMyWords
+" Plugin dahu/VimFindsMe
+" Plugin dahu/MarkMyWords
 
 " make tabline prettier
 Plugin mkitt/tabline.vim
@@ -25,6 +25,7 @@ Plugin mkitt/tabline.vim
 
 " tweaks
 " Plugin vim-scripts/SearchHighlighting
+Plugin osyo-manga/vim-over
 Plugin PeterRincker/vim-argumentative
 Plugin terryma/vim-multiple-cursors
 Plugin tpope/vim-repeat
@@ -36,7 +37,6 @@ Plugin vim-scripts/ReplaceWithRegister
 " Plugin airblade/vim-rooter
 Plugin ton/vim-bufsurf
 Plugin tpope/vim-commentary
-" Plugin tpope/vim-unimpaired
 Plugin tpope/vim-eunuch
 " Plugin EasyGrep
 Plugin godlygeek/tabular
@@ -47,7 +47,7 @@ Plugin rking/ag.vim
 Plugin tpope/vim-fugitive
 " Plugin idanarye/vim-merginal
 Plugin tommcdo/vim-fugitive-blame-ext
-Plugin bling/vim-airline
+" Plugin bling/vim-airline
 " Plugin bling/vim-bufferline
 " Plugin mhinz/vim-startify
 " Plugin Shougo/neocomplete.vim
@@ -90,7 +90,7 @@ Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
 
 
-Plugin scrooloose/syntastic
+" Plugin scrooloose/syntastic
 
 
 
@@ -128,11 +128,11 @@ Plugin gorodinskiy/vim-coloresque
 " Plugin davidhalter/jedi-vim
 
 " julia ----------------------------------------------------------------------
-Plugin JuliaLang/julia-vim
+" Plugin JuliaLang/julia-vim
 
 " dart -----------------------------------------------------------------------
 " Plugin dart-lang/dart-vim-plugin
-Plugin bartlomiejdanek/vim-dart
+" Plugin bartlomiejdanek/vim-dart
 
 " angular --------------------------------------------------------------------
 " Plugin matthewsimo/angular-vim-snippets
@@ -147,6 +147,8 @@ Plugin pangloss/vim-javascript
 Plugin mxw/vim-jsx
 " Plugin jsx/jsx.vim
 " Plugin marijnh/tern_for_vim
+" Plugin moll/vim-node
+" Plugin ahayman/vim-nodejs-complete
 
 " " closure
 " Plugin guns/vim-clojure-static
@@ -157,20 +159,20 @@ Plugin mxw/vim-jsx
 " Plugin tpope/vim-sexp-mappings-for-regular-people
 " Plugin tpope/vim-surround
 
-Plugin wavded/vim-stylus
-Plugin kchmck/vim-coffee-script
+" Plugin wavded/vim-stylus
+" Plugin kchmck/vim-coffee-script
 Plugin groenewege/vim-less
 
 
 " c
-Plugin justinmk/vim-syntax-extra
+" Plugin justinmk/vim-syntax-extra
 
 
 " elm
-Plugin lambdatoast/elm.vim
+" Plugin lambdatoast/elm.vim
 
 " prolog
-Plugin adimit/prolog.vim
+" Plugin adimit/prolog.vim
 
 " markdown
 " Plugin plasticboy/vim-markdown
@@ -183,6 +185,11 @@ Plugin tpope/vim-markdown
 
 " VAMActivate github:rhysd/open-pdf.vim
 Plugin flazz/vim-colorschemes
+Plugin chriskempson/vim-tomorrow-theme
 Plugin chriskempson/base16-vim
 Plugin blerins/flattown
-colorscheme base16-eighties
+Plugin w0ng/vim-hybrid
+colorscheme gruvbox
+" colorscheme base16-eighties
+" colorscheme hybrid
+" colorscheme Tomorrow-Night-Eighties

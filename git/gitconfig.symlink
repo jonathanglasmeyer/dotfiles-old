@@ -27,6 +27,7 @@
 [core]
 	excludesfile = /home/jwerner/.gitignore_global
         editor = gvim -f
+	autocrlf = input
 [apply]
         whitespace = nowarn
 [merge]

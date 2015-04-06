@@ -1,0 +1,2 @@
+bin="/home/jwerner/.dotfiles/bin/run-or-raise"
+echo "$bin jetbrains-studio" > /home/jwerner/.dotfiles/bin/rundev

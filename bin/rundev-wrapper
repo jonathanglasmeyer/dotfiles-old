@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+/home/jwerner/.dotfiles/bin/run-or-raise jetbrains
+

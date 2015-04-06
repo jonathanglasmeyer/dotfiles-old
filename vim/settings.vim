@@ -5,12 +5,13 @@ call InitBackupDir()
 set noswapfile
 " set fileencodings=utf-8
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set smarttab
 set winfixheight
+set synmaxcol=120
 
 " auto save - does this work?
 set autowriteall
@@ -49,7 +50,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-" set relativenumber
+set number
 set undofile
 
 
@@ -70,7 +71,7 @@ set viminfo^=%
 " clipboard = X11
 set clipboard=unnamed
 
-set t_Co=256
+" set t_Co=256
 
 " folds
 set foldopen=block,hor,mark,percent,quickfix,search,tag,undo,jump
