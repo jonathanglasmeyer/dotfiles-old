@@ -11,6 +11,7 @@ Source colorschemes
 " navigation -----------------------------------------------------------------
 " Plugin justinmk/vim-sneak
 Plugin kien/ctrlp.vim
+Plugin JazzCore/ctrlp-cmatcher
 Plugin fisadev/vim-ctrlp-cmdpalette
 
 " Plugin dahu/VimFindsMe
@@ -25,7 +26,6 @@ Plugin mkitt/tabline.vim
 
 " tweaks
 " Plugin vim-scripts/SearchHighlighting
-Plugin osyo-manga/vim-over
 Plugin PeterRincker/vim-argumentative
 Plugin tpope/vim-repeat
 Plugin tpope/vim-endwise
