@@ -271,3 +271,9 @@ alias hg="history | grep"
 alias pull='(cd ~/veloyo && ./pull-all)'
 alias ts="tig status"
 
+alias es='$(ag * -l --nocolor -g . | selecta)'
+# alias es='$(find * -type f | selecta)'
+
+# let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+alias re-service='(cd ~/veloyo/service-web-client && pm2 flush & pm2 restart service-web-client); tmux select-window -t logs'
+alias net-restart='nmcli n off & nmcli n on && ping'

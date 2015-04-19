@@ -56,10 +56,11 @@ Plugin terryma/vim-expand-region
 Plugin kana/vim-textobj-line
 Plugin kana/vim-textobj-entire
 Plugin tpope/vim-dispatch
-Plugin Yggdroot/indentLine
+" Plugin Yggdroot/indentLine
 Plugin gregsexton/gitv
 Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
+Plugin Raimondi/delimitMate
 
 " filetype -------------------------------------------------------------------
 " haskell
@@ -73,13 +74,13 @@ Plugin pbrisbin/vim-syntax-shakespeare
 " html -----------------------------------------------------------------------
 Plugin mattn/emmet-vim
 " Plugin indenthtml.vim
-Plugin othree/xml.vim
-Plugin digitaltoad/vim-jade
+" Plugin othree/xml.vim
+" Plugin digitaltoad/vim-jade
 Plugin othree/html5.vim
 
 " css ------------------------------------------------------------------------
 Plugin hail2u/vim-css3-syntax
-Plugin gorodinskiy/vim-coloresque
+" Plugin gorodinskiy/vim-coloresque
 " Plugin chrisbra/Colorizer
 " Plugin vim-pandoc/vim-pandoc
 
@@ -106,14 +107,18 @@ Plugin gorodinskiy/vim-coloresque
 " Plugin burnettk/vim-angular
 
 " jsx
-" Plugin pangloss/vim-javascript
+" Plugin jonathanewerner/vim-javascript
 " Plugin jelera/vim-javascript-syntax
-Plugin pangloss/vim-javascript
+" Plugin pangloss/vim-javascript
 " Plugin othree/yajs.vim
 " Plugin othree/javascript-libraries-syntax.vim
-Plugin mxw/vim-jsx
+
+" requires pangloss/vim-javascript
+" Plugin mxw/vim-jsx
+
 " Plugin jsx/jsx.vim
 " Plugin marijnh/tern_for_vim
+" Plugin terryma/vim-multiple-cursors
 " Plugin moll/vim-node
 " Plugin ahayman/vim-nodejs-complete
 
@@ -141,6 +146,9 @@ Plugin groenewege/vim-less
 " prolog
 " Plugin adimit/prolog.vim
 
+" json
+Plugin elzr/vim-json
+
 " markdown
 " Plugin plasticboy/vim-markdown
 Plugin tpope/vim-markdown
@@ -151,12 +159,21 @@ Plugin tpope/vim-markdown
 " call plug#end()
 
 " VAMActivate github:rhysd/open-pdf.vim
-Plugin flazz/vim-colorschemes
+" Plugin flazz/vim-colorschemes
 Plugin chriskempson/vim-tomorrow-theme
 Plugin chriskempson/base16-vim
 Plugin blerins/flattown
-Plugin w0ng/vim-hybrid
+Plugin jonathanewerner/gruvbox
+" Plugin w0ng/vim-hybrid
 colorscheme gruvbox
 " colorscheme base16-eighties
 " colorscheme hybrid
 " colorscheme Tomorrow-Night-Eighties
+" Plugin ajh17/Spacegray.vim
+" colorscheme spacegray
+" Plugin yosiat/oceanic-next-vim
+Plugin jonathanewerner/semantic-highlight.vim
+Plugin gabesoft/vim-ags
+Plugin roman/golden-ratio
+Plugin osyo-manga/vim-over
+Plugin machakann/vim-textobj-delimited

@@ -4,14 +4,15 @@ Source initBackupDir
 call InitBackupDir()
 set noswapfile
 " set fileencodings=utf-8
-
+" let &showbreak = '… '
+set linebreak
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set smarttab
 set winfixheight
-set synmaxcol=120
+" set synmaxcol=120
 
 " auto save - does this work?
 set autowriteall
@@ -213,3 +214,4 @@ set shell=/usr/bin/zsh
 
 " auto strip white space on save
 autocmd BufWritePre * :%s/\s\+$//e
+

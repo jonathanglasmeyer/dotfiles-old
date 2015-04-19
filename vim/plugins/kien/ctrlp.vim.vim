@@ -127,3 +127,5 @@ let g:ctrlp_use_caching = 0
 "   order:btt - from bottom to top.
 
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30'
+
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }

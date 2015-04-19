@@ -26,3 +26,5 @@ function! SquashCommits()
   '<,'>s/pick /fixup /ge
 endfunction
 autocmd! VimEnter .git/rebase-merge/git-rebase-todo vmap <buffer> <leader>s :call SquashCommits()<CR>
+nnoremap <silent> }q :cn<cr>
+nnoremap <silent> {q :cp<cr>
