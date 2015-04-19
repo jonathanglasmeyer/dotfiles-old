@@ -12,7 +12,8 @@ nnoremap O L
 vnoremap L O
 vnoremap O L
 
-nnoremap j n
+nnoremap , n
+nnoremap ; N
 nnoremap n gj
 
 vnoremap j n
@@ -123,3 +124,6 @@ nnoremap <silent> <leader>8 :call SaveQuickF(8)<cr>
 
 nnoremap <silent> <cr> :lnext<cr>
 
+" In the quickfix window, <CR> is used to jump to the error under the
+" cursor, so undefine the mapping there.
+autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
