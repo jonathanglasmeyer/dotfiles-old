@@ -83,8 +83,8 @@ set-window-option -g window-status-current-fg colour2
 #set-window-option -g window-status-attr dim
 
 # active window title colors . for transparent: color15
-set -g pane-border-fg colour235
-set -g pane-active-border-fg colour235
+set -g pane-border-fg colour239
+set -g pane-active-border-fg colour239
 set -g pane-active-border-bg default
 
 # message text
