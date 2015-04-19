@@ -1,0 +1,3 @@
+bin="/home/jwerner/.dotfiles/bin/run-or-raise"
+echo "$bin xfce4-terminal" > /home/jwerner/.dotfiles/bin/rundev
+echo "$bin Subl3" >> /home/jwerner/.dotfiles/bin/rundev
