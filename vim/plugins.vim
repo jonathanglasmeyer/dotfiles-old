@@ -27,73 +27,39 @@ Plugin mkitt/tabline.vim
 " Plugin vim-scripts/SearchHighlighting
 Plugin osyo-manga/vim-over
 Plugin PeterRincker/vim-argumentative
-Plugin terryma/vim-multiple-cursors
 Plugin tpope/vim-repeat
 Plugin tpope/vim-endwise
 Plugin wellle/targets.vim
 Plugin vim-scripts/ReplaceWithRegister
 
 " additional functionality
-" Plugin airblade/vim-rooter
 Plugin ton/vim-bufsurf
 Plugin tpope/vim-commentary
 Plugin tpope/vim-eunuch
-" Plugin EasyGrep
 Plugin godlygeek/tabular
-" Plugin Raimondi/delimitMate
-" Plugin jiangmiao/auto-pairs
 Plugin rking/ag.vim
-" Plugin tpope/vim-obsession
 Plugin tpope/vim-fugitive
-" Plugin idanarye/vim-merginal
 Plugin tommcdo/vim-fugitive-blame-ext
-" Plugin bling/vim-airline
-" Plugin bling/vim-bufferline
-" Plugin mhinz/vim-startify
-" Plugin Shougo/neocomplete.vim
 Plugin Valloric/YouCompleteMe
-" Plugin Shougo/neosnippet
-" Plugin honza/vim-snippets
-" Plugin kikijump/tslime.vim
 Plugin jpalardy/vim-slime
 Plugin junegunn/vim-easy-align
-" Plugin epeli/slimux
 Plugin ervandew/supertab
 Plugin SirVer/ultisnips
-" Plugin honza/vim-snippets
-
 Plugin kien/rainbow_parentheses.vim
-" Plugin luochen1990/rainbow
-" Plugin int3/vim-extradite
 Plugin ivan-cukic/vim-ctrlp-switcher
-" Plugin majutsushi/tagbar
 Plugin kana/vim-textobj-user
 Plugin bps/vim-textobj-python
 Plugin vim-scripts/UnconditionalPaste
 Plugin airblade/vim-gitgutter
-" Plugin terryma/vim-smooth-scroll
-" Plugin tpope/vim-vinegar
 Plugin jonathanewerner/vim-rsi
-" Plugin prendradjaja/vim-vertigo
 Plugin terryma/vim-expand-region
 Plugin kana/vim-textobj-line
 Plugin kana/vim-textobj-entire
 Plugin tpope/vim-dispatch
-" Plugin wojtekmach/vim-rename
-" Plugin chreekat/vim-paren-crosshairs
 Plugin Yggdroot/indentLine
-" Plugin nathanaelkane/vim-indent-guides
 Plugin gregsexton/gitv
-
-" Plugin junegunn/vim-oblique
 Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
-
-
-
-" Plugin scrooloose/syntastic
-
-
 
 " filetype -------------------------------------------------------------------
 " haskell
