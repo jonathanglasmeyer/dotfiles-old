@@ -9,7 +9,7 @@
 [credential]
 	helper = store
 [alias]
-        up = pull --rebase
+        up = pull --rebase=preserve
         rbm = rebase master --preserve-merges
         rbc = rebase --continue
         co = checkout
@@ -51,6 +51,6 @@
 [init]
 	# templatedir = ~/.git_template
 [pull]
-	rebase = true
+	rebase = preserve
 [gui]
 	editor = gvim --servername vim --remote-silent
