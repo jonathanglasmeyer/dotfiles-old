@@ -9,9 +9,10 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
-set guifont=Monospace\ 12
+" set guifont=Monospace\ 12
 " set guifont=Meslo\ LG\ S\ DZ\ 10
-set guifont=Liberation\ Mono\ for\ Powerline\ 13
+" set guifont=Liberation\ Mono\ for\ Powerline\ 13
+set guifont=Consolas\ 14
 " set guifont=Incso
 " set guioptions-=e
 " colorscheme grb256

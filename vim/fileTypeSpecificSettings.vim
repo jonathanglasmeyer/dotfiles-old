@@ -76,7 +76,7 @@ function! Foo()
       call RunMx()
     endif
 endfunction
-autocmd! BufEnter ~/dev/* call Foo()
+" autocmd! BufEnter ~/dev/* call Foo()
 " autocmd! BufEnter ~/veloyo/* call Foo()
 
 " C-l : clear screen
