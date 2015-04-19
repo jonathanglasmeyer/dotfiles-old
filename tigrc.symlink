@@ -177,7 +177,6 @@ bind generic	<Lt>	back			# Go back to the previous view state
 # bind generic	<Down>	next			# Move to next
 bind generic	<C-N>	next
 bind generic	n	next
-bind generic	e	next
 # bind generic	<Up>	previous		# Move to previous
 bind generic	<C-E>	previous
 bind generic	e	previous
@@ -198,8 +197,8 @@ bind stage	s	status-update		# Stage/unstage current diff (c)hunk
 bind stage	1	stage-update-line	# Stage/unstage current line
 bind stage	!	status-revert		# Revert current diff (c)hunk
 bind stage	\	stage-split-chunk	# Split current diff (c)hunk
-bind stage	t	:/^@@			# Jump to next (c)hunk
-bind stage	h	:?^@@			# Jump to next (c)hunk
+bind stage	n	:/^@@			# Jump to next (c)hunk
+bind stage	e	:?^@@			# Jump to last (c)hunk
 bind stage	[	:toggle diff-context -1 # Decrease the diff context
 bind stage	]	:toggle diff-context +1	# Increase the diff context
 bind diff	[	:toggle diff-context -1
