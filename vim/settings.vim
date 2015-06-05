@@ -4,7 +4,7 @@ Source initBackupDir
 call InitBackupDir()
 set noswapfile
 " set fileencodings=utf-8
-" let &showbreak = '… '
+let &showbreak = '… '
 set linebreak
 set tabstop=2
 set shiftwidth=2
@@ -12,6 +12,13 @@ set softtabstop=2
 set expandtab
 set smarttab
 set winfixheight
+
+
+" update sem highlight more often
+set updatetime=500
+" do not show freaking preview window
+set completeopt=menuone,longest
+
 " set synmaxcol=120
 
 " auto save - does this work?
@@ -51,7 +58,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set number
+set nonumber
 set undofile
 
 

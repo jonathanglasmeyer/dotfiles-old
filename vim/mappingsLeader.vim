@@ -9,6 +9,13 @@ nnoremap <silent> <leader>r :CtrlP<cr>
 nnoremap <silent> <leader>R :CtrlPCurFile<cr>
 " nnoremap <silent> <leader>w :call ToggleStyleFyle()<cr>
 nnoremap <silent> <leader>w :CtrlP ~/veloyo<cr>
+" nnoremap <leader>a :r! css-to-radium --input %<cr>
+function! Foo()
+  w
+  source %
+  call Reddit()
+endfunction
+" nnoremap <leader>s :call Foo()<cr>
 nnoremap <leader>s :w!<CR>
 
 nnoremap <leader>S :Ags<space>
@@ -18,8 +25,12 @@ nnoremap <leader>hrr :GitGutterRevertHunk<cr>
 nnoremap <leader>hp :GitGutterPreviewHunk<cr>
 nnoremap <leader>` <C-w>z
 
-nnoremap <leader>tr :TernRename<cr>
-nnoremap <leader>td :TernDef<cr>
+" nnoremap <leader>tr :TernRename<cr>
+" nnoremap <leader>t :silent !tmux send-keys C-p C-m<cr>
+nnoremap <leader>t :silent call SendQuickCmd()<cr>
+
+" nnoremap <leader>T :nnoremap <Char-0x3c>leader>t :silent !tmux send-keys C-u<space>
+nnoremap <leader>T :Quick<space>
 
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>gr :Gread<cr>
@@ -33,22 +44,29 @@ function! MultiCommit()
   silent !tmux send-keys C-u multi-commit C-m
   silent !/home/jwerner/.dotfiles/bin/runtermvim
 endfunction
+
+function! JavascriptFunctionOperator()
+  silent ?\v\n\s*\w+\(.*\)\s\{
+  normal n$V%
+endfunction
+vnoremap af :call JavascriptFunctionOperator()<cr>
+omap af :normal vaf<CR>
+
 nnoremap <silent> <leader>C :call MultiCommit()<cr>
 
 nnoremap <leader>u *Nciw
 
 fun! MyOver()
   exec "OverCommandLine %s/" . expand("<cword>") . "/"
-  set nohlsearch
 endfun
-nnoremap <silent> <leader>U :call MyOver()<cr>
+nnoremap <leader>U :OverCommandLine %s/\v<cr>
 
 nnoremap <silent> <leader>y :vs<cr>
 nnoremap <leader>n :CtrlP ~/txt/tech<cr>
-nnoremap <silent> <leader>E :call RestartMX()<cr>
+" nnoremap <silent> <leader>E :call RestartMX()<cr>
 nnoremap <silent> <leader>o :b#<cr>
 
-" reindent whole file
+  " reindent whole file
 nnoremap <silent> <leader>> mmgg=G`m
 
 

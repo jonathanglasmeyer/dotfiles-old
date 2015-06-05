@@ -3,15 +3,21 @@ m() {
 }
 alias ls='ls --color=auto -hX --group-directories-first -t'
 alias ll='ls -o -hX --group-directories-first'
-alias l.='ls -oa -hX --group-directories-first'
-alias lss='ll | grep '
 alias ..='cd ..'
 alias ...='cd ../../..'
-alias ....='cd ../../../..'
 alias h="history"
 alias e="vim"
 alias g="git"
-alias cmon="sudo !!"
 alias w="which"
+alias pm2-logs-strict="pm2 logs --raw | bunyan --strict -c '!this.req'"
+alias pm2-logs="pm2 logs --raw | bunyan -c '!this.req'"
+alias pm2-logs-with-reqs="pm2 logs --raw | bunyan"
+pm2-start-all() {
+  pm2 start api-server.json
+  pm2 start service-web-client.json
+  pm2 start auth-server.json
+  pm2 start admin.json
+  pm2 start website.json
+}
 c() { builtin cd "$@" && ls; }
 export VIMINIT="let \$MYVIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$MYVIMRC"

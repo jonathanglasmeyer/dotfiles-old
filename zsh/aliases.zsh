@@ -63,7 +63,7 @@ dot() {
 }
 alias path="echo $PATH | sed 's/\:/\n/g' | sort"
 alias c="cd"
-alias h="history"
+alias h="history | tail -n 50"
 alias cluster="ssh werner@cluster.wr.informatik.uni-hamburg.de"
 
 # '[r]emove [o]rphans' - recursively remove ALL orphaned packages
@@ -137,6 +137,7 @@ alias vimprofile="gvim --startuptime vim.log && cat vim.log | sort -k 2"
 alias dev="cd ~/dev"
 alias s="tmux attach -t session"
 alias sc="tmux -2 new-session -s 'session'"
+alias sclint="tmux -2 new-session -s 'lint'"
 
 alias rake="noglob rake"
 
@@ -232,9 +233,11 @@ hash -d dl=~/Downloads
 alias -s pdf=evince
 
 send-res() {scp $1.* cluster:/home/werner/dev/prosub/ressources}
-convert-to-wav() {ffmpeg -i $1.mp4 -acodec pcm_s16le -ar 16000 -ac 1 $1.wav}
+convert-to-wav() {ffmpeg -i $1.mp3 -acodec pcm_s16le -ar 16000 -ac 1 $1.wav}
 
 sub() { ag -l $1 | xargs sed -i "s/$1/$2/g" }
+ag-del() { ag -l "$@" | xargs sed -i "/$@/d" }
+ag-foo() { ag -l "$@" }
 upl() { scp $1.{wav,txt} uni:/informatik/isr/nats/projects/subtitling/resources }
 ls-res() { ssh uni "ls /informatik/isr/nats/projects/subtitling/resources/*.wav" }
 cpres() { "scp uni:/informatik/isr/nats/projects/subtitling/all_videos/data/$1.wav .  " }
@@ -276,4 +279,23 @@ alias es='$(ag * -l --nocolor -g . | selecta)'
 
 # let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 alias re-service='(cd ~/veloyo/service-web-client && pm2 flush & pm2 restart service-web-client); tmux select-window -t logs'
+alias re-api='(cd ~/veloyo/api-server && pm2 flush & pm2 restart api-server); tmux select-window -t logs'
+alias re-all='(cd ~/veloyo && pm2 flush & pm2 kill && pm2 start processes_sample.json); tmux select-window -t logs'
 alias net-restart='nmcli n off & nmcli n on && ping'
+alias glog='pretty-log'
+alias pm2-logs-strict="pm2 logs --raw | bunyan --strict -c '!this.req'"
+alias pm2-logs="pm2 logs --raw | bunyan -c '!this.req'"
+alias pm2-logs-with-reqs="pm2 logs --raw | bunyan"
+# pm2 logs --raw | bunyan --strict -c '!this.req'
+alias automocha="supervisor -q -n exit -x npm test"
+
+alias keys="cat $0 | jq '.apps[0].env'"
+pm2-start-all() {
+  pm2 start config/01-api-server.json
+  pm2 start config/05-service-web-client.json
+  pm2 start config/02-auth-server.json
+  pm2 start config/04-admin.json
+  pm2 start config/03-website.json
+}
+# alias diff-configs="fs=('01-api-server' '02-auth-server' '03-website' '04-admin' '05-service-web-client'); for f in $fs; do echo $f; echo '-------------'; colordiff -y <(cat config/$f.json | jq '.apps[0].env' | json -k) <(cat deployment/config/$f-int.json | jq '.apps[0].env' | json -k); done"
+alias git-clean-remote='git remote prune origin'

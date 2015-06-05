@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Don't allow console.log() statements to be committed.
+#
+# Add to .git/hooks/pre-commit
+#
+# Note: jquery.js seems to always include 1 reference
+#       in a debugging section, that one can be safely
+#       ignored. 1 reference to console.log is cool
+
+count=`grep -iR 'console\.log' ./javascripts/* | wc -l | awk '{print $1}'`
+filesWithLogStatements=$(ag -l 'console\.info')
+if [[ "$count" -ge 2 ]]; then
+  echo "    remove any config.log() statements in javascript sources"
+  exit 1
+fi

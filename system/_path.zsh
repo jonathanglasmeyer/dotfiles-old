@@ -14,6 +14,13 @@ path+=('/home/jwerner/bin/android-studio/sdk/platform-tools')
 path+=('/home/jwerner/dev/workrave-stats')
 path+=('/home/jwerner/dev/loc')
 
+# pipsi
+path+=('/home/jwerner/.local/bin')
+
+path+=('/home/jwerner/.nimble/bin')
+
+path+=('/home/jwerner/bachelor-bin')
+
 export PATH
 
 export PATH="/home/jwerner/bin/haskell/elm/.cabal-sandbox/bin:$PATH"

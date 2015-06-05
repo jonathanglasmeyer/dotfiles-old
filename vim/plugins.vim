@@ -32,6 +32,7 @@ Plugin tpope/vim-endwise
 Plugin wellle/targets.vim
 Plugin vim-scripts/ReplaceWithRegister
 
+
 " additional functionality
 Plugin ton/vim-bufsurf
 Plugin tpope/vim-commentary
@@ -60,7 +61,7 @@ Plugin tpope/vim-dispatch
 Plugin gregsexton/gitv
 Plugin kana/vim-niceblock
 Plugin thinca/vim-localrc
-Plugin Raimondi/delimitMate
+" Plugin Raimondi/delimitMate
 
 " filetype -------------------------------------------------------------------
 " haskell
@@ -107,11 +108,13 @@ Plugin hail2u/vim-css3-syntax
 " Plugin burnettk/vim-angular
 
 " jsx
-" Plugin jonathanewerner/vim-javascript
+Plugin jonathanewerner/vim-javascript-syntax
 " Plugin jelera/vim-javascript-syntax
 " Plugin pangloss/vim-javascript
 " Plugin othree/yajs.vim
+" Plugin mxw/vim-jsx
 " Plugin othree/javascript-libraries-syntax.vim
+" Plugin vim-scripts/JavaScript-Indent
 
 " requires pangloss/vim-javascript
 " Plugin mxw/vim-jsx
@@ -164,16 +167,25 @@ Plugin chriskempson/vim-tomorrow-theme
 Plugin chriskempson/base16-vim
 Plugin blerins/flattown
 Plugin jonathanewerner/gruvbox
-" Plugin w0ng/vim-hybrid
+" Plugin morhetz/gruvbox
 colorscheme gruvbox
 " colorscheme base16-eighties
+" colorscheme flattown
 " colorscheme hybrid
 " colorscheme Tomorrow-Night-Eighties
 " Plugin ajh17/Spacegray.vim
 " colorscheme spacegray
-" Plugin yosiat/oceanic-next-vim
-Plugin jonathanewerner/semantic-highlight.vim
+Plugin jaxbot/semantic-highlight.vim
+" Plugin jonathanewerner/semantic-highlight.vim
 Plugin gabesoft/vim-ags
 Plugin roman/golden-ratio
 Plugin osyo-manga/vim-over
 Plugin machakann/vim-textobj-delimited
+Plugin Valloric/MatchTagAlways
+Plugin thinca/vim-textobj-function-javascript
+Plugin elixir-lang/vim-elixir
+Plugin osyo-manga/vim-hopping
+" Plugin bkad/CamelCaseMotion
+" colorscheme Tomorrow-Night
+Plugin MartinLafreniere/vim-PairTools
+Plugin zah/nim.vim

@@ -21,12 +21,10 @@ au! FileType javascript set shiftwidth=2
 au! FileType javascript set tabstop=2
 
 " open hooks -----------------------------------------------------------------
-set updatetime=2000
-autocmd! BufRead *.jsx set ft=javascript
   let dir = getcwd()
 function! Eslint()
   silent! update
-  exec 'silent !tmux send-keys -t lint.0 C-l "eslint ' . expand('%:p') . '" C-m'
+  exec 'silent !tmux send-keys -t lint:1 C-l "eslint ' . expand('%:p') . '" C-m'
 endfunction
 " save hooks -----------------------------------------------------------------
 au! TextChanged  *tex silent w
@@ -62,6 +60,7 @@ autocmd! BufWritePost *vimrc source ~/.dotfiles/vim/mappingsNormal.vim
 
 autocmd! BufRead *.dart set ft=dart
 autocmd! BufRead *.less set ft=less
+autocmd! BufRead *.mless set ft=less
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet
 autocmd! BufRead *.jade set ft=jade
