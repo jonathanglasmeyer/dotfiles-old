@@ -13,13 +13,24 @@ path+=('/home/jwerner/bin/android-studio/sdk/platform-tools')
 # own tools
 path+=('/home/jwerner/dev/workrave-stats')
 path+=('/home/jwerner/dev/loc')
+path+=('/home/jwerner/prod/.bin')
 
 # pipsi
 path+=('/home/jwerner/.local/bin')
 
+# crosswalk
+path+=('/home/jwerner/bin/crosswalk-15.43.351.0')
+
+# cordova crosswalk canary
+path+=('/home/jwerner/bin/crosswalk-cordova-15.43.351.0-arm/bin')
+
+
 path+=('/home/jwerner/.nimble/bin')
 
-path+=('/home/jwerner/bachelor-bin')
+path+=('/home/jwerner/bachelor/bin')
+
+# veloyo
+path+=('/home/jwerner/veloyo/tooling')
 
 export PATH
 

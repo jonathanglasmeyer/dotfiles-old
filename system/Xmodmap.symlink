@@ -27,7 +27,8 @@ keycode  35 = braceright bracketright bracketright braceright
 keycode 94 = Escape
 
 
-keycode 108 = Mode_switch NoSymbol Mode_switch
+
+! keycode 108 = Mode_switch NoSymbol Mode_switch
 
 ! Exchange left Alt and left Win
 ! remove mod1 = Alt_L

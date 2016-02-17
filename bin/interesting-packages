@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+comm -23 <(comm -23 <(pacman -Qqnt | sort) <(pacman -Qqg base | sort)) <(pacman -Qgq base-devel | sort) | xargs pacman -Qi

@@ -12,7 +12,7 @@ set guioptions-=L  "remove left-hand scroll bar
 " set guifont=Monospace\ 12
 " set guifont=Meslo\ LG\ S\ DZ\ 10
 " set guifont=Liberation\ Mono\ for\ Powerline\ 13
-set guifont=Consolas\ 14
+set guifont=Consolas\ 16
 " set guifont=Incso
 " set guioptions-=e
 " colorscheme grb256
@@ -24,3 +24,7 @@ set guiheadroom=0
 
 " disable welcome screen
 set shortmess+=I
+
+" if has("gui_running")
+"   set lines=46 columns=125
+" endif

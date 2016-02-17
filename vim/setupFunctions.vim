@@ -17,7 +17,7 @@ fun! EnsureVamIsOnDisk(plugin_root_dir)
       call mkdir(a:plugin_root_dir, 'p')
       execute '!git clone --depth=1 git://github.com/MarcWeber/vim-addon-manager '.
                   \       shellescape(a:plugin_root_dir, 1).'/vim-addon-manager'
-      " VAM runs helptags automatically when you install or update 
+      " VAM runs helptags automatically when you install or update
       " plugins
       exec 'helptags '.fnameescape(a:plugin_root_dir.'/vim-addon-manager/doc')
     endif
@@ -89,11 +89,11 @@ function! Plugin(arg)
     " silent exec "Plug '" . a:arg . "'"
     silent exec "VAMActivate github:" . a:arg
 endfunction
-command! -nargs=1 Plugin call Plugin(<f-args>) 
+command! -nargs=1 Plugin call Plugin(<f-args>)
 
 
-function! PluginFT(name, ft)
-    LoadPluginSettingsFile(arg)
-    silent exec "Plug '" . a:arg . "', {'on': '" . a:ft . "' }"
-endfunction
-command! -nargs=1 Plugin call Plugin(<f-args>) 
+" function! PluginFT(name, ft)
+"     LoadPluginSettingsFile(arg)
+"     silent exec "Plug '" . a:arg . "', {'on': '" . a:ft . "' }"
+" endfunction
+" command! -nargs=1 Plugin call Plugin(<f-args>)

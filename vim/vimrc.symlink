@@ -1,4 +1,10 @@
-set nocompatible | filetype indent plugin on | syn on
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+if !has('nvim')
+  set nocompatible | filetype indent plugin on | syn on
+  set t_ut=
+endif
 
 function! Source(arg)
     let l:f=expand('~/.dotfiles/vim/' . a:arg . ".vim")
@@ -14,7 +20,6 @@ Source settings
 Source fileTypeSpecificSettings
 Source mappings
 Source projects
-set t_ut=
 
 " To enable the saving and restoring of screen positions.
 let g:screen_size_restore_pos = 1

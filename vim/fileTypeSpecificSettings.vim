@@ -15,7 +15,13 @@ au! FileType c set commentstring=//\ %s
 au! FileType markdown set shiftwidth=4
 au! FileType markdown set tabstop=4
 au! FileType markdown set softtabstop=4
+au! FileType markdown set wrap
 au! FileType markdown set linebreak
+au! FileType markdown set nolist
+au! FileType markdown set textwidth=0
+au! FileType markdown set wrapmargin=0
+au! FileType markdown set shiftwidth=4
+au! FileType markdown set tabstop=4
 
 au! FileType javascript set shiftwidth=2
 au! FileType javascript set tabstop=2
@@ -58,8 +64,10 @@ autocmd! BufWritePost *vimrc source ~/.dotfiles/vim/mappingsNormal.vim
 " custom filetypes
 
 
+autocmd! BufRead *.jsx.template set ft=javascript
 autocmd! BufRead *.dart set ft=dart
 autocmd! BufRead *.less set ft=less
+autocmd! BufRead *.less.module set ft=less
 autocmd! BufRead *.mless set ft=less
 " autocmd! BufRead *.elm set ft=haskell
 autocmd! BufRead *.hamlet set ft=hamlet

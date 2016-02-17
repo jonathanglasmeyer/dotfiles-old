@@ -39,7 +39,7 @@ let g:ctrlp_prompt_mappings = {
   "   \ 'PrtCurLeft()':         ['<c-h>', '<left>', '<c-^>'],
   "   \ 'PrtCurRight()':        ['<c-l>', '<right>'],
   "   \ 'PrtClearCache()':      ['<F5>'],
-  "   \ 'PrtDeleteEnt()':       ['<F7>'],
+    \ 'PrtDeleteEnt()':       ['<F7>'],
   "   \ 'CreateNewFile()':      ['<c-y>'],
   "   \ 'MarkToOpen()':         ['<c-z>'],
   "   \ 'OpenMulti()':          ['<c-o>'],
@@ -48,7 +48,7 @@ let g:ctrlp_prompt_mappings = {
 <
 set grepprg=ag\ --nogroup\ --nocolor\ --smart-case
 " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 " let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_open_new_file = 'r'
 "never jump to existing buffer
@@ -128,4 +128,27 @@ let g:ctrlp_use_caching = 0
 
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30'
 
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
+" let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+
+let g:ctrlp_abbrev = {
+  \ 'gmode': 't',
+  \ 'abbrevs': [
+    \ {
+\ 'pattern': '^c p',
+    \ 'expanded': '@cd ~/.vim/vim-addons',
+      \ 'mode': 'pfrz',
+    \ },
+  \ {
+      \ 'pattern': '\(^@.\+\|\\\@<!:.\+\)\@<! ',
+      \ 'expanded': '.\{-}',
+      \ 'mode': 'pfr',
+    \ },
+    \ {
+      \ 'pattern': '\\\@<!:.\+\zs\\\@<! ',
+      \ 'expanded': '\ ',
+      \ 'mode': 'pfz',
+    \ },
+    \ ]
+  \ }
+let g:ctrlp_mruf_max=50

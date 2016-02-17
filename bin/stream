@@ -1,0 +1,23 @@
+# #!/usr/bin/env bash
+# SERVER="rtmp://eumedia1.livecoding.tv:1935/livecodingtv"
+# KEY_FRAME="2" # Livecoding says it MUST be 2, please do not change it unless you know what you are doing.
+
+# ffmpeg -f x11grab -s "$INRES" -r "$FPS" -i :0.0 -f alsa -i pulse -f flv -ac 2 -ar 44100 \
+#   -vcodec libx264 -force_key_frames "expr:gte(t,n_forced*$KEY_FRAME)" -g $GOP -keyint_min $FPS -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p\
+#   -s $OUTRES -preset $QUALITY -tune film -acodec libmp3lame -threads $THREADS -strict normal \
+#   -bufsize $CBR "$SERVER/$STREAM_KEY"
+#variable definitions
+INRES="1600x900" # input resolution
+OUTRES="1600x900" # output resolution
+FPS="15" # target FPS
+GOP="30" # i-frame interval, should be double of FPS,
+GOPMIN="15" # min i-frame interval, should be equal to fps,
+THREADS="2" # max 6
+CBR="1100k" # constant bitrate (should be between 1000k - 3000k)
+QUALITY="veryfast" # one of the many FFMPEG preset
+AUDIO_RATE="44100"
+#to hide logs use= -loglevel quiet
+ffmpeg -f x11grab -s "$INRES" -r "$FPS" -i :0.0 -f alsa -i pulse -f flv -ac 2 -ar $AUDIO_RATE \
+-vcodec libx264 -keyint_min 3 -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p \
+-s $OUTRES -preset $QUALITY -acodec mp3 -threads $THREADS \
+-bufsize $CBR "rtmp://eumedia1.livecoding.tv:1935/livecodingtv/$STREAM_KEY"

@@ -26,7 +26,7 @@ q
 # xcompmgr -c &
 compton -b &
 
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+~/.dotfiles/bin/java_hack.sh &
 
 # exec i3 -V >> ~/.i3/i3log 2>&1
 exec gnome-session

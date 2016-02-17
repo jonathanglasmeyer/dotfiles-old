@@ -1,5 +1,6 @@
 inoremap <esc> <esc>l
 
+nnoremap Q q
 nnoremap l o
 nnoremap o l
 
@@ -68,9 +69,10 @@ noremap gV `[v`]
 nnoremap <silent> K :silent AgMy<cr>
 vnoremap <silent> K :<C-u>silent AgMyVisual<cr>
 
-nnoremap <silent> <F1> :e .local.vimrc<cr>
+" nnoremap <silent> <F1> :e .local.vimrc<cr>
+nnoremap <silent> <F1> :CtrlPBookmarkDir<cr>
 nnoremap <F2> :UltiSnipsEdit<cr>
-nnoremap <F3> :e .local.vimrc<cr>
+nnoremap <F3> :e ~/.cache/ctrlp/mru/cache.txt<cr>
 
 nnoremap <F4> :RainbowParenthesesToggleAll<cr>
 nnoremap <F8> :TagbarToggle<cr>
@@ -113,17 +115,18 @@ function! SaveQuickCmd(...)
 endfunction
 command! -nargs=* -complete=shellcmd Quick call SaveQuickCmd(<f-args>)
 
-nnoremap <silent> <leader>1 :call SaveQuickF(1)<cr>
-nnoremap <silent> <leader>2 :call SaveQuickF(2)<cr>
-nnoremap <silent> <leader>3 :call SaveQuickF(3)<cr>
-nnoremap <silent> <leader>4 :call SaveQuickF(4)<cr>
-nnoremap <silent> <leader>5 :call SaveQuickF(5)<cr>
-nnoremap <silent> <leader>6 :call SaveQuickF(6)<cr>
-nnoremap <silent> <leader>7 :call SaveQuickF(7)<cr>
-nnoremap <silent> <leader>8 :call SaveQuickF(8)<cr>
+" nnoremap <silent> <leader>1 :call SaveQuickF(1)<cr>
+" nnoremap <silent> <leader>2 :call SaveQuickF(2)<cr>
+" nnoremap <silent> <leader>3 :call SaveQuickF(3)<cr>
+" nnoremap <silent> <leader>4 :call SaveQuickF(4)<cr>
+" nnoremap <silent> <leader>5 :call SaveQuickF(5)<cr>
+" nnoremap <silent> <leader>6 :call SaveQuickF(6)<cr>
+" nnoremap <silent> <leader>7 :call SaveQuickF(7)<cr>
+" nnoremap <silent> <leader>8 :call SaveQuickF(8)<cr>
 
 nnoremap <silent> <cr> :lnext<cr>
 
 " In the quickfix window, <CR> is used to jump to the error under the
 " cursor, so undefine the mapping there.
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
+

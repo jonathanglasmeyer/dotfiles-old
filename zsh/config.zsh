@@ -32,18 +32,6 @@ function chpwd() {
 export cd
 alias cwd='cd "$(cat ~/.cwd)"'
 
-# eval `dircolors ~/.dircolors/dircolors.ansi-dark`
-
-# ---------- vex --------------------
-## zsh needs this option set to use $(virtualenv_prompt)
-# setopt prompt_subst
-
-# function virtualenv_prompt() {
-#     if [ -n "$VIRTUAL_ENV" ]; then
-#         echo "(${VIRTUAL_ENV##*/}) "
-#     fi
-#globalias() {
-
 # ------------------------------------------------------------------------------
 # http://blog.patshead.com/2012/11/automatically-expaning-zsh-global-aliases---simplified.html
 globalias() {
@@ -60,3 +48,4 @@ bindkey "^ " magic-space           # control-space to bypass completion
 bindkey -M isearch " " magic-space # normal space during searches
 # ------------------------------------------------------------------------------
 
+source <(npm completion)

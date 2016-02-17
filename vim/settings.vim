@@ -12,13 +12,15 @@ set softtabstop=2
 set expandtab
 set smarttab
 set winfixheight
+" set statusline+=%F
 
 
-" update sem highlight more often
+" update semantic highlight more often
 set updatetime=500
 " do not show freaking preview window
 set completeopt=menuone,longest
 
+" set this when working with huge lines
 " set synmaxcol=120
 
 " auto save - does this work?
@@ -58,7 +60,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set nonumber
+set number
 set undofile
 
 
@@ -222,3 +224,28 @@ set shell=/usr/bin/zsh
 " auto strip white space on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" augroup syntastic_eslint
+"   autocmd CursorHold *.js nested update
+"   autocmd CursorHold *.jsx nested update
+" augroup END
+" set updatetime=2000
+
+augroup always_show_gutter_bar
+  autocmd!
+  autocmd BufEnter * sign define dummy
+  autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
+augroup END
+
+" from https://github.com/spf13/spf13-vim/blob/master/.vimrc
+if has('statusline')
+  set laststatus=2
+  " Broken down into easily includeable segments
+  " set statusline=%{getcwd()}/          " current dir
+  set statusline+=%<%f\    " Filename
+  set statusline+=%w%h%m%r " Options
+  set statusline+=%#error#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_enable_signs=1
+  set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+endif

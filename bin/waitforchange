@@ -1,1 +1,2 @@
-while true; do inotifywait -qq $1 && cat $1; done
+
+inotifywait --monitor --recursive --event modify src | while read $foo; do echo 'changed'; done
