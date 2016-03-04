@@ -34,10 +34,10 @@ f() {
 ag --depth 3 --smart-case --hidden --follow -g "." | fzf -e
 }
 
-fd() {
-  depth=$1 # supply depth or default = 3
-  find . -maxdepth ${depth:-3} -type d -print 2>/dev/null | fzf -e
-}
+# fd() {
+#   depth=$1 # supply depth or default = 3
+#   find . -maxdepth ${depth:-3} -type d -print 2>/dev/null | fzf -e
+# }
 
 orphans() {
   if [[ ! -n $(pkg-list_true_orphans) ]]; then
@@ -53,13 +53,13 @@ I() {
 alias i='apacman --noconfirm'
 
 
-dot() {
-  # symlink dotfile to repo and bootstrap
-  var=$1
-  mv $1 ~/.dotfiles/${var#.}.symlink && ~/.dotfiles/script/bootstrap
-}
+# dot() {
+#   # symlink dotfile to repo and bootstrap
+#   var=$1
+#   mv $1 ~/.dotfiles/${var#.}.symlink && ~/.dotfiles/script/bootstrap
+# }
 
-alias path="echo $PATH | sed 's/\:/\n/g' | sort"
+# alias path="echo $PATH | sed 's/\:/\n/g' | sort"
 alias c="cd"
 # alias h="history | tail -n 50"
 alias h="history | tail -n 50"
@@ -67,8 +67,9 @@ alias h="history | tail -n 50"
 alias gs='git status'
 alias rm='trash-put'
 # alias i='sudo yum -y install'
-alias upd='apacman -Syu --progress --purgebuild --skiptest --noconfirm'
-alias upd-noaur='apacman -Syu --noaur --progress --purgebild --skiptest --noconfirm'
+alias upd='sudo pacman-key --refresh-keys && apacman -Syu --progress --purgebuild --skiptest --noconfirm'
+alias upd-noaur='apacman -Syu --noaur --progress --purgebuild --skiptest --noconfirm'
+alias upd-aur='apacman -Syu --auronly --progress --purgebuild --skiptest --noconfirm'
 alias R='reload!'
 
 alias ls='ls --color=auto -hX --group-directories-first -t'
@@ -80,72 +81,38 @@ alias ....='cd ../../../..'
 alias pnig='while { true } { sleep 2; ping www.google.com  }'
 alias ping='while { true } { sleep 2; ping www.google.com  }'
 
-alias mouse-off='synclient TouchpadOff=1'
-alias mouse-on='synclient TouchpadOff=0'
+# alias mouse-off='synclient TouchpadOff=1'
+# alias mouse-on='synclient TouchpadOff=0'
 
 alias recent="ls -1t | head -30"
-alias copykey="xclip -sel clip < ~/.ssh/id_rsa.pub"
-alias tmux="tmux -2"
+# alias copykey="xclip -sel clip < ~/.ssh/id_rsa.pub"
 alias vimprofile="gvim --startuptime vim.log && cat vim.log | sort -k 2"
-alias s="tmux attach -t session"
-alias sc="tmux -2 new-session -s 'session'"
-
 
 alias disk-usage="sudo du -h / 2> /dev/null | grep -P '^[0-9\.]+G'"
 alias disk-usage-here="sudo du -hsx * | sort -rh | head -10"
 alias w="which"
-alias lock="i3lock -f -u -r 20"
 alias npmi="npm install --save --save-exact"
 alias npmid="npm install --save-dev --save-exact"
 alias npmig="sudo npm install -g"
 
-alias traffic='sudo nethogs wlp7s0'
+# alias traffic='sudo nethogs wlp7s0'
 
 alias ssh='sshrc'
 
-transfer() {
-  # tmpfile=$( mktemp -t transfer.XXX)
-  tmpfile=tmp
-  curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) >> $tmpfile
-  cat $tmpfile;
-  cat $tmpfile | xclip
-  rm -f $tmpfile;
-}
-alias u=transfer
+# transfer() {
+#   # tmpfile=$( mktemp -t transfer.XXX)
+#   tmpfile=tmp
+#   curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) >> $tmpfile
+#   cat $tmpfile;
+#   cat $tmpfile | xclip
+#   rm -f $tmpfile;
+# }
+# alias u=transfer
 
-# python
-py() {
-  rootDir=$(git rev-parse --show-toplevel)
-  $rootDir/.env/bin/python "$@"
-}
+# sub() { ag -l $1 | xargs sed -i "s/$1/$2/g" }
+# ag-del() { ag -l "$@" | xargs sed -i "/$@/d" }
 
-ipy() {
-  rootDir=$(git rev-parse --show-toplevel)
-  $rootDir/.env/bin/ipython
-}
-
-p() {
-  root=$(git rev-parse --show-toplevel)
-  $root/.env/bin/pip "$@"
-}
-
-alias cc='cd $(git rev-parse --show-toplevel)'
-alias -g NULL='>/dev/null'
-alias -g G='| grep -i '
-
-hash -d dl=~/Downloads
-hash -d vly=~/veloyo
-hash -d dev=~/dev
-hash -d prod=~/prod
-hash -d thesis=~/bachelor/thesis
-
-
-hash -d comw=~/veloyo/veloyo/common/client/components/widgets
-
-sub() { ag -l $1 | xargs sed -i "s/$1/$2/g" }
-ag-del() { ag -l "$@" | xargs sed -i "/$@/d" }
-
-alias goo='google-chrome-stable'
+alias goo='chromium'
 
 alias copy='xclip -selection clipboard'
 alias hg="history | grep"
@@ -155,6 +122,7 @@ alias net-restart='nmcli n off & nmcli n on && ping'
 alias pm2-logs-strict="pm2 logs --raw | bunyan --strict -c '!this.req' -L -o short"
 alias pm2-logs="pm2 logs --raw | bunyan -c '!this.req || this.err' -l info -L -o short"
 alias pm2-logs-debug="pm2 logs --raw | bunyan -c '!this.req || this.err' -l debug -L -o short"
+alias pm2-logs-trace="pm2 logs --raw | bunyan -c '!this.req || this.err' -l trace -L -o short"
 alias pm2-logs-with-reqs="pm2 logs --raw | bunyan -L"
 
 pm2-start-all() {
@@ -204,8 +172,6 @@ alias pm2-restart-docs="pm2 restart ~/veloyo/config-development/docs.json"
 
 alias git-clean-remote='git remote prune origin'
 alias loc="find . -type f | xargs wc -l | sort -k 1 -g"
-alias mute="amixer set Capture toggle"
-
 
 # from sec 10 for 6 seconds
 # ffmpeg -i input.mp3 -ss 10 -t 6 acodec copy output.mp3
@@ -219,7 +185,21 @@ alias vim-update='vim -c "silent VAMUpdateActivated"'
 # alias ag='ag --smart-case --hidden --follow'
 # ag --js -g "." | xargs sed -i 's/pattern/replacement/'
 
-# ag "foo" -l | xargs sed -i 's/foo/bar/'
-alias ag-js='ag --js -g "."'
-alias r='npm run'
 alias pac='(cd /home/jwerner/prod/pac >/dev/null && npm start)'
+alias prettyjson='python -m json.tool'
+alias url="echo file://$(pwd)/$1"
+alias weather="curl wttr.in"
+
+# Use perl regexes for grepping
+alias grep="grep -P"
+
+# npm check updates
+# npm-check-updates / ncu
+alias rn-start="adb shell monkey -p com.veloyonative 1"
+alias rn-reload="adb shell input keyevent 82 && sleep 0.3 && adb shell input keyevent 20 23"
+alias rn-debug="adb shell input keyevent 82 && sleep 0.3 && adb shell input keyevent 20 20 23"
+alias rn-menu="adb shell input keyevent 82"
+alias rn-stop="adb shell am force-stop com.veloyonative"
+# alias npm="pnpm"
+alias g="git"
+alias ws="nohup ~/bin/WebStorm-145.184.5/bin/webstorm.sh"

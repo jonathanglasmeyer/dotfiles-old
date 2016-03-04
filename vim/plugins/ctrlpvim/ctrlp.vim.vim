@@ -1,4 +1,6 @@
-" let g:ctrlp_regexp = 1
+" Folder recursion depth
+let g:ctrlp_max_depth = 10
+
 let g:ctrlp_by_filename = 0
 let g:ctrlp_map = ''
 let g:ctrlp_prompt_mappings = {

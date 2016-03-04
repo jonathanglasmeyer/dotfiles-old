@@ -168,7 +168,7 @@ Plugin drmingdrmer/vim-syntax-markdown
 " call plug#end()
 
 " VAMActivate github:rhysd/open-pdf.vim
-" Plugin flazz/vim-colorschemes
+Plugin flazz/vim-colorschemes
 Plugin chriskempson/vim-tomorrow-theme
 " Plugin chriskempson/base16-vim
 " Plugin blerins/flattown

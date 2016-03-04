@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="af-magic-my"
+# ZSH_THEME="af-magic-my"
 
-plugins=(git git-flow git-flow-completion wd virtualenv)
+# plugins=(git git-flow git-flow-completion wd virtualenv)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 unset SSH_ASKPASS
 

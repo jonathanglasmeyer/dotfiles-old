@@ -1,5 +1,3 @@
-" let g:semanticEnableFileTypes = ['javascript', 'vim', 'python']
-let g:semanticEnableFileTypes = { 'javascript': 'js', 'vim': 'vim', 'python': 'py'}
 let g:semanticUseBackground = 1
 " let g:semanticPersistCache = 1
 " let g:semanticUseCache = 1
